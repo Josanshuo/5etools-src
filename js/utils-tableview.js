@@ -94,14 +94,27 @@ class UtilsTableview {
 			.filter(({isSelected}) => isSelected);
 
 		const parser = new DOMParser();
-		const rows = rdState.rows.map(row => headersActive.map(({ix}) => parser.parseFromString(`<div>${row[ix]}</div>`, "text/html").documentElement.textContent));
+		const rows = rdState.rows
+			.map(row => {
+				return headersActive
+					.map(({ix}) => {
+						const asText = parser.parseFromString(`<div>${row[ix]}</div>`, "text/html").documentElement.textContent || "";
+						return asText
+							.trim()
+							.split("\n")
+							.map(it => it.trim())
+							.join("\n")
+							.replace(/\n\n+/g, "\n\n")
+						;
+					});
+			});
 		return DataUtil.getCsv(headersActive.map(({name}) => name), rows);
 	}
 
 	static _getTableHtml ({rdState, entities, colTransforms, sorter}) {
 		let stack = `<table class="w-100 table-striped stats stats--book stats--book-large min-w-100 w-initial">
 			<thead>
-				<tr>${Object.values(colTransforms).map((c, i) => `<th data-col="${i}" class="px-2" colspan="${c.flex || 1}">${c.name}</th>`).join("")}</tr>
+				<tr>${Object.values(colTransforms).map((c, i) => `<th data-col="${i}" class="ve-text-left px-2" colspan="${c.flex || 1}">${c.name}</th>`).join("")}</tr>
 			</thead>
 			<tbody>`;
 

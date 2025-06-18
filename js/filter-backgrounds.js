@@ -18,7 +18,7 @@ class PageFilterBackgrounds extends PageFilterBase {
 		super();
 
 		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores"});
-		this._skillFilter = new Filter({header: "Skill Proficiencies", displayFn: StrUtil.toTitleCase});
+		this._skillFilter = new Filter({header: "Skill Proficiencies", displayFn: StrUtil.toTitleCase.bind(StrUtil)});
 		this._prereqFilter = new Filter({
 			header: "Prerequisite",
 			items: [...FilterCommon.PREREQ_FILTER_ITEMS],
@@ -47,7 +47,7 @@ class PageFilterBackgrounds extends PageFilterBase {
 					.map(([k, v]) => {
 						switch (k) {
 							case "any": return "(Any)";
-							case "anyFromCategory": return `(Any from ${Parser.featCategoryToFull(v.category)} Category)`;
+							case "anyFromCategory": return `(Any From Category)`;
 							default: return k.split("|")[0].toTitleCase();
 						}
 					});
@@ -81,15 +81,16 @@ class PageFilterBackgrounds extends PageFilterBase {
 		bg._fLangs = languages;
 
 		this._mutateForFilters_commonMisc(bg);
-		bg._fOtherBenifits = [];
-		if (bg.feats) bg._fOtherBenifits.push("Feat");
-		if (bg.additionalSpells) bg._fOtherBenifits.push("Additional Spells");
-		if (bg.armorProficiencies) bg._fOtherBenifits.push("Armor Proficiencies");
-		if (bg.weaponProficiencies) bg._fOtherBenifits.push("Weapon Proficiencies");
+		bg._fOtherBenefits = [];
+		if (bg.feats) bg._fOtherBenefits.push("Feat");
+		if (bg.additionalSpells) bg._fOtherBenefits.push("Additional Spells");
+		if (bg.armorProficiencies) bg._fOtherBenefits.push("Armor Proficiencies");
+		if (bg.weaponProficiencies) bg._fOtherBenefits.push("Weapon Proficiencies");
 		bg._skillDisplay = skillDisplay;
 
-		const ability = Renderer.getAbilityData(bg.ability, {isOnlyShort: true, isBackgroundShortForm: bg.edition === "one"});
-		bg._slAbility = ability.asTextShort || VeCt.STR_NONE;
+		bg._slAbility = bg.ability
+			? (Renderer.getAbilityData(bg.ability, {isOnlyShort: true, isBackgroundShortForm: bg.edition === "one"}).asTextShort || VeCt.STR_NONE)
+			: VeCt.STR_NONE;
 
 		bg._fFeats = this._mutateForFilters_getFilterFeats(bg);
 	}
@@ -103,7 +104,7 @@ class PageFilterBackgrounds extends PageFilterBase {
 		this._skillFilter.addItem(bg._fSkills);
 		this._toolFilter.addItem(bg._fTools);
 		this._languageFilter.addItem(bg._fLangs);
-		this._otherBenefitsFilter.addItem(bg._fOtherBenifits);
+		this._otherBenefitsFilter.addItem(bg._fOtherBenefits);
 		this._miscFilter.addItem(bg._fMisc);
 		this._featsFilter.addItem(bg._fFeats);
 	}
@@ -131,7 +132,7 @@ class PageFilterBackgrounds extends PageFilterBase {
 			bg._fSkills,
 			bg._fTools,
 			bg._fLangs,
-			bg._fOtherBenifits,
+			bg._fOtherBenefits,
 			bg._fMisc,
 			bg._fFeats,
 		);
@@ -204,6 +205,7 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 				hash,
 				source,
 				sourceJson: bg.source,
+				...ListItem.getCommonValues(bg),
 				ability: bg._slAbility,
 				skills: bg._skillDisplay,
 			},

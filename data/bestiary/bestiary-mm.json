@@ -30,6 +30,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Aarakocra Skirmisher|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -73,7 +76,7 @@
 				{
 					"name": "Dive Attack",
 					"entries": [
-						"If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 ({@dice 1d6}) damage to the target."
+						"If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 ({@damage 1d6}) damage to the target."
 					]
 				}
 			],
@@ -164,6 +167,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Aboleth|XMM"
 			],
 			"size": [
 				"L"
@@ -357,6 +363,9 @@
 				{
 					"source": "CM"
 				}
+			],
+			"reprintedAs": [
+				"Abominable Yeti|XMM"
 			],
 			"size": [
 				"H"
@@ -559,6 +568,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Priest Acolyte|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -701,6 +713,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Adult Black Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -988,6 +1003,9 @@
 					"source": "SatO"
 				}
 			],
+			"reprintedAs": [
+				"Dracolich|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -1216,6 +1234,9 @@
 				{
 					"source": "JttRC"
 				}
+			],
+			"reprintedAs": [
+				"Adult Blue Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -1498,6 +1519,9 @@
 				{
 					"source": "GoS"
 				}
+			],
+			"reprintedAs": [
+				"Adult Brass Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -1828,6 +1852,9 @@
 					"source": "DSotDQ"
 				}
 			],
+			"reprintedAs": [
+				"Adult Bronze Dragon|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -2123,7 +2150,9 @@
 				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"constitution"
+				"constitution",
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2150,6 +2179,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Adult Copper Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -2429,7 +2461,9 @@
 				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"dexterity"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2453,6 +2487,9 @@
 				{
 					"source": "JttRC"
 				}
+			],
+			"reprintedAs": [
+				"Adult Gold Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -2754,7 +2791,8 @@
 				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"charisma"
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2778,6 +2816,9 @@
 				{
 					"source": "CM"
 				}
+			],
+			"reprintedAs": [
+				"Adult Green Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -3090,6 +3131,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Adult Red Dragon|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -3374,6 +3418,9 @@
 				{
 					"source": "GoS"
 				}
+			],
+			"reprintedAs": [
+				"Adult Silver Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -3699,6 +3746,9 @@
 				{
 					"source": "EGW"
 				}
+			],
+			"reprintedAs": [
+				"Adult White Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -4053,6 +4103,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Air Elemental|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -4198,6 +4251,9 @@
 					"source": "KftGV"
 				}
 			],
+			"reprintedAs": [
+				"Allosaurus|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -4288,6 +4344,9 @@
 			"source": "MM",
 			"page": 87,
 			"srd": true,
+			"reprintedAs": [
+				"Ancient Black Dragon|XMM"
+			],
 			"size": [
 				"G"
 			],
@@ -4571,6 +4630,9 @@
 				{
 					"source": "TCE"
 				}
+			],
+			"reprintedAs": [
+				"Ancient Blue Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -4856,6 +4918,9 @@
 				{
 					"source": "JttRC"
 				}
+			],
+			"reprintedAs": [
+				"Ancient Brass Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -5176,6 +5241,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Ancient Bronze Dragon|XMM"
+			],
 			"size": [
 				"G"
 			],
@@ -5471,7 +5539,9 @@
 				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"constitution"
+				"constitution",
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5489,6 +5559,9 @@
 				{
 					"source": "BGDIA"
 				}
+			],
+			"reprintedAs": [
+				"Ancient Copper Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -5776,7 +5849,9 @@
 				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"dexterity"
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5797,6 +5872,9 @@
 				{
 					"source": "DoDk"
 				}
+			],
+			"reprintedAs": [
+				"Ancient Gold Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -6098,7 +6176,8 @@
 				"wisdom"
 			],
 			"savingThrowForcedLegendary": [
-				"charisma"
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6119,6 +6198,9 @@
 				{
 					"source": "DIP"
 				}
+			],
+			"reprintedAs": [
+				"Ancient Green Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -6421,6 +6503,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Ancient Red Dragon|XMM"
+			],
 			"size": [
 				"G"
 			],
@@ -6702,6 +6787,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Ancient Silver Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -7016,6 +7104,9 @@
 					"source": "IDRotF"
 				}
 			],
+			"reprintedAs": [
+				"Ancient White Dragon|XMM"
+			],
 			"size": [
 				"G"
 			],
@@ -7310,6 +7401,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Sphinx of Valor|XMM"
 			],
 			"size": [
 				"L"
@@ -7649,6 +7743,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Animated Armor|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -7782,6 +7879,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Ankheg|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -7841,7 +7941,7 @@
 			],
 			"soundClip": {
 				"type": "internal",
-				"path": "bestiary/ankeg.mp3"
+				"path": "bestiary/ankheg.mp3"
 			},
 			"senseTags": [
 				"D",
@@ -7879,6 +7979,9 @@
 				{
 					"source": "CRCotN"
 				}
+			],
+			"reprintedAs": [
+				"Ankylosaurus|XMM"
 			],
 			"size": [
 				"H"
@@ -7966,7 +8069,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Ape|XPHB"
+				"Ape|XMM"
 			],
 			"size": [
 				"M"
@@ -8075,6 +8178,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Arcanaloth|XMM"
 			],
 			"size": [
 				"M"
@@ -8435,6 +8541,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Archmage|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -8762,6 +8871,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Assassin|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -8833,7 +8945,7 @@
 				{
 					"name": "Sneak Attack (1/Turn)",
 					"entries": [
-						"The assassin deals an extra 14 ({@dice 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+						"The assassin deals an extra 14 ({@damage 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
 					]
 				}
 			],
@@ -8929,6 +9041,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Awakened Shrub|XMM"
 			],
 			"size": [
 				"S"
@@ -9043,6 +9158,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Awakened Tree|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -9142,6 +9260,9 @@
 					"source": "IDRotF"
 				}
 			],
+			"reprintedAs": [
+				"Axe Beak|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -9213,6 +9334,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Azer Sentinel|XMM"
 			],
 			"size": [
 				"M"
@@ -9339,6 +9463,9 @@
 					"source": "KftGV"
 				}
 			],
+			"reprintedAs": [
+				"Baboon|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -9415,7 +9542,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Badger|XPHB"
+				"Badger|XMM"
 			],
 			"size": [
 				"T"
@@ -9514,6 +9641,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Balor|XMM"
 			],
 			"size": [
 				"H"
@@ -9786,6 +9916,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Bandit|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -9968,6 +10101,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Bandit Captain|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -10133,6 +10269,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Banshee|XMM"
 			],
 			"size": [
 				"M"
@@ -10314,6 +10453,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Barbed Devil|XMM"
 			],
 			"size": [
 				"M"
@@ -10523,6 +10665,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Barlgura|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -10727,6 +10872,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Basilisk|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -10836,7 +10984,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Bat|XPHB"
+				"Bat|XMM"
 			],
 			"size": [
 				"T"
@@ -10949,6 +11097,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Bearded Devil|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -11052,7 +11203,7 @@
 				{
 					"name": "Glaive",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 12} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 12} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@damage 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				}
 			],
@@ -11147,6 +11298,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Behir|XMM"
 			],
 			"size": [
 				"H"
@@ -11321,6 +11475,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Beholder|XMM"
 			],
 			"size": [
 				"L"
@@ -11631,6 +11788,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Beholder Zombie|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -11843,6 +12003,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Berserker|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -11972,7 +12135,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Black Bear|XPHB"
+				"Black Bear|XMM"
 			],
 			"size": [
 				"M"
@@ -12073,6 +12236,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Black Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -12316,6 +12482,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Black Pudding|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -12455,6 +12624,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Blink Dog|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -12562,6 +12734,9 @@
 					"source": "CM"
 				}
 			],
+			"reprintedAs": [
+				"Blood Hawk|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -12653,6 +12828,9 @@
 				{
 					"source": "DoSI"
 				}
+			],
+			"reprintedAs": [
+				"Blue Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -12861,6 +13039,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Blue Slaad|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -13026,7 +13207,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Boar|XPHB"
+				"Boar|XMM"
 			],
 			"size": [
 				"M"
@@ -13145,6 +13326,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Bone Devil|XMM"
 			],
 			"size": [
 				"L"
@@ -13342,6 +13526,9 @@
 					"source": "WDMM"
 				}
 			],
+			"reprintedAs": [
+				"Bone Naga|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -13485,6 +13672,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Bone Naga|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -13623,6 +13813,9 @@
 			"source": "MM",
 			"page": 106,
 			"srd": true,
+			"reprintedAs": [
+				"Brass Dragon Wyrmling|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -13844,6 +14037,9 @@
 				{
 					"source": "DoSI"
 				}
+			],
+			"reprintedAs": [
+				"Bronze Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -14100,7 +14296,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Brown Bear|XPHB"
+				"Brown Bear|XMM"
 			],
 			"size": [
 				"L"
@@ -14253,6 +14449,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Bugbear Warrior|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -14311,7 +14510,7 @@
 				{
 					"name": "Surprise Attack",
 					"entries": [
-						"If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@dice 2d6}) damage from the attack."
+						"If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@damage 2d6}) damage from the attack."
 					]
 				}
 			],
@@ -14436,7 +14635,7 @@
 				{
 					"name": "Surprise Attack",
 					"entries": [
-						"If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@dice 2d6}) damage from the attack."
+						"If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@damage 2d6}) damage from the attack."
 					]
 				},
 				{
@@ -14532,6 +14731,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Bulette|XMM"
 			],
 			"size": [
 				"L"
@@ -14641,6 +14843,9 @@
 				{
 					"source": "WBtW"
 				}
+			],
+			"reprintedAs": [
+				"Bullywug Warrior|XMM"
 			],
 			"size": [
 				"M"
@@ -14795,6 +15000,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Cambion|XMM"
 			],
 			"size": [
 				"M"
@@ -15108,7 +15316,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Camel|XPHB"
+				"Camel|XMM"
 			],
 			"size": [
 				"L"
@@ -15191,6 +15399,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Carrion Crawler|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -15267,7 +15478,7 @@
 			],
 			"soundClip": {
 				"type": "internal",
-				"path": "bestiary/carrior-crawler.mp3"
+				"path": "bestiary/carrion-crawler.mp3"
 			},
 			"traitTags": [
 				"Keen Senses",
@@ -15344,7 +15555,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Cat|XPHB"
+				"Cat|XMM"
 			],
 			"size": [
 				"T"
@@ -15425,6 +15636,9 @@
 				{
 					"source": "WDMM"
 				}
+			],
+			"reprintedAs": [
+				"Polar Bear|XMM"
 			],
 			"size": [
 				"L"
@@ -15548,6 +15762,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Centaur Trooper|XMM"
 			],
 			"size": [
 				"L"
@@ -15676,6 +15893,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Chain Devil|XMM"
 			],
 			"size": [
 				"M"
@@ -15848,6 +16068,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Chasme|XMM"
 			],
 			"size": [
 				"L"
@@ -16024,6 +16247,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Chimera|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -16168,6 +16394,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Chuul|XMM"
 			],
 			"size": [
 				"L"
@@ -16326,6 +16555,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Clay Golem|XMM"
 			],
 			"size": [
 				"L"
@@ -16509,6 +16741,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Cloaker|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -16672,6 +16907,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Cloud Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -16885,6 +17123,9 @@
 					"source": "WBtW"
 				}
 			],
+			"reprintedAs": [
+				"Cockatrice|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -17077,6 +17318,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Commoner|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -17172,7 +17416,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Constrictor Snake|XPHB"
+				"Constrictor Snake|XMM"
 			],
 			"size": [
 				"L"
@@ -17251,6 +17495,9 @@
 			"source": "MM",
 			"page": 111,
 			"srd": true,
+			"reprintedAs": [
+				"Copper Dragon Wyrmling|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -17487,6 +17734,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Couatl|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -17686,7 +17936,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Crab|XPHB"
+				"Crab|XMM"
 			],
 			"size": [
 				"T"
@@ -17801,6 +18051,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Crawling Claw|XMM"
 			],
 			"size": [
 				"T"
@@ -17926,7 +18179,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Crocodile|XPHB"
+				"Crocodile|XMM"
 			],
 			"size": [
 				"L"
@@ -18100,6 +18353,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Cultist Fanatic|XMM"
 			],
 			"size": [
 				"M"
@@ -18352,6 +18608,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Cultist|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -18487,6 +18746,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Cyclops Sentry|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -18618,6 +18880,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Dao|XMM"
 			],
 			"size": [
 				"L"
@@ -18881,6 +19146,9 @@
 					"source": "KftGV"
 				}
 			],
+			"reprintedAs": [
+				"Darkmantle|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -18995,6 +19263,9 @@
 				{
 					"source": "AATM"
 				}
+			],
+			"reprintedAs": [
+				"Death Dog|XMM"
 			],
 			"size": [
 				"M"
@@ -19125,6 +19396,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Death Knight|XMM"
 			],
 			"size": [
 				"M"
@@ -19365,6 +19639,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Death Slaad|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -19595,6 +19872,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Death Tyrant|XMM"
 			],
 			"size": [
 				"L"
@@ -20006,6 +20286,9 @@
 					"source": "DIP"
 				}
 			],
+			"reprintedAs": [
+				"Deer|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -20081,6 +20364,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Demilich|XMM"
 			],
 			"size": [
 				"T"
@@ -20364,6 +20650,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Deva|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -20451,7 +20740,7 @@
 				{
 					"name": "Angelic Weapons",
 					"entries": [
-						"The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra {@dice 4d8} radiant damage (included in the attack)."
+						"The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra {@damage 4d8} radiant damage (included in the attack)."
 					]
 				},
 				{
@@ -20560,7 +20849,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Dire Wolf|XPHB"
+				"Dire Wolf|XMM"
 			],
 			"size": [
 				"L"
@@ -20680,6 +20969,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Displacer Beast|XMM"
 			],
 			"size": [
 				"L"
@@ -20805,6 +21097,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Djinni|XMM"
 			],
 			"size": [
 				"L"
@@ -21117,6 +21412,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Doppelganger|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -21176,7 +21474,7 @@
 				{
 					"name": "Surprise Attack",
 					"entries": [
-						"If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ({@dice 3d6}) damage from the attack."
+						"If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ({@damage 3d6}) damage from the attack."
 					]
 				}
 			],
@@ -21264,7 +21562,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Draft Horse|XPHB"
+				"Draft Horse|XMM"
 			],
 			"size": [
 				"L"
@@ -21344,6 +21642,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Dragon Turtle|XMM"
 			],
 			"size": [
 				"G"
@@ -21513,6 +21814,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Dretch|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -21643,6 +21947,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Drider|XMM"
 			],
 			"size": [
 				"L"
@@ -21921,6 +22228,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Priest Acolyte|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -22149,6 +22459,9 @@
 				{
 					"source": "PaBTSO"
 				}
+			],
+			"reprintedAs": [
+				"Gladiator|XMM"
 			],
 			"size": [
 				"M"
@@ -22416,6 +22729,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Bandit Deceiver|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -22634,6 +22950,9 @@
 					"source": "GoS"
 				}
 			],
+			"reprintedAs": [
+				"Fiend Cultist|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -22808,7 +23127,7 @@
 							"type": "entries",
 							"entries": [
 								"Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.",
-								"A {@creature drow priestess of lolth} wearing {@item +3 scale mail} has AC 19."
+								"A {@creature drow priestess of Lolth} wearing {@item +3 scale mail} has AC 19."
 							]
 						}
 					]
@@ -22875,7 +23194,7 @@
 							"items": {
 								"name": "Special Equipment",
 								"entries": [
-									"The drow wears {@item drow +3 scale mail|mm|+3 scale mail}. This armor loses its enhancement bonuses permanently if it is exposed to sunlight for 1 hour or longer."
+									"The drow wears {@item drow +3 scale mail|MM|+3 scale mail}. This armor loses its enhancement bonuses permanently if it is exposed to sunlight for 1 hour or longer."
 								]
 							}
 						}
@@ -22884,7 +23203,7 @@
 						{
 							"ac": 19,
 							"from": [
-								"{@item drow +3 scale mail|mm|+3 scale mail}"
+								"{@item drow +3 scale mail|MM|+3 scale mail}"
 							]
 						}
 					],
@@ -22967,6 +23286,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Druid|XMM"
 			],
 			"size": [
 				"M"
@@ -23166,6 +23488,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Dryad|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -23351,6 +23676,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Spy|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -23492,6 +23820,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Modron Duodrone|XMM"
 			],
 			"size": [
 				"M"
@@ -23644,6 +23975,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Dust Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -23801,6 +24135,9 @@
 					"source": "ToFW"
 				}
 			],
+			"reprintedAs": [
+				"Eagle|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -23911,6 +24248,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Earth Elemental|XMM"
 			],
 			"size": [
 				"L"
@@ -24078,6 +24418,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Efreeti|XMM"
 			],
 			"size": [
 				"L"
@@ -24318,7 +24661,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Elephant|XPHB"
+				"Elephant|XMM"
 			],
 			"size": [
 				"H"
@@ -24421,7 +24764,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Elk|XPHB"
+				"Elk|XMM"
 			],
 			"size": [
 				"L"
@@ -24452,7 +24795,7 @@
 				{
 					"name": "Charge",
 					"entries": [
-						"If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@dice 2d6}) damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+						"If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@damage 2d6}) damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
 					]
 				}
 			],
@@ -24528,6 +24871,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Empyrean|XMM"
 			],
 			"size": [
 				"H"
@@ -24661,7 +25007,7 @@
 				{
 					"name": "Bolt",
 					"entries": [
-						"{@atk rs} {@hit 15} to hit, range 600 ft., one target. {@h}24 ({@dice 7d6}) damage of one of the following types (empyrean's choice): acid, cold, fire, force, lightning, radiant, or thunder."
+						"{@atk rs} {@hit 15} to hit, range 600 ft., one target. {@h}24 ({@damage 7d6}) damage of one of the following types (empyrean's choice): acid, cold, fire, force, lightning, radiant, or thunder."
 					]
 				}
 			],
@@ -24768,6 +25114,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Erinyes|XMM"
 			],
 			"size": [
 				"M"
@@ -25019,6 +25368,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Ettercap|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -25189,6 +25541,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Ettin|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -25303,6 +25658,9 @@
 			"name": "Faerie Dragon (Blue)",
 			"source": "MM",
 			"page": 133,
+			"reprintedAs": [
+				"Faerie Dragon Adult|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -25455,6 +25813,9 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
@@ -25470,6 +25831,9 @@
 				{
 					"source": "ToA"
 				}
+			],
+			"reprintedAs": [
+				"Faerie Dragon Adult|XMM"
 			],
 			"size": [
 				"T"
@@ -25622,6 +25986,9 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
@@ -25633,6 +26000,9 @@
 			"name": "Faerie Dragon (Indigo)",
 			"source": "MM",
 			"page": 133,
+			"reprintedAs": [
+				"Faerie Dragon Adult|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -25786,6 +26156,9 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
@@ -25797,6 +26170,9 @@
 			"name": "Faerie Dragon (Orange)",
 			"source": "MM",
 			"page": 133,
+			"reprintedAs": [
+				"Faerie Dragon Youth|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -25957,6 +26333,9 @@
 				{
 					"source": "WBtW"
 				}
+			],
+			"reprintedAs": [
+				"Faerie Dragon Youth|XMM"
 			],
 			"size": [
 				"T"
@@ -26124,6 +26503,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Faerie Dragon Adult|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -26278,6 +26660,9 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
@@ -26289,6 +26674,9 @@
 			"name": "Faerie Dragon (Yellow)",
 			"source": "MM",
 			"page": 133,
+			"reprintedAs": [
+				"Faerie Dragon Youth|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -26492,6 +26880,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Fire Elemental|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -26663,6 +27054,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Fire Giant|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -26818,6 +27212,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Salamander Fire Snake|XMM"
 			],
 			"size": [
 				"M"
@@ -27002,6 +27399,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Flameskull|XMM"
 			],
 			"size": [
 				"T"
@@ -27232,6 +27632,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Flesh Golem|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -27384,6 +27787,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Flumph|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -27517,6 +27923,9 @@
 				{
 					"source": "KftGV"
 				}
+			],
+			"reprintedAs": [
+				"Flying Snake|XMM"
 			],
 			"size": [
 				"T"
@@ -27652,6 +28061,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Animated Flying Sword|XMM"
 			],
 			"size": [
 				"S"
@@ -27790,6 +28202,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Fomorian|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -27923,7 +28338,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Frog|XPHB"
+				"Frog|XMM"
 			],
 			"size": [
 				"T"
@@ -28021,6 +28436,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Frost Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -28170,6 +28588,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Galeb Duhr|XMM"
 			],
 			"size": [
 				"M"
@@ -28349,6 +28770,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Gargoyle|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -28483,6 +28907,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Gas Spore Fungus|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -28613,6 +29040,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Gelatinous Cube|XMM"
 			],
 			"size": [
 				"L"
@@ -28755,6 +29185,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Ghast|XMM"
 			],
 			"size": [
 				"M"
@@ -28969,6 +29402,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Ghost|XMM"
 			],
 			"size": [
 				"M"
@@ -29209,6 +29645,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Ghoul|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -29315,6 +29754,9 @@
 					"source": "GHLoE"
 				}
 			],
+			"reprintedAs": [
+				"Giant Ape|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -29406,7 +29848,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Giant Badger|XPHB"
+				"Giant Badger|XMM"
 			],
 			"size": [
 				"M"
@@ -29517,6 +29959,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Giant Bat|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -29615,6 +30060,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Giant Boar|XMM"
 			],
 			"size": [
 				"L"
@@ -29729,6 +30177,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Giant Centipede|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -29829,6 +30280,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Giant Constrictor Snake|XMM"
 			],
 			"size": [
 				"H"
@@ -29946,7 +30400,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Giant Crab|XPHB"
+				"Giant Crab|XMM"
 			],
 			"size": [
 				"M"
@@ -30056,6 +30510,9 @@
 				{
 					"source": "DoDk"
 				}
+			],
+			"reprintedAs": [
+				"Giant Crocodile|XMM"
 			],
 			"size": [
 				"H"
@@ -30173,6 +30630,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Giant Eagle|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -30279,6 +30739,9 @@
 					"source": "SKT"
 				}
 			],
+			"reprintedAs": [
+				"Giant Elk|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -30320,7 +30783,7 @@
 				{
 					"name": "Charge",
 					"entries": [
-						"If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@dice 2d6}) damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+						"If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@damage 2d6}) damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
 					]
 				}
 			],
@@ -30396,6 +30859,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Giant Fire Beetle|XMM"
 			],
 			"size": [
 				"S"
@@ -30504,6 +30970,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Giant Frog|XMM"
 			],
 			"size": [
 				"M"
@@ -30625,7 +31094,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Giant Goat|XPHB"
+				"Giant Goat|XMM"
 			],
 			"size": [
 				"L"
@@ -30721,6 +31190,9 @@
 				{
 					"source": "BGDIA"
 				}
+			],
+			"reprintedAs": [
+				"Giant Hyena|XMM"
 			],
 			"size": [
 				"L"
@@ -30827,6 +31299,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Giant Lizard|XMM"
 			],
 			"size": [
 				"L"
@@ -30982,6 +31457,9 @@
 					"source": "PaBTSO"
 				}
 			],
+			"reprintedAs": [
+				"Giant Octopus|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -31104,6 +31582,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Giant Owl|XMM"
 			],
 			"size": [
 				"L"
@@ -31232,6 +31713,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Giant Venomous Snake|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -31349,6 +31833,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Giant Rat|XMM"
 			],
 			"size": [
 				"S"
@@ -31496,6 +31983,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Giant Scorpion|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -31593,7 +32083,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Giant Seahorse|XPHB"
+				"Giant Seahorse|XMM"
 			],
 			"size": [
 				"L"
@@ -31717,6 +32207,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Giant Shark|XMM"
 			],
 			"size": [
 				"H"
@@ -31885,7 +32378,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Giant Spider|XPHB"
+				"Giant Spider|XMM"
 			],
 			"size": [
 				"L"
@@ -32028,6 +32521,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Giant Toad|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -32150,6 +32646,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Giant Vulture|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -32269,6 +32768,9 @@
 					"source": "PSA"
 				}
 			],
+			"reprintedAs": [
+				"Giant Wasp|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -32346,7 +32848,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Giant Weasel|XPHB"
+				"Giant Weasel|XMM"
 			],
 			"size": [
 				"M"
@@ -32447,6 +32949,9 @@
 				{
 					"source": "PSX"
 				}
+			],
+			"reprintedAs": [
+				"Giant Wolf Spider|XMM"
 			],
 			"size": [
 				"M"
@@ -32596,6 +33101,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Gibbering Mouther|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -32727,6 +33235,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Githyanki Knight|XMM"
 			],
 			"size": [
 				"M"
@@ -32870,6 +33381,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Githyanki Warrior|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -32985,6 +33499,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Githzerai Monk|XMM"
 			],
 			"size": [
 				"M"
@@ -33112,6 +33629,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Githzerai Zerth|XMM"
 			],
 			"size": [
 				"M"
@@ -33276,6 +33796,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Glabrezu|XMM"
 			],
 			"size": [
 				"L"
@@ -33516,6 +34039,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Gladiator|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -33687,6 +34213,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Gnoll Warrior|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -33815,6 +34344,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Gnoll Fang of Yeenoghu|XMM"
 			],
 			"size": [
 				"M"
@@ -33950,6 +34482,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Gnoll Pack Lord|XMM"
 			],
 			"size": [
 				"M"
@@ -34116,7 +34651,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Goat|XPHB"
+				"Goat|XMM"
 			],
 			"size": [
 				"M"
@@ -34266,6 +34801,9 @@
 					"source": "GHLoE"
 				}
 			],
+			"reprintedAs": [
+				"Goblin Warrior|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -34412,6 +34950,9 @@
 					"source": "PaBTSO"
 				}
 			],
+			"reprintedAs": [
+				"Goblin Boss|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -34545,6 +35086,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Gold Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -34801,6 +35345,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Gorgon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -34921,6 +35468,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Goristro|XMM"
 			],
 			"size": [
 				"H"
@@ -35109,6 +35659,10 @@
 					"source": "PaBTSO"
 				}
 			],
+			"reprintedAs": [
+				"Gray Ooze|XMM",
+				"Psychic Gray Ooze|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -35188,7 +35742,7 @@
 					"type": "variant",
 					"name": "Psychic Gray Ooze",
 					"entries": [
-						"A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psioncic creatures such as {@creature mind flayer||mind flayers}, suggesting that the ooze can sense and mimic psionic ability.",
+						"A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psionic creatures such as {@creature mind flayer||mind flayers}, suggesting that the ooze can sense and mimic psionic ability.",
 						"A psionic gray ooze has an intelligence score of 6 (-2), as well as the following additional action.",
 						{
 							"type": "entries",
@@ -35277,6 +35831,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Gray Slaad|XMM"
 			],
 			"size": [
 				"M"
@@ -35496,6 +36053,9 @@
 				{
 					"source": "WBtW"
 				}
+			],
+			"reprintedAs": [
+				"Green Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -35727,6 +36287,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Green Hag|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -35894,7 +36457,7 @@
 							"type": "entries",
 							"name": "Hag Eye",
 							"entries": [
-								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@dice 3d10} psychic damage and is {@condition blinded} for 24 hours.",
+								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@damage 3d10} psychic damage and is {@condition blinded} for 24 hours.",
 								"A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
 							]
 						}
@@ -36045,6 +36608,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Green Slaad|XMM"
 			],
 			"size": [
 				"L"
@@ -36286,6 +36852,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Grell|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -36430,6 +36999,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Grick|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -36555,6 +37127,9 @@
 				{
 					"source": "PaBTSO"
 				}
+			],
+			"reprintedAs": [
+				"Grick Ancient|XMM"
 			],
 			"size": [
 				"L"
@@ -36710,6 +37285,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Griffon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -36822,6 +37400,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Grimlock|XMM"
 			],
 			"size": [
 				"M"
@@ -37011,6 +37592,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Guard|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -37117,6 +37701,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Guardian Naga|XMM"
 			],
 			"size": [
 				"L"
@@ -37325,6 +37912,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Sphinx of Lore|XMM"
 			],
 			"size": [
 				"L"
@@ -37567,6 +38157,9 @@
 					"source": "DSotDQ"
 				}
 			],
+			"reprintedAs": [
+				"Ogrillon Ogre|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -37677,6 +38270,9 @@
 				{
 					"source": "IMR"
 				}
+			],
+			"reprintedAs": [
+				"Half-Dragon|XMM"
 			],
 			"size": [
 				"M"
@@ -37844,6 +38440,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Harpy|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -37970,7 +38569,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Hawk|XPHB"
+				"Hawk|XMM"
 			],
 			"size": [
 				"T"
@@ -38101,6 +38700,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Hell Hound|XMM"
 			],
 			"size": [
 				"M"
@@ -38260,6 +38862,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Helmed Horror|XMM"
 			],
 			"size": [
 				"M"
@@ -38426,6 +39031,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Hezrou|XMM"
 			],
 			"size": [
 				"L"
@@ -38613,6 +39221,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Hill Giant|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -38747,6 +39358,9 @@
 				{
 					"source": "EGW"
 				}
+			],
+			"reprintedAs": [
+				"Hippogriff|XMM"
 			],
 			"size": [
 				"L"
@@ -38884,6 +39498,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Hobgoblin Warrior|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -38932,7 +39549,7 @@
 				{
 					"name": "Martial Advantage",
 					"entries": [
-						"Once per turn, the hobgoblin can deal an extra 7 ({@dice 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
+						"Once per turn, the hobgoblin can deal an extra 7 ({@damage 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -39010,6 +39627,9 @@
 					"source": "DSotDQ"
 				}
 			],
+			"reprintedAs": [
+				"Hobgoblin Captain|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -39057,7 +39677,7 @@
 				{
 					"name": "Martial Advantage",
 					"entries": [
-						"Once per turn, the hobgoblin can deal an extra 10 ({@dice 3d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
+						"Once per turn, the hobgoblin can deal an extra 10 ({@damage 3d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -39150,6 +39770,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Hobgoblin Warlord|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -39203,7 +39826,7 @@
 				{
 					"name": "Martial Advantage",
 					"entries": [
-						"Once per turn, the hobgoblin can deal an extra 14 ({@dice 4d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
+						"Once per turn, the hobgoblin can deal an extra 14 ({@damage 4d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -39328,6 +39951,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Homunculus|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -39444,6 +40070,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Hook Horror|XMM"
 			],
 			"size": [
 				"L"
@@ -39570,6 +40199,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Horned Devil|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -39669,7 +40301,7 @@
 				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 17} Constitution saving throw or lose 10 ({@dice 3d6}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 ({@dice 3d6}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a {@dc 17} Constitution saving throw or lose 10 ({@dice 3d6}) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 ({@damage 3d6}). Any creature can take an action to stanch the wound with a successful {@dc 12} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				},
 				{
@@ -39761,6 +40393,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Hunter Shark|XMM"
 			],
 			"size": [
 				"L"
@@ -39898,6 +40533,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Hydra|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -40021,6 +40659,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Hyena|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -40108,6 +40749,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Ice Devil|XMM"
 			],
 			"size": [
 				"L"
@@ -40331,6 +40975,9 @@
 					"source": "KftGV"
 				}
 			],
+			"reprintedAs": [
+				"Ice Mephit|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -40538,7 +41185,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Imp|XPHB"
+				"Imp|XMM"
 			],
 			"size": [
 				"T"
@@ -40737,6 +41384,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Incubus|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -40907,6 +41557,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Intellect Devourer|XMM"
 			],
 			"size": [
 				"T"
@@ -41093,6 +41746,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Invisible Stalker|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -41259,6 +41915,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Iron Golem|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -41417,6 +42076,9 @@
 					"source": "GoS"
 				}
 			],
+			"reprintedAs": [
+				"Jackal|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -41510,6 +42172,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Jackalwere|XMM"
 			],
 			"size": [
 				"M"
@@ -41669,6 +42334,9 @@
 					"source": "ToFW"
 				}
 			],
+			"reprintedAs": [
+				"Kenku|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -41791,6 +42459,9 @@
 				{
 					"source": "IDRotF"
 				}
+			],
+			"reprintedAs": [
+				"Killer Whale|XMM"
 			],
 			"size": [
 				"H"
@@ -41967,6 +42638,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Knight|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -42130,6 +42804,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Kobold Warrior|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -42273,6 +42950,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Kraken|XMM"
 			],
 			"size": [
 				"G"
@@ -42510,6 +43190,9 @@
 					"source": "SatO"
 				}
 			],
+			"reprintedAs": [
+				"Kuo-toa|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -42667,6 +43350,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Kuo-toa Archpriest|XMM"
 			],
 			"size": [
 				"M"
@@ -42879,6 +43565,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Kuo-toa Monitor|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -43028,6 +43717,9 @@
 				{
 					"source": "GoS"
 				}
+			],
+			"reprintedAs": [
+				"Kuo-toa Whip|XMM"
 			],
 			"size": [
 				"M"
@@ -43213,6 +43905,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Lamia|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -43371,6 +44066,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Lemure|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -43502,6 +44200,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Lich|XMM"
 			],
 			"size": [
 				"M"
@@ -43804,7 +44505,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Lion|XPHB"
+				"Lion|XMM"
 			],
 			"size": [
 				"L"
@@ -43923,7 +44624,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Lizard|XPHB"
+				"Lizard|XMM"
 			],
 			"size": [
 				"T"
@@ -43993,6 +44694,9 @@
 					"source": "TCE"
 				}
 			],
+			"reprintedAs": [
+				"Lizardfolk Sovereign|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -44059,7 +44763,7 @@
 				{
 					"name": "Skewer",
 					"entries": [
-						"Once per turn, when the lizardfolk makes a melee attack with its trident and hits, the target takes an extra 10 ({@dice 3d6}) damage, and the lizardfolk gains temporary hit points equal to the extra damage dealt."
+						"Once per turn, when the lizardfolk makes a melee attack with its trident and hits, the target takes an extra 10 ({@damage 3d6}) damage, and the lizardfolk gains temporary hit points equal to the extra damage dealt."
 					]
 				}
 			],
@@ -44131,6 +44835,9 @@
 			"name": "Lizard Queen",
 			"source": "MM",
 			"page": 205,
+			"reprintedAs": [
+				"Lizardfolk Sovereign|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -44197,7 +44904,7 @@
 				{
 					"name": "Skewer",
 					"entries": [
-						"Once per turn, when the lizardfolk makes a melee attack with its trident and hits, the target takes an extra 10 ({@dice 3d6}) damage, and the lizardfolk gains temporary hit points equal to the extra damage dealt."
+						"Once per turn, when the lizardfolk makes a melee attack with its trident and hits, the target takes an extra 10 ({@damage 3d6}) damage, and the lizardfolk gains temporary hit points equal to the extra damage dealt."
 					]
 				}
 			],
@@ -44311,6 +45018,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Scout|XMM"
 			],
 			"size": [
 				"M"
@@ -44451,6 +45161,9 @@
 				{
 					"source": "EGW"
 				}
+			],
+			"reprintedAs": [
+				"Lizardfolk Geomancer|XMM"
 			],
 			"size": [
 				"M"
@@ -44737,6 +45450,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Mage|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -44946,6 +45662,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Magma Mephit|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -45120,6 +45839,9 @@
 					"source": "SatO"
 				}
 			],
+			"reprintedAs": [
+				"Magmin|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -45243,6 +45965,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Mammoth|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -45351,6 +46076,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Manes|XMM"
 			],
 			"size": [
 				"S"
@@ -45488,6 +46216,9 @@
 				{
 					"source": "DoDk"
 				}
+			],
+			"reprintedAs": [
+				"Manticore|XMM"
 			],
 			"size": [
 				"L"
@@ -45637,6 +46368,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Marid|XMM"
 			],
 			"size": [
 				"L"
@@ -45920,6 +46654,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Marilith|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -46143,7 +46880,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Mastiff|XPHB"
+				"Mastiff|XMM"
 			],
 			"size": [
 				"M"
@@ -46251,6 +46988,9 @@
 				{
 					"source": "DoDk"
 				}
+			],
+			"reprintedAs": [
+				"Medusa|XMM"
 			],
 			"size": [
 				"M"
@@ -46392,6 +47132,9 @@
 					"source": "JttRC"
 				}
 			],
+			"reprintedAs": [
+				"Merfolk Skirmisher|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -46516,6 +47259,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Merrow|XMM"
 			],
 			"size": [
 				"L"
@@ -46649,6 +47395,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Mezzoloth|XMM"
 			],
 			"size": [
 				"M"
@@ -46908,6 +47657,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Mimic|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -47082,6 +47834,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Mind Flayer|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -47248,6 +48003,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Mind Flayer Arcanist|XMM"
 			],
 			"size": [
 				"M"
@@ -47510,6 +48268,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Minotaur of Baphomet|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -47665,6 +48426,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Minotaur Skeleton|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -47798,6 +48562,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Modron Monodrone|XMM"
 			],
 			"size": [
 				"M"
@@ -47941,6 +48708,9 @@
 				{
 					"source": "JttRC"
 				}
+			],
+			"reprintedAs": [
+				"Mud Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -48088,7 +48858,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Mule|XPHB"
+				"Mule|XMM"
 			],
 			"size": [
 				"M"
@@ -48212,6 +48982,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Mummy|XMM"
 			],
 			"size": [
 				"M"
@@ -48361,6 +49134,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Mummy Lord|XMM"
 			],
 			"size": [
 				"M"
@@ -48654,6 +49430,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Myconid Adult|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -48814,6 +49593,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Myconid Sovereign|XMM"
 			],
 			"size": [
 				"L"
@@ -48989,6 +49771,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Myconid Sprout|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -49104,6 +49889,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Nalfeshnee|XMM"
 			],
 			"size": [
 				"L"
@@ -49290,6 +50078,9 @@
 					"source": "DIP"
 				}
 			],
+			"reprintedAs": [
+				"Needle Blight|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -49433,6 +50224,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Night Hag|XMM"
 			],
 			"size": [
 				"M"
@@ -49631,7 +50425,7 @@
 							"type": "entries",
 							"name": "Hag Eye",
 							"entries": [
-								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@dice 3d10} psychic damage and is {@condition blinded} for 24 hours.",
+								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@damage 3d10} psychic damage and is {@condition blinded} for 24 hours.",
 								"A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
 							]
 						}
@@ -49677,6 +50471,10 @@
 				"paralyzed",
 				"poisoned",
 				"unconscious"
+			],
+			"savingThrowForcedLegendary": [
+				"charisma",
+				"constitution"
 			],
 			"savingThrowForcedSpell": [
 				"charisma",
@@ -49786,6 +50584,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Nightmare|XMM"
 			],
 			"size": [
 				"L"
@@ -49978,6 +50779,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Noble|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -50121,6 +50925,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Nothic|XMM"
 			],
 			"size": [
 				"M"
@@ -50268,6 +51075,9 @@
 					"source": "ToFW"
 				}
 			],
+			"reprintedAs": [
+				"Nycaloth|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -50381,7 +51191,7 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or take 5 ({@damage 2d4}) slashing damage at the start of each of its turns due to a fiendish wound. Each time the nycaloth hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 2d4}). Any creature can take an action to stanch the wound with a successful {@dc 13} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or take 5 ({@damage 2d4}) slashing damage at the start of each of its turns due to a fiendish wound. Each time the nycaloth hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@damage 2d4}). Any creature can take an action to stanch the wound with a successful {@dc 13} Wisdom ({@skill Medicine}) check. The wound also closes if the target receives magical healing."
 					]
 				},
 				{
@@ -50516,6 +51326,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Ochre Jelly|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -50639,7 +51452,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Octopus|XPHB"
+				"Octopus|XMM"
 			],
 			"size": [
 				"S"
@@ -50820,6 +51633,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Ogre|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -50952,6 +51768,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Ogre Zombie|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -51083,6 +51902,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Oni|XMM"
 			],
 			"size": [
 				"L"
@@ -51297,6 +52119,9 @@
 					"source": "PaBTSO"
 				}
 			],
+			"reprintedAs": [
+				"Tough|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -51433,6 +52258,9 @@
 					"source": "IDRotF"
 				}
 			],
+			"reprintedAs": [
+				"Cultist Fanatic|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -51524,7 +52352,7 @@
 				{
 					"name": "Gruumsh's Fury",
 					"entries": [
-						"The orc deals an extra 4 ({@dice 1d8}) damage when it hits with a weapon attack (included in the attacks)."
+						"The orc deals an extra 4 ({@damage 1d8}) damage when it hits with a weapon attack (included in the attacks)."
 					]
 				}
 			],
@@ -51532,7 +52360,7 @@
 				{
 					"name": "Spear",
 					"entries": [
-						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@dice 1d6 + 3} plus {@dice 1d8}) piercing damage, or 12 ({@damage 2d8 + 3}) piercing damage if used with two hands to make a melee attack."
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@damage 1d6 + 3} plus {@damage 1d8}) piercing damage, or 12 ({@damage 2d8 + 3}) piercing damage if used with two hands to make a melee attack."
 					]
 				}
 			],
@@ -51611,6 +52439,9 @@
 					"source": "CRCotN"
 				}
 			],
+			"reprintedAs": [
+				"Tough Boss|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -51672,7 +52503,7 @@
 				{
 					"name": "Gruumsh's Fury",
 					"entries": [
-						"The orc deals an extra 4 ({@dice 1d8}) damage when it hits with a weapon attack (included in the attacks)."
+						"The orc deals an extra 4 ({@damage 1d8}) damage when it hits with a weapon attack (included in the attacks)."
 					]
 				}
 			],
@@ -51771,6 +52602,9 @@
 				{
 					"source": "EGW"
 				}
+			],
+			"reprintedAs": [
+				"Berserker|XMM"
 			],
 			"size": [
 				"M"
@@ -51930,6 +52764,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Otyugh|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -52069,7 +52906,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Owl|XPHB"
+				"Owl|XMM"
 			],
 			"size": [
 				"T"
@@ -52218,6 +53055,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Owlbear|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -52333,7 +53173,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Panther|XPHB"
+				"Panther|XMM"
 			],
 			"size": [
 				"M"
@@ -52447,6 +53287,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Pegasus|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -52545,6 +53388,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Modron Pentadrone|XMM"
 			],
 			"size": [
 				"L"
@@ -52703,6 +53549,9 @@
 					"source": "JttRC"
 				}
 			],
+			"reprintedAs": [
+				"Peryton|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -52756,7 +53605,7 @@
 				{
 					"name": "Dive Attack",
 					"entries": [
-						"If the peryton is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 9 ({@dice 2d8}) damage to the target."
+						"If the peryton is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 9 ({@damage 2d8}) damage to the target."
 					]
 				},
 				{
@@ -52859,6 +53708,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Phase Spider|XMM"
 			],
 			"size": [
 				"L"
@@ -52986,6 +53838,9 @@
 					"source": "ToFW"
 				}
 			],
+			"reprintedAs": [
+				"Piercer|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -53042,7 +53897,7 @@
 				{
 					"name": "Drop",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, one creature directly underneath the piercer. {@h}3 ({@damage 1d6}) piercing damage per 10 feet fallen, up to 21 ({@dice 6d6}). Miss: The piercer takes half the normal falling damage for the distance fallen."
+						"{@atk mw} {@hit 3} to hit, one creature directly underneath the piercer. {@h}3 ({@damage 1d6}) piercing damage per 10 feet fallen, up to 21 ({@damage 6d6}). Miss: The piercer takes half the normal falling damage for the distance fallen."
 					]
 				}
 			],
@@ -53101,6 +53956,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Pit Fiend|XMM"
 			],
 			"size": [
 				"L"
@@ -53351,6 +54209,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Pixie|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -53494,6 +54355,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Planetar|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -53589,7 +54453,7 @@
 				{
 					"name": "Angelic Weapons",
 					"entries": [
-						"The planetar's weapon attacks are magical. When the planetar hits with any weapon, the weapon deals an extra {@dice 5d8} radiant damage (included in the attack)."
+						"The planetar's weapon attacks are magical. When the planetar hits with any weapon, the weapon deals an extra {@damage 5d8} radiant damage (included in the attack)."
 					]
 				},
 				{
@@ -53697,6 +54561,9 @@
 					"source": "DSotDQ"
 				}
 			],
+			"reprintedAs": [
+				"Plesiosaurus|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -53794,7 +54661,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Venomous Snake|XPHB"
+				"Venomous Snake|XMM"
 			],
 			"size": [
 				"T"
@@ -53889,6 +54756,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Polar Bear|XMM"
 			],
 			"size": [
 				"L"
@@ -54002,6 +54872,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Poltergeist|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -54101,7 +54974,7 @@
 					"name": "Telekinetic Thrust",
 					"entries": [
 						"The poltergeist targets a creature or unattended object within 30 feet of it. A creature must be Medium or smaller to be affected by this magic, and an object can weigh up to 150 pounds.",
-						"If the target is a creature, the poltergeist makes a Charisma check contested by the target's Strength check. If the poltergeist wins the contest, the poltergeist hurls the target up to 30 feet in any direction, including upward. If the target then comes into contact with a hard surface or heavy object, the target takes {@dice 1d6} damage per 10 feet moved.",
+						"If the target is a creature, the poltergeist makes a Charisma check contested by the target's Strength check. If the poltergeist wins the contest, the poltergeist hurls the target up to 30 feet in any direction, including upward. If the target then comes into contact with a hard surface or heavy object, the target takes {@damage 1d6} damage per 10 feet moved.",
 						"If the target is an object that isn't being worn or carried, the poltergeist hurls it up to 30 feet in any direction. The poltergeist can use the object as a ranged weapon, attacking one creature along the object's path ({@hit 4} to hit) and dealing 5 ({@damage 2d4}) bludgeoning damage on a hit."
 					]
 				}
@@ -54156,7 +55029,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Pony|XPHB"
+				"Pony|XMM"
 			],
 			"size": [
 				"M"
@@ -54307,6 +55180,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Priest|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -54395,7 +55271,7 @@
 				{
 					"name": "Divine Eminence",
 					"entries": [
-						"As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 ({@damage 3d6}) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d6} for each level above 1st."
+						"As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 ({@damage 3d6}) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by {@damage 1d6} for each level above 1st."
 					]
 				}
 			],
@@ -54478,7 +55354,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Pseudodragon|XPHB"
+				"Pseudodragon|XMM"
 			],
 			"size": [
 				"T"
@@ -54639,6 +55515,9 @@
 					"source": "ToFW"
 				}
 			],
+			"reprintedAs": [
+				"Pteranodon|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -54750,6 +55629,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Purple Worm|XMM"
 			],
 			"size": [
 				"G"
@@ -54885,6 +55767,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Modron Quadrone|XMM"
 			],
 			"size": [
 				"M"
@@ -55034,6 +55919,9 @@
 					"source": "PaBTSO"
 				}
 			],
+			"reprintedAs": [
+				"Quaggoth|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -55090,7 +55978,7 @@
 				{
 					"name": "Wounded Fury",
 					"entries": [
-						"While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 ({@dice 2d6}) damage to any target it hits with a melee attack."
+						"While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 ({@damage 2d6}) damage to any target it hits with a melee attack."
 					]
 				}
 			],
@@ -55145,6 +56033,9 @@
 				{
 					"source": "IDRotF"
 				}
+			],
+			"reprintedAs": [
+				"Myconid Spore Servant|XMM"
 			],
 			"size": [
 				"M"
@@ -55238,6 +56129,9 @@
 					"source": "IDRotF"
 				}
 			],
+			"reprintedAs": [
+				"Quaggoth Thonot|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -55316,7 +56210,7 @@
 				{
 					"name": "Wounded Fury",
 					"entries": [
-						"While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 ({@dice 2d6}) damage to any target it hits with a melee attack."
+						"While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 ({@damage 2d6}) damage to any target it hits with a melee attack."
 					]
 				}
 			],
@@ -55420,7 +56314,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Quasit|XPHB"
+				"Quasit|XMM"
 			],
 			"size": [
 				"T"
@@ -55604,6 +56498,9 @@
 					"source": "ToFW"
 				}
 			],
+			"reprintedAs": [
+				"Piranha|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -55705,6 +56602,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Rakshasa|XMM"
 			],
 			"size": [
 				"M"
@@ -55895,7 +56795,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Rat|XPHB"
+				"Rat|XMM"
 			],
 			"size": [
 				"T"
@@ -55992,7 +56892,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Raven|XPHB"
+				"Raven|XMM"
 			],
 			"size": [
 				"T"
@@ -56082,6 +56982,9 @@
 				{
 					"source": "DSotDQ"
 				}
+			],
+			"reprintedAs": [
+				"Red Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -56291,6 +57194,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Red Slaad|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -56448,7 +57354,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Reef Shark|XPHB"
+				"Reef Shark|XMM"
 			],
 			"size": [
 				"M"
@@ -56570,6 +57476,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Remorhaz|XMM"
 			],
 			"size": [
 				"H"
@@ -56709,6 +57618,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Revenant|XMM"
 			],
 			"size": [
 				"M"
@@ -56888,6 +57800,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Rhinoceros|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -57006,7 +57921,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Riding Horse|XPHB"
+				"Riding Horse|XMM"
 			],
 			"size": [
 				"L"
@@ -57100,6 +58015,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Roc|XMM"
 			],
 			"size": [
 				"G"
@@ -57244,6 +58162,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Roper|XMM"
 			],
 			"size": [
 				"L"
@@ -57417,6 +58338,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Animated Rug of Smothering|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -57546,6 +58470,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Rust Monster|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -57664,6 +58591,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Saber-Toothed Tiger|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -57775,6 +58705,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Sahuagin Warrior|XMM"
 			],
 			"size": [
 				"M"
@@ -57922,6 +58855,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Sahuagin Baron|XMM"
 			],
 			"size": [
 				"L"
@@ -58072,6 +59008,9 @@
 				{
 					"source": "BGDIA"
 				}
+			],
+			"reprintedAs": [
+				"Sahuagin Priest|XMM"
 			],
 			"size": [
 				"M"
@@ -58278,6 +59217,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Salamander|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -58439,6 +59381,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Satyr|XMM"
 			],
 			"size": [
 				"M"
@@ -58610,6 +59555,9 @@
 					"source": "KftGV"
 				}
 			],
+			"reprintedAs": [
+				"Scarecrow|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -58746,7 +59694,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Scorpion|XPHB"
+				"Scorpion|XMM"
 			],
 			"size": [
 				"T"
@@ -58898,6 +59846,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Scout|XMM"
 			],
 			"size": [
 				"M"
@@ -59059,6 +60010,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Sea Hag|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -59207,7 +60161,7 @@
 							"type": "entries",
 							"name": "Hag Eye",
 							"entries": [
-								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@dice 3d10} psychic damage and is {@condition blinded} for 24 hours.",
+								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@damage 3d10} psychic damage and is {@condition blinded} for 24 hours.",
 								"A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
 							]
 						}
@@ -59332,6 +60286,9 @@
 			"page": 337,
 			"srd": true,
 			"basicRules": true,
+			"reprintedAs": [
+				"Seahorse|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -59447,6 +60404,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Shadow|XMM"
 			],
 			"size": [
 				"M"
@@ -59622,6 +60582,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Shadow Demon|XMM"
 			],
 			"size": [
 				"M"
@@ -59819,6 +60782,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Shambling Mound|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -59989,6 +60955,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Shield Guardian|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -60134,6 +61103,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Shrieker Fungus|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -60215,6 +61187,9 @@
 				{
 					"source": "IDRotF"
 				}
+			],
+			"reprintedAs": [
+				"Silver Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -60515,7 +61490,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Skeleton|XPHB"
+				"Skeleton|XMM"
 			],
 			"size": [
 				"M"
@@ -60637,7 +61612,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Slaad Tadpole|XPHB"
+				"Slaad Tadpole|XMM"
 			],
 			"size": [
 				"T"
@@ -60747,6 +61722,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Smoke Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -60912,6 +61890,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Solar|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -61010,7 +61991,7 @@
 				{
 					"name": "Angelic Weapons",
 					"entries": [
-						"The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra {@dice 6d8} radiant damage (included in the attack)."
+						"The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra {@damage 6d8} radiant damage (included in the attack)."
 					]
 				},
 				{
@@ -61174,6 +62155,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Spectator|XMM"
 			],
 			"size": [
 				"M"
@@ -61421,6 +62405,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Specter|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -61565,7 +62552,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Spider|XPHB"
+				"Spider|XMM"
 			],
 			"size": [
 				"T"
@@ -61676,6 +62663,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Spined Devil|XMM"
 			],
 			"size": [
 				"S"
@@ -61854,6 +62844,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Spirit Naga|XMM"
 			],
 			"size": [
 				"L"
@@ -62066,7 +63059,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Sprite|XPHB"
+				"Sprite|XMM"
 			],
 			"size": [
 				"T"
@@ -62262,6 +63255,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Spy|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -62314,7 +63310,7 @@
 				{
 					"name": "Sneak Attack (1/Turn)",
 					"entries": [
-						"The spy deals an extra 7 ({@dice 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't {@condition incapacitated} and the spy doesn't have disadvantage on the attack roll."
+						"The spy deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't {@condition incapacitated} and the spy doesn't have disadvantage on the attack roll."
 					]
 				}
 			],
@@ -62398,6 +63394,9 @@
 				{
 					"source": "DoDk"
 				}
+			],
+			"reprintedAs": [
+				"Steam Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -62591,6 +63590,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Stirge|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -62689,6 +63691,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Stone Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -62924,6 +63929,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Stone Golem|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -63076,6 +64084,9 @@
 				{
 					"source": "SatO"
 				}
+			],
+			"reprintedAs": [
+				"Storm Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -63307,6 +64318,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Succubus|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -63495,6 +64509,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Swarm of Bats|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -63601,6 +64618,9 @@
 			"source": "MM",
 			"page": 338,
 			"srd": true,
+			"reprintedAs": [
+				"Swarm of Insects|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -63706,6 +64726,9 @@
 				{
 					"source": "WDMM"
 				}
+			],
+			"reprintedAs": [
+				"Swarm of Insects|XMM"
 			],
 			"size": [
 				"M"
@@ -63834,6 +64857,9 @@
 				{
 					"source": "PSA"
 				}
+			],
+			"reprintedAs": [
+				"Swarm of Insects|XMM"
 			],
 			"size": [
 				"M"
@@ -63968,6 +64994,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Swarm of Venomous Snakes|XMM"
 			],
 			"size": [
 				"M"
@@ -64109,6 +65138,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Swarm of Piranhas|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -64245,6 +65277,9 @@
 					"source": "DoDk"
 				}
 			],
+			"reprintedAs": [
+				"Swarm of Rats|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -64369,6 +65404,9 @@
 					"source": "CM"
 				}
 			],
+			"reprintedAs": [
+				"Swarm of Ravens|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -64485,6 +65523,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Swarm of Insects|XMM"
 			],
 			"size": [
 				"M"
@@ -64620,6 +65661,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Swarm of Insects|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -64736,6 +65780,9 @@
 				{
 					"source": "DoDk"
 				}
+			],
+			"reprintedAs": [
+				"Tarrasque|XMM"
 			],
 			"size": [
 				"G"
@@ -64950,6 +65997,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Thri-kreen Marauder|XMM"
 			],
 			"size": [
 				"M"
@@ -65256,6 +66306,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Tough|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -65388,7 +66441,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Tiger|XPHB"
+				"Tiger|XMM"
 			],
 			"size": [
 				"L"
@@ -65553,6 +66606,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Treant|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -65702,6 +66758,9 @@
 					"source": "IDRotF"
 				}
 			],
+			"reprintedAs": [
+				"Warrior Infantry|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -65812,6 +66871,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Triceratops|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -65911,6 +66973,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Modron Tridrone|XMM"
 			],
 			"size": [
 				"M"
@@ -66074,6 +67139,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Troglodyte|XMM"
 			],
 			"size": [
 				"M"
@@ -66258,6 +67326,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Troll|XMM"
 			],
 			"size": [
 				"L"
@@ -66558,6 +67629,9 @@
 					"source": "DIP"
 				}
 			],
+			"reprintedAs": [
+				"Twig Blight|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -66680,6 +67754,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Tyrannosaurus Rex|XMM"
+			],
 			"size": [
 				"H"
 			],
@@ -66776,6 +67853,9 @@
 				{
 					"source": "JttRC"
 				}
+			],
+			"reprintedAs": [
+				"Ultroloth|XMM"
 			],
 			"size": [
 				"M"
@@ -67039,6 +68119,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Umber Hulk|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -67183,6 +68266,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Unicorn|XMM"
 			],
 			"size": [
 				"L"
@@ -67435,6 +68521,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Vampire|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -67536,10 +68625,32 @@
 					"name": "Vampire Weaknesses",
 					"entries": [
 						"The vampire has the following flaws:",
-						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water.} The vampire takes 20 acid damage if it ends its turn in running water.",
-						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed.",
-						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+						{
+							"type": "list",
+							"style": "list-hang-subtrait",
+							"items": [
+								{
+									"type": "itemSub",
+									"name": "Forbiddance",
+									"entry": "The vampire can't enter a residence without an invitation from one of the occupants."
+								},
+								{
+									"type": "itemSub",
+									"name": "Harmed by Running Water",
+									"entry": "The vampire takes 20 acid damage if it ends its turn in running water."
+								},
+								{
+									"type": "itemSub",
+									"name": "Stake to the Heart",
+									"entry": "If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed."
+								},
+								{
+									"type": "itemSub",
+									"name": "Sunlight Hypersensitivity",
+									"entry": "The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+								}
+							]
+						}
 					]
 				}
 			],
@@ -67694,6 +68805,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Vampire Spawn|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -67768,10 +68882,32 @@
 					"name": "Vampire Weaknesses",
 					"entries": [
 						"The vampire has the following flaws:",
-						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water.} The vampire takes 20 acid damage when it ends its turn in running water.",
-						"{@i Stake to the Heart.} The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
-						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+						{
+							"type": "list",
+							"style": "list-hang-subtrait",
+							"items": [
+								{
+									"type": "itemSub",
+									"name": "Forbiddance",
+									"entry": "The vampire can't enter a residence without an invitation from one of the occupants."
+								},
+								{
+									"type": "itemSub",
+									"name": "Harmed by Running Water",
+									"entry": "The vampire takes 20 acid damage when it ends its turn in running water."
+								},
+								{
+									"type": "itemSub",
+									"name": "Stake to the Heart",
+									"entry": "The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place."
+								},
+								{
+									"type": "itemSub",
+									"name": "Sunlight Hypersensitivity",
+									"entry": "The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks"
+								}
+							]
+						}
 					]
 				}
 			],
@@ -67838,6 +68974,9 @@
 				{
 					"source": "RoT"
 				}
+			],
+			"reprintedAs": [
+				"Vampire|XMM"
 			],
 			"size": [
 				"M"
@@ -67996,10 +69135,32 @@
 					"name": "Vampire Weaknesses",
 					"entries": [
 						"The vampire has the following flaws:",
-						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water.} The vampire takes 20 acid damage if it ends its turn in running water.",
-						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed.",
-						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+						{
+							"type": "list",
+							"style": "list-hang-subtrait",
+							"items": [
+								{
+									"type": "itemSub",
+									"name": "Forbiddance",
+									"entry": "The vampire can't enter a residence without an invitation from one of the occupants."
+								},
+								{
+									"type": "itemSub",
+									"name": "Harmed by Running Water",
+									"entry": "The vampire takes 20 acid damage if it ends its turn in running water."
+								},
+								{
+									"type": "itemSub",
+									"name": "Stake to the Heart",
+									"entry": "If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed."
+								},
+								{
+									"type": "itemSub",
+									"name": "Sunlight Hypersensitivity",
+									"entry": "The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks"
+								}
+							]
+						}
 					]
 				}
 			],
@@ -68123,6 +69284,9 @@
 			"name": "Vampire Warrior",
 			"source": "MM",
 			"page": 298,
+			"reprintedAs": [
+				"Vampire|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -68224,10 +69388,32 @@
 					"name": "Vampire Weaknesses",
 					"entries": [
 						"The vampire has the following flaws:",
-						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water.} The vampire takes 20 acid damage if it ends its turn in running water.",
-						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed.",
-						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+						{
+							"type": "list",
+							"style": "list-hang-subtrait",
+							"items": [
+								{
+									"type": "itemSub",
+									"name": "Forbiddance",
+									"entry": "The vampire can't enter a residence without an invitation from one of the occupants."
+								},
+								{
+									"type": "itemSub",
+									"name": "Harmed by Running Water",
+									"entry": "The vampire takes 20 acid damage if it ends its turn in running water."
+								},
+								{
+									"type": "itemSub",
+									"name": "Stake to the Heart",
+									"entry": "If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed."
+								},
+								{
+									"type": "itemSub",
+									"name": "Sunlight Hypersensitivity",
+									"entry": "The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks"
+								}
+							]
+						}
 					]
 				}
 			],
@@ -68450,6 +69636,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Warrior Veteran|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -68581,6 +69770,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Vine Blight|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -68706,6 +69898,9 @@
 				{
 					"source": "DoSI"
 				}
+			],
+			"reprintedAs": [
+				"Violet Fungus|XMM"
 			],
 			"size": [
 				"M"
@@ -68837,6 +70032,9 @@
 				{
 					"source": "VEoR"
 				}
+			],
+			"reprintedAs": [
+				"Vrock|XMM"
 			],
 			"size": [
 				"L"
@@ -69025,6 +70223,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Vulture|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -69136,7 +70337,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Warhorse|XPHB"
+				"Warhorse|XMM"
 			],
 			"size": [
 				"L"
@@ -69365,6 +70566,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Warhorse Skeleton|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -69491,6 +70695,9 @@
 				{
 					"source": "QftIS"
 				}
+			],
+			"reprintedAs": [
+				"Water Elemental|XMM"
 			],
 			"size": [
 				"L"
@@ -69669,6 +70876,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Water Weird|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -69798,7 +71008,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Weasel|XPHB"
+				"Weasel|XMM"
 			],
 			"size": [
 				"T"
@@ -69879,6 +71089,9 @@
 				{
 					"source": "KftGV"
 				}
+			],
+			"reprintedAs": [
+				"Werebear|XMM"
 			],
 			"size": [
 				"M"
@@ -70066,6 +71279,9 @@
 				{
 					"source": "BMT"
 				}
+			],
+			"reprintedAs": [
+				"Wereboar|XMM"
 			],
 			"size": [
 				"M"
@@ -70267,6 +71483,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Wererat|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -70433,6 +71652,9 @@
 				{
 					"source": "ToFW"
 				}
+			],
+			"reprintedAs": [
+				"Weretiger|XMM"
 			],
 			"size": [
 				"M"
@@ -70650,6 +71872,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Werewolf|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -70820,6 +72045,9 @@
 				{
 					"source": "IDRotF"
 				}
+			],
+			"reprintedAs": [
+				"White Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -71079,6 +72307,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Wight|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -71292,6 +72523,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Will-o'-Wisp|XMM"
+			],
 			"size": [
 				"T"
 			],
@@ -71454,6 +72688,9 @@
 					"source": "DoSI"
 				}
 			],
+			"reprintedAs": [
+				"Winged Kobold|XMM"
+			],
 			"size": [
 				"S"
 			],
@@ -71588,6 +72825,9 @@
 				{
 					"source": "GHLoE"
 				}
+			],
+			"reprintedAs": [
+				"Winter Wolf|XMM"
 			],
 			"size": [
 				"L"
@@ -71768,7 +73008,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Wolf|XPHB"
+				"Wolf|XMM"
 			],
 			"size": [
 				"M"
@@ -71885,6 +73125,9 @@
 				{
 					"source": "DoDk"
 				}
+			],
+			"reprintedAs": [
+				"Worg|XMM"
 			],
 			"size": [
 				"L"
@@ -72069,6 +73312,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Wraith|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -72240,6 +73486,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Wyvern|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -72357,6 +73606,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Xorn|XMM"
 			],
 			"size": [
 				"M"
@@ -72506,6 +73758,9 @@
 					"source": "ToFW"
 				}
 			],
+			"reprintedAs": [
+				"Yeti|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -72649,6 +73904,9 @@
 					"source": "VEoR"
 				}
 			],
+			"reprintedAs": [
+				"Yochlol|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -72780,7 +74038,7 @@
 				{
 					"name": "Slam (Bite in Spider Form)",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft. (10 feet in demon form), one target. {@h}5 ({@dice 1d6 + 2}) bludgeoning (piercing in spider form) damage plus 21 ({@damage 6d6}) poison damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft. (10 feet in demon form), one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning (piercing in spider form) damage plus 21 ({@damage 6d6}) poison damage."
 					]
 				},
 				{
@@ -72885,6 +74143,9 @@
 				{
 					"source": "LK"
 				}
+			],
+			"reprintedAs": [
+				"Young Black Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -73125,6 +74386,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Young Blue Dragon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -73339,6 +74603,9 @@
 				{
 					"source": "SKT"
 				}
+			],
+			"reprintedAs": [
+				"Young Brass Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -73596,6 +74863,9 @@
 					"source": "QftIS"
 				}
 			],
+			"reprintedAs": [
+				"Young Bronze Dragon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -73844,6 +75114,9 @@
 					"source": "SatO"
 				}
 			],
+			"reprintedAs": [
+				"Young Copper Dragon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -74073,6 +75346,9 @@
 			"source": "MM",
 			"page": 115,
 			"srd": true,
+			"reprintedAs": [
+				"Young Gold Dragon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -74353,6 +75629,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Young Green Dragon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -74617,6 +75896,9 @@
 					"source": "CoA"
 				}
 			],
+			"reprintedAs": [
+				"Young Red Dragon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -74834,6 +76116,9 @@
 				{
 					"source": "CoA"
 				}
+			],
+			"reprintedAs": [
+				"Shadow Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -75078,6 +76363,9 @@
 					"source": "IDRotF"
 				}
 			],
+			"reprintedAs": [
+				"Young Remorhaz|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -75170,6 +76458,9 @@
 				{
 					"source": "DSotDQ"
 				}
+			],
+			"reprintedAs": [
+				"Young Silver Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -75426,6 +76717,9 @@
 					"source": "BMT"
 				}
 			],
+			"reprintedAs": [
+				"Young White Dragon|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -75660,6 +76954,9 @@
 					"source": "CM"
 				}
 			],
+			"reprintedAs": [
+				"Yuan-ti Abomination|XMM"
+			],
 			"size": [
 				"L"
 			],
@@ -75862,6 +77159,9 @@
 				{
 					"source": "CM"
 				}
+			],
+			"reprintedAs": [
+				"Yuan-ti Malison (Type 1)|XMM"
 			],
 			"size": [
 				"M"
@@ -76066,6 +77366,9 @@
 					"source": "ToA"
 				}
 			],
+			"reprintedAs": [
+				"Yuan-ti Malison (Type 2)|XMM"
+			],
 			"size": [
 				"M"
 			],
@@ -76251,6 +77554,9 @@
 				{
 					"source": "CM"
 				}
+			],
+			"reprintedAs": [
+				"Yuan-ti Malison (Type 3)|XMM"
 			],
 			"size": [
 				"M"
@@ -76477,6 +77783,9 @@
 				{
 					"source": "PSI"
 				}
+			],
+			"reprintedAs": [
+				"Yuan-ti Infiltrator|XMM"
 			],
 			"size": [
 				"M"
@@ -76736,7 +78045,7 @@
 				}
 			],
 			"reprintedAs": [
-				"Zombie|XPHB"
+				"Zombie|XMM"
 			],
 			"size": [
 				"M"

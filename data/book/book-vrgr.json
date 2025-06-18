@@ -431,7 +431,7 @@
 									"title": "Rudolph van Richten prepares for his next expedition, watched over by the spirit of his son, Erasmus.",
 									"width": 1700,
 									"height": 1167,
-									"credit": "Zuzanna Wuzyk"
+									"credit": "Zuzanna Wužyk"
 								}
 							]
 						},
@@ -4578,7 +4578,7 @@
 								{
 									"type": "list",
 									"items": [
-										"A creature that starts its turn in the Mists must succeed on a DC 20 Constitution saving throw or gain 1 level of {@condition exhaustion}. This {@condition exhaustion} can't be removed while the creature is in the Mists.",
+										"A creature that starts its turn in the Mists must succeed on a {@dc 20} Constitution saving throw or gain 1 level of {@condition exhaustion}. This {@condition exhaustion} can't be removed while the creature is in the Mists.",
 										"No matter how far a creature travels in the Mists, or which direction it goes, it gets turned around so that it eventually ends up back in the domain it left.",
 										"The area within the Mists is heavily obscured (see the {@book Player's Handbook|PHB} for details)."
 									]
@@ -8040,7 +8040,7 @@
 									"page": 96,
 									"id": "1de",
 									"entries": [
-										"Saidra's form is a vaporous as her claims to nobility. She's a crimson spirit with statistics similar to a {@creature wraith}. She can cast the {@spell disintegrate} spell (save DC 18) on any creature that reveals themself to be lying about who they are. In her guise as duchess, Saidra dons a bird-like mask and fashionable scarlet gowns. As the Red Death, she is nothing more than a crimson-tinged shadow.",
+										"Saidra's form is a vaporous as her claims to nobility. She's a crimson spirit with statistics similar to a {@creature wraith}. She can cast the {@spell disintegrate} spell (save {@dc 18}) on any creature that reveals themself to be lying about who they are. In her guise as duchess, Saidra dons a bird-like mask and fashionable scarlet gowns. As the Red Death, she is nothing more than a crimson-tinged shadow.",
 										{
 											"type": "entries",
 											"id": "1df",
@@ -8241,7 +8241,7 @@
 													"page": 98,
 													"id": "1ec",
 													"entries": [
-														"If the characters have established themselves in Port-a-Lucine as important, wealthy, and interesting people, they receive genuine invitations. The duchess hears about them if they spend lavishly, or as your adventure demands. Forging an invitation requires a successful DC 10 Intelligence check."
+														"If the characters have established themselves in Port-a-Lucine as important, wealthy, and interesting people, they receive genuine invitations. The duchess hears about them if they spend lavishly, or as your adventure demands. Forging an invitation requires a successful {@dc 10} Intelligence check."
 													]
 												},
 												{
@@ -8541,7 +8541,7 @@
 								"The ruling families united to hunt the Talons. Thanks to her tactical genius, Drakov repelled her pursuers and went on the offensive. One by one she attacked her former benefactors, burning villages, pressing citizens into service, and impaling anyone with a drop of noble blood. Though it took years, Drakov forged a bloody empire. But while sacking the burning city of her last remaining foe, Drakov and her troops were engulfed by strange smoke. When it cleared, everything they knew was gone.",
 								"Transported to an unfamiliar land, Drakov and her troops wasted little time subjugating it. The realm fell quickly, even easily, and upon taking the city of Lekar, Drakov prepared to name herself ruler of her new empire: Falkovnia.",
 								"Then, under a moonless sky, the dead rose against the land's invaders. The surrounding villages fell to the zombies with hardly a sound, and undead claws scraped Lekar's walls before the first alarms were raised. The First Siege of Lekar raged for four days. Drakov's strategies, both brilliant and desperate, eventually turned back the zombie horde, but at the cost of most of her veteran troops.",
-								"Since then, Drakov has lost nearly her entire nation. Every month a new desperate battle unfolds. She prepares ceaselessly for each, certain of her plans and ultimate victory, but doubting the mettle of her troops. With threats and public, impalings she tries to keep her people more terrified of her than of the undead. And with every new moon she faces an unconquerable foe, never revealing to anyone that each zombie bears the familiar, rotting face of an innocent her soldiers once put to the sword.",
+								"Since then, Drakov has lost nearly her entire nation. Every month a new desperate battle unfolds. She prepares ceaselessly for each, certain of her plans and ultimate victory, but doubting the mettle of her troops. With threats and public impalings she tries to keep her people more terrified of her than of the undead. And with every new moon she faces an unconquerable foe, never revealing to anyone that each zombie bears the familiar, rotting face of an innocent her soldiers once put to the sword.",
 								{
 									"type": "entries",
 									"name": "Vladeska's Powers and Dominion",
@@ -8801,7 +8801,7 @@
 													"page": 104,
 													"id": "214",
 													"entries": [
-														"The streets are packed with poorly armed commoners and cruel Talon soldiers. Any character who succeeds on a DC 16 Wisdom ({@skill Perception}) check finds useful materials among the carts and cargo cleared from the streets\u2014weapons, a variety of adventuring gear, or the resources to approximate one {@item Gunpowder Keg||gunpowder keg explosive} (described in the {@book Dungeon Master's Guide|DMG})."
+														"The streets are packed with poorly armed commoners and cruel Talon soldiers. Any character who succeeds on a {@dc 16} Wisdom ({@skill Perception}) check finds useful materials among the carts and cargo cleared from the streets\u2014weapons, a variety of adventuring gear, or the resources to approximate one {@item Gunpowder Keg||gunpowder keg explosive} (described in the {@book Dungeon Master's Guide|DMG})."
 													]
 												}
 											]
@@ -8822,7 +8822,7 @@
 											"type": "table",
 											"caption": "Zombie Siege Encounters",
 											"colLabels": [
-												"{@dice 1d6;2d6|d6s}",
+												"{@dice 1d6 + #$prompt_number:default=0,min=0,max=2,title=Enter +2 if the characters ignored an event$#;2d6 + #$prompt_number:default=0,min=0,max=2,title=Enter +2 if the characters ignored an event$#|d6s}",
 												"Encounter"
 											],
 											"colStyles": [
@@ -10000,7 +10000,7 @@
 												],
 												[
 													"8\u20139",
-													"A number ({@dice 2d4}) of the Staring Cats of Uldun-dar appear within 30 feet of the character. These sapient, hyperdimensional {@creature Cat||cats} have uneven numbers of eyes and are not hostile, but they ominously share reports on how the character died in multiple parallel dimensions. The cats vanish after the character's next long rest."
+													"A number ({@dice 2d4}) of the Staring Cats of Uldun-dar appear within 30 feet of the character. These sapient, hyper-dimensional {@creature Cat||cats} have uneven numbers of eyes and are not hostile, but they ominously share reports on how the character died in multiple parallel dimensions. The cats vanish after the character's next long rest."
 												],
 												[
 													"10\u201311",
@@ -10261,7 +10261,7 @@
 													"page": 120,
 													"id": "271",
 													"entries": [
-														"Each evening, {@b} Tsien Chiang relays her orders for I'Cath's reconstruction to her droves of jiangshi agents, led by Minister Suen. Suen then disseminates these orders to the jiangshi of the Gemstone Garden, who work through the night. Every morning, Tsien Chiang finds some aspect of the city's miraculous changes unacceptable and returns to her palace, where she spends the day assembling new orders for her {@creature jiangshi|VRGR} servants."
+														"Each evening, Tsien Chiang relays her orders for I'Cath's reconstruction to her droves of jiangshi agents, led by Minister Suen. Suen then disseminates these orders to the jiangshi of the Gemstone Garden, who work through the night. Every morning, Tsien Chiang finds some aspect of the city's miraculous changes unacceptable and returns to her palace, where she spends the day assembling new orders for her {@creature jiangshi|VRGR} servants."
 													]
 												},
 												{
@@ -10465,7 +10465,7 @@
 													"page": 122,
 													"id": "281",
 													"entries": [
-														"A character cannot remove levels of {@condition exhaustion} by finishing a long rest in I'Cath if they spend any part of that rest in Tsien Chiang's dream. Characters with no levels of {@condition exhaustion} wake from the dream after 6 hours. Characters with 1 or more levels of {@condition exhaustion} can try to wake up after every 6 hours they spend within the dream; to awaken, they must succeed on a DC 10 Wisdom saving throw. Those who fail remain within the dream for another 6 hours, after which they can try to escape again. Creatures that do not sleep can choose to enter the dream by meditating. If they enter the dream, they are affected by it as if they were sleeping. Many residents of I'Cath don't attempt to escape the dream, considering existence within it preferable to life in the real city."
+														"A character cannot remove levels of {@condition exhaustion} by finishing a long rest in I'Cath if they spend any part of that rest in Tsien Chiang's dream. Characters with no levels of {@condition exhaustion} wake from the dream after 6 hours. Characters with 1 or more levels of {@condition exhaustion} can try to wake up after every 6 hours they spend within the dream; to awaken, they must succeed on a {@dc 10} Wisdom saving throw. Those who fail remain within the dream for another 6 hours, after which they can try to escape again. Creatures that do not sleep can choose to enter the dream by meditating. If they enter the dream, they are affected by it as if they were sleeping. Many residents of I'Cath don't attempt to escape the dream, considering existence within it preferable to life in the real city."
 													]
 												}
 											]
@@ -11562,7 +11562,7 @@
 									"height": 1702,
 									"credit": "Eric Belisle"
 								},
-								"Harkon Lukas's life companions are ambition and blood. Born amid a community of lycanthropes, he dreamed of commanding not just a pack, but a whole army, a nation, even an empire of born predators. Early in life, he sought to unite his reckless werebeast family and turn them into tools of his ambition. When they failed him, though, Harkon lashed out, ultimately driving the lycanthropes to turn on him. The would-be leader murdered dozens but barely escaped alive, fleeing into a nation of humans.",
+								"Harkon Lukas' life companions are ambition and blood. Born amid a community of lycanthropes, he dreamed of commanding not just a pack, but a whole army, a nation, even an empire of born predators. Early in life, he sought to unite his reckless werebeast family and turn them into tools of his ambition. When they failed him, though, Harkon lashed out, ultimately driving the lycanthropes to turn on him. The would-be leader murdered dozens but barely escaped alive, fleeing into a nation of humans.",
 								"In the years that followed, Harkon learned how to blend in with other peoples, how to manipulate those he considered his inferiors, and how to turn adoration into a weapon. He decided that if rule over a nation of hunters wasn't possible, he would force an empire of sheep to dance to the howling of wolves. Harkon Lukas became a legend, a performer, a teacher, a scoundrel, and a luminary. People flocked to bask in his remarkable presence.",
 								"Eventually, though, the land's rulers realized the threat Harkon posed. Officials tried to quietly imprison him for invented crimes, but the people defended him. When royal agents came for him en masse, the lycanthrope feigned his death. Outraged, the celebrity's followers rioted, and as the news spread, their outrage inspired a revolution. Within a week, the nation's government had crumbled, its defenders fleeing before an army that bore the red-stained coffin of Harkon Lukas at its head. As the rebel forces neared the walls of the royal palace, they were met by a contrite monarch, who gave a heartfelt speech, begging forgiveness and outlining concessions and a way for the nation to move forward. The rebels agreed to further negotiation.",
 								"At that moment, Harkon Lukas ended his ploy, bursting from his crimson coffin in wolf form and devouring the monarch before thousands of followers. Drenched in blood, the \"resurrected\" Harkon returned to his human form and donned a battered crown amid the roaring cheers of a nation of fans. But before the reign of the wolf could begin, the Mists rose amid the assembled throng and closed around their champion. When they cleared, the sovereign-wolf was no longer a step away from rule, but a stranger in an unfamiliar provincial land called Kartakass.",
@@ -12365,7 +12365,7 @@
 												],
 												[
 													"4",
-													"Dr. Mordenheim wants {@creature Elise|VRGR} found and returned. Using various monster parts, she creates unique hunter bodies with the statistics of {@creature Flesh Golem||flesh golems} or {@b} other monsters. She places the characters' minds into these bodies, promising to restore them when they bring her {@creature Elise|VRGR}."
+													"Dr. Mordenheim wants {@creature Elise|VRGR} found and returned. Using various monster parts, she creates unique hunter bodies with the statistics of {@creature Flesh Golem||flesh golems} or other monsters. She places the characters' minds into these bodies, promising to restore them when they bring her {@creature Elise|VRGR}."
 												]
 											]
 										}
@@ -13390,7 +13390,7 @@
 													"page": 153,
 													"id": "349",
 													"entries": [
-														"Creatures exposed to the disease must succeed on a DC 10 Constitution saving throw or become infected. The DC of this saving throw can increase depending on the severity of the plague's spread (see \"{@book Cycle of the Plague|VRGR|3|Cycle of the Plague}\" below)."
+														"Creatures exposed to the disease must succeed on a {@dc 10} Constitution saving throw or become infected. The DC of this saving throw can increase depending on the severity of the plague's spread (see \"{@book Cycle of the Plague|VRGR|3|Cycle of the Plague}\" below)."
 													]
 												},
 												{
@@ -13409,7 +13409,7 @@
 													"page": 154,
 													"id": "34b",
 													"entries": [
-														"At the end of each long rest, an infected creature must make a DC 10 Constitution saving throw. On a failed save, the creature gains 1 level of {@condition exhaustion}. On a successful save, the creature's {@condition exhaustion} level decreases by 1. If a successful saving throw reduces the infected creature's level of {@condition exhaustion} below 1, the creature recovers from the disease."
+														"At the end of each long rest, an infected creature must make a {@dc 10} Constitution saving throw. On a failed save, the creature gains 1 level of {@condition exhaustion}. On a successful save, the creature's {@condition exhaustion} level decreases by 1. If a successful saving throw reduces the infected creature's level of {@condition exhaustion} below 1, the creature recovers from the disease."
 													]
 												},
 												{
@@ -13490,23 +13490,23 @@
 												],
 												[
 													"2",
-													"How many people brush up against the character as they push through the crowds? The character must succeed on a DC 12 Constitution saving throw or contract the Gnawing Plague."
+													"How many people brush up against the character as they push through the crowds? The character must succeed on a {@dc 12} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"3",
-													"A nearby person turns and coughs directly on the character, who must succeed on a DC 14 Constitution saving throw or contract the Gnawing Plague."
+													"A nearby person turns and coughs directly on the character, who must succeed on a {@dc 14} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"4",
-													"A {@creature rat} scurries across the character's foot. If the character isn't wearing metal armor, it scratches them and they must succeed on a DC 12 Constitution saving throw or contract the Gnawing Plague."
+													"A {@creature rat} scurries across the character's foot. If the character isn't wearing metal armor, it scratches them and they must succeed on a {@dc 12} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"5",
-													"A sobbing child is separated from their parents in a crowd. A character who physically interacts with the child must succeed on a DC 14 Constitution saving throw or contract the Gnawing Plague."
+													"A sobbing child is separated from their parents in a crowd. A character who physically interacts with the child must succeed on a {@dc 14} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"6",
-													"A cutpurse tries to pick the character's pocket. If the character tries to physically stop the criminal, they must succeed on a DC 12 Constitution saving throw or contract the Gnawing Plague."
+													"A cutpurse tries to pick the character's pocket. If the character tries to physically stop the criminal, they must succeed on a {@dc 12} Constitution saving throw or contract the Gnawing Plague."
 												]
 											]
 										}
@@ -13533,11 +13533,11 @@
 											"rows": [
 												[
 													"1",
-													"A dead body lies in the character's path. A character who touches the body must succeed on a DC 12 Constitution saving throw or contract the Gnawing Plague."
+													"A dead body lies in the character's path. A character who touches the body must succeed on a {@dc 12} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"2",
-													"A retching {@creature commoner} tries to grapple the character, begging for any help. Anyone the commoner touches must succeed on a DC 16 Constitution saving throw or contract the Gnawing Plague."
+													"A retching {@creature commoner} tries to grapple the character, begging for any help. Anyone the commoner touches must succeed on a {@dc 16} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"3",
@@ -13545,11 +13545,11 @@
 												],
 												[
 													"4",
-													"Several mangy {@creature Giant Rat||giant rats} attack. Anyone bitten by a giant rat must succeed on a DC 14 Constitution saving throw or contract the Gnawing Plague."
+													"Several mangy {@creature Giant Rat||giant rats} attack. Anyone bitten by a giant rat must succeed on a {@dc 14} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"5",
-													"A {@creature swarm of rats} shadows the character as they travel. If confronted, the swarm attacks. Anyone bitten by the rats must succeed on a DC 14 Constitution saving throw or contract the Gnawing Plague."
+													"A {@creature swarm of rats} shadows the character as they travel. If confronted, the swarm attacks. Anyone bitten by the rats must succeed on a {@dc 14} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"6",
@@ -13580,7 +13580,7 @@
 											"rows": [
 												[
 													"1",
-													"A desperate group of {@creature Commoner||commoners} tries to break through a sealed gate to escape quarantine. Anyone who tries to aid or deter them must succeed on a DC 16 Constitution saving throw or contract the Gnawing Plague."
+													"A desperate group of {@creature Commoner||commoners} tries to break through a sealed gate to escape quarantine. Anyone who tries to aid or deter them must succeed on a {@dc 16} Constitution saving throw or contract the Gnawing Plague."
 												],
 												[
 													"2",
@@ -14672,11 +14672,11 @@
 												],
 												[
 													"2",
-													"Dense foliage, swampy ground, clouds of insects, or thick fog slows the party's travel to a crawl. The party chooses one character, who must succeed on a DC 14 Wisdom ({@skill Survival}) check or the party's travel speed is reduced by half for the next hour (this is in addition to any speed reduction from {@quickref difficult terrain||3})."
+													"Dense foliage, swampy ground, clouds of insects, or thick fog slows the party's travel to a crawl. The party chooses one character, who must succeed on a {@dc 14} Wisdom ({@skill Survival}) check or the party's travel speed is reduced by half for the next hour (this is in addition to any speed reduction from {@quickref difficult terrain||3})."
 												],
 												[
 													"3",
-													"The area is riddled with traps set by Chakuna. A random character must succeed on a DC 15 Wisdom ({@skill Perception}) check or fall into a {@trap pits||spiked pit} (see the {@book Dungeon Master's Guide|DMG})."
+													"The area is riddled with traps set by Chakuna. A random character must succeed on a {@dc 15} Wisdom ({@skill Perception}) check or fall into a {@trap pits||spiked pit} (see the {@book Dungeon Master's Guide|DMG})."
 												],
 												[
 													"4",
@@ -14688,11 +14688,11 @@
 												],
 												[
 													"6",
-													"Clouds of insects, persistent leeches, or other parasites torment the party. Each character must succeed on a DC 16 Wisdom ({@skill Survival}) check or gain 1 level of {@condition exhaustion}. Creatures immune to disease suffer no ill effects from the parasites."
+													"Clouds of insects, persistent leeches, or other parasites torment the party. Each character must succeed on a {@dc 16} Wisdom ({@skill Survival}) check or gain 1 level of {@condition exhaustion}. Creatures immune to disease suffer no ill effects from the parasites."
 												],
 												[
 													"7",
-													"The party encounters a {@creature druid}, {@creature green hag}, or {@creature displacer beast} that is not part of the hunt. If a character succeeds on a DC 16 Charisma ({@skill Persuasion}) check, that creature shows them a route that allows them to move at double their speed for the next hour and avoid rolling on this table at the end of that time."
+													"The party encounters a {@creature druid}, {@creature green hag}, or {@creature displacer beast} that is not part of the hunt. If a character succeeds on a {@dc 16} Charisma ({@skill Persuasion}) check, that creature shows them a route that allows them to move at double their speed for the next hour and avoid rolling on this table at the end of that time."
 												],
 												[
 													"8",
@@ -14712,15 +14712,15 @@
 												],
 												[
 													"12",
-													"A rope bridge provides the only method of crossing a river or ravine. Each character must succeed on a DC 10 Dexterity ({@skill Acrobatics}) check to cross the bridge or fall 60 feet into the jungle or water below. The bridge has AC 11, 16 hit points, and immunity to poison and psychic damage."
+													"A rope bridge provides the only method of crossing a river or ravine. Each character must succeed on a {@dc 10} Dexterity ({@skill Acrobatics}) check to cross the bridge or fall 60 feet into the jungle or water below. The bridge has AC 11, 16 hit points, and immunity to poison and psychic damage."
 												],
 												[
 													"13",
-													"The party discovers an overgrown ruin. A character who succeeds on a DC 18 Wisdom ({@skill Perception}) check spots a relief carving of a wicked-looking figure ripping out its own heart."
+													"The party discovers an overgrown ruin. A character who succeeds on a {@dc 18} Wisdom ({@skill Perception}) check spots a relief carving of a wicked-looking figure ripping out its own heart."
 												],
 												[
 													"14",
-													"A random character must succeed on a DC 14 Wisdom ({@skill Perception}) check or fall into {@book quicksand|DMG|5|Quicksand} (see the {@book Dungeon Master's Guide|DMG})."
+													"A random character must succeed on a {@dc 14} Wisdom ({@skill Perception}) check or fall into {@book quicksand|DMG|5|Quicksand} (see the {@book Dungeon Master's Guide|DMG})."
 												],
 												[
 													"15",
@@ -14732,7 +14732,7 @@
 												],
 												[
 													"17",
-													"The party chooses one character who must succeed on a DC 16 Wisdom ({@skill Survival}) check. On a failed check, the party becomes lost. It takes the characters 1 hour to realize they are {@dice 1d4} miles away from their assumed location in a disadvantageous direction."
+													"The party chooses one character who must succeed on a {@dc 16} Wisdom ({@skill Survival}) check. On a failed check, the party becomes lost. It takes the characters 1 hour to realize they are {@dice 1d4} miles away from their assumed location in a disadvantageous direction."
 												],
 												[
 													"18\u201320",
@@ -16327,7 +16327,7 @@
 									"page": 182,
 									"id": "420",
 									"entries": [
-										"Captain Larissa Snowmane pilots the paddleboat {@i River Dancer} along the rivers and coasts of Ravenloft's domains, righting wrongs and ferrying those in need to new homes. Larissa is a legend, known for her icy-white hair, dancing skill, and mezzo-soprano signing voice. As she approaches her seventieth year, she remains one of the domains' most widely traveled explorers. When danger threatens her vessel and crew, Captain Snowmane reluctantly uses a magical performance known as the Dance of the Dead, a forbidden song and dance that keeps Undead creatures at bay but slays living beings who witness it, then reanimates them as zombies. Larissa avoids rival riverboat captain Nathan Timothy and his ship, {@i Virago}, as well as the swampy domain of Souragne, where she learned her deadly magic from grim forces that consider her debt unpaid.",
+										"Captain Larissa Snowmane pilots the paddle boat {@i River Dancer} along the rivers and coasts of Ravenloft's domains, righting wrongs and ferrying those in need to new homes. Larissa is a legend, known for her icy-white hair, dancing skill, and mezzo-soprano signing voice. As she approaches her seventieth year, she remains one of the domains' most widely traveled explorers. When danger threatens her vessel and crew, Captain Snowmane reluctantly uses a magical performance known as the Dance of the Dead, a forbidden song and dance that keeps Undead creatures at bay but slays living beings who witness it, then reanimates them as zombies. Larissa avoids rival riverboat captain Nathan Timothy and his ship, {@i Virago}, as well as the swampy domain of Souragne, where she learned her deadly magic from grim forces that consider her debt unpaid.",
 										{
 											"type": "entries",
 											"name": "Larissa Snowmane's Traits",
@@ -16363,7 +16363,7 @@
 											"page": 182,
 											"id": "422",
 											"entries": [
-												"Larissa Snowmane is a human {@creature druid} with exceptional insight into navigating the waterways of the Mists. Her handsome, multilevel paddleboat {@i River Dancer} provides an exciting base of operations for wayfaring adventurers. Consider the following plots when featuring Larissa Snowmane in an adventure:",
+												"Larissa Snowmane is a human {@creature druid} with exceptional insight into navigating the waterways of the Mists. Her handsome, multilevel paddle boat {@i River Dancer} provides an exciting base of operations for wayfaring adventurers. Consider the following plots when featuring Larissa Snowmane in an adventure:",
 												{
 													"type": "list",
 													"items": [
@@ -17200,7 +17200,7 @@
 												"The victim has disadvantage on attack rolls, ability checks, saving throws, or some combination of the three. This can be tied to a single ability score or applied generally.",
 												"The victim can't communicate using language, whether through speaking, sign language, writing, telepathy, or any other means.",
 												"The victim gains 3 levels of {@condition exhaustion} that can't be removed while the curse endures.",
-												"When the victim finishes a long rest, they must succeed on a DC 15 Constitution saving throw, or their hit point maximum is reduced by {@dice 1d10}. If this reduces their hit point maximum to 0, the victim dies, and their body crumbles to dust.",
+												"When the victim finishes a long rest, they must succeed on a {@dc 15} Constitution saving throw, or their hit point maximum is reduced by {@dice 1d10}. If this reduces their hit point maximum to 0, the victim dies, and their body crumbles to dust.",
 												"When the victim takes damage, they take an extra {@dice 1d10} necrotic damage. This effect can't happen again until the start of the victim's next turn.",
 												"The victim gains a Dark Gift (see {@book chapter 1|VRGR|1}) appropriate to the circumstances surrounding the curse.",
 												"The victim gains vulnerability to one damage type.",
@@ -17224,7 +17224,7 @@
 											"page": 193,
 											"id": "45c",
 											"entries": [
-												"When a curse is resolved, its effects usually end immediately. Some more insidious curses might linger beyond the resolution but can then be removed by a {@spell remove curse} spell or similar magic if the victim succeeds on a DC 15 Charisma saving throw when the spell is cast. If the save fails, it can be repeated after a specific interval passes, usually 1 month, with the curse ending on a successful save. Adjust the DC of a particularly weak curse to 10 or that of a stronger one to 20.",
+												"When a curse is resolved, its effects usually end immediately. Some more insidious curses might linger beyond the resolution but can then be removed by a {@spell remove curse} spell or similar magic if the victim succeeds on a {@dc 15} Charisma saving throw when the spell is cast. If the save fails, it can be repeated after a specific interval passes, usually 1 month, with the curse ending on a successful save. Adjust the DC of a particularly weak curse to 10 or that of a stronger one to 20.",
 												"Here are some examples of curse resolutions:",
 												{
 													"type": "list",
@@ -17964,7 +17964,7 @@
 											"type": "item",
 											"name": "Interior Illustrators",
 											"entries": [
-												"Helder Almeida, Mark Behm, Eric Belisle, Zoltan Boros, Christopher Burdett, Dawn Carlos, Paul Scott Canavan, Kai Carpenter, Sidharth Chaturvedi, David René Christensen, CoupleOfKooks, Nikki Dawes, Olga Drebas, Wayne England, Caroline Gariba, Lake Hurwitz, Sam Keiser, Julian Kok, Katerina Ladon, Olly Lawson, Titus Lunter, Andrew Mar, Scott Murphy, Irina Nordsol, Stephen Oakley, Robin Olausson, Livia Prima, April Prime, David Sladek, Anna Steinbauer, Shawn Wood, Zuzanna Wuzyk"
+												"Helder Almeida, Mark Behm, Eric Belisle, Zoltan Boros, Christopher Burdett, Dawn Carlos, Paul Scott Canavan, Kai Carpenter, Sidharth Chaturvedi, David René Christensen, CoupleOfKooks, Nikki Dawes, Olga Drebas, Wayne England, Caroline Gariba, Lake Hurwitz, Sam Keiser, Julian Kok, Katerina Ladon, Olly Lawson, Titus Lunter, Andrew Mar, Scott Murphy, Irina Nordsol, Stephen Oakley, Robin Olausson, Livia Prima, April Prime, David Sladek, Anna Steinbauer, Shawn Wood, Zuzanna Wužyk"
 											]
 										},
 										{

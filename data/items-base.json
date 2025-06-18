@@ -9,6 +9,10 @@
 			"name": "Antimatter Rifle",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Antimatter Rifle|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 10,
@@ -26,6 +30,33 @@
 			"firearm": true,
 			"weapon": true,
 			"ammoType": "energy cell"
+		},
+		{
+			"name": "Antimatter Rifle",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 10,
+			"valueRarity": "very rare",
+			"weaponCategory": "martial",
+			"age": "futuristic",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"Sap|XPHB"
+			],
+			"range": "120/360",
+			"reload": 2,
+			"dmg1": "6d8",
+			"dmgType": "N",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "energy cell|xdmg"
 		},
 		{
 			"name": "Arrow",
@@ -47,6 +78,8 @@
 			"name": "Arrow",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 0.05,
@@ -83,6 +116,8 @@
 			"name": "Arrows (20)",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 1,
@@ -103,6 +138,10 @@
 			"name": "Automatic Pistol",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Semiautomatic Pistol|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 3,
@@ -124,6 +163,10 @@
 			"name": "Automatic Rifle",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Automatic Rifle|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 8,
@@ -144,6 +187,34 @@
 			"ammoType": "modern bullet"
 		},
 		{
+			"name": "Automatic Rifle",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 8,
+			"valueRarity": "rare",
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF|XDMG",
+				"BF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"Slow|XPHB"
+			],
+			"range": "80/240",
+			"reload": 30,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "firearm bullet|xphb"
+		},
+		{
 			"name": "Bagpipes",
 			"source": "PHB",
 			"page": 154,
@@ -162,7 +233,9 @@
 			"name": "Bagpipes",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 6,
@@ -218,8 +291,10 @@
 			"name": "Battleaxe",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 4,
 			"value": 1000,
@@ -276,8 +351,10 @@
 			"name": "Blowgun",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 1,
 			"value": 1000,
@@ -338,6 +415,8 @@
 			"name": "Bolt",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 0.075,
@@ -352,6 +431,8 @@
 			"name": "Bolts (20)",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 1.5,
@@ -392,8 +473,10 @@
 			"name": "Breastplate",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "MA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "MA|XPHB",
 			"rarity": "none",
 			"weight": 20,
 			"value": 40000,
@@ -427,8 +510,10 @@
 			"name": "Chain Mail",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "HA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "HA|XPHB",
 			"rarity": "none",
 			"weight": 55,
 			"value": 7500,
@@ -462,8 +547,10 @@
 			"name": "Chain Shirt",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "MA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "MA|XPHB",
 			"rarity": "none",
 			"weight": 20,
 			"value": 5000,
@@ -498,8 +585,10 @@
 			"name": "Club",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 10,
@@ -556,6 +645,9 @@
 		},
 		{
 			"name": "Crystal",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "PHB",
 			"page": 151,
 			"srd": true,
@@ -572,8 +664,13 @@
 		},
 		{
 			"name": "Crystal",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "XPHB",
 			"page": 224,
+			"srd52": true,
+			"edition": "one",
 			"type": "SCF|XPHB",
 			"scfType": "arcane",
 			"rarity": "none",
@@ -610,8 +707,10 @@
 			"name": "Dagger",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 1,
 			"value": 200,
@@ -659,8 +758,10 @@
 			"name": "Dart",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 0.25,
 			"value": 5,
@@ -700,7 +801,7 @@
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@dice 1d4} slashing damage on a hit, instead of {@dice 2d4}."
+						"If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@damage 1d4} slashing damage on a hit, instead of {@damage 2d4}."
 					]
 				}
 			],
@@ -725,7 +826,9 @@
 			"name": "Drum",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 3,
@@ -772,7 +875,9 @@
 			"name": "Dulcimer",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 10,
@@ -804,10 +909,29 @@
 			"name": "Energy Cell",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Energy Cell|XDMG"
+			],
+			"edition": "classic",
 			"type": "AF|DMG",
 			"rarity": "none",
 			"weight": 0.3125,
 			"age": "futuristic",
+			"cellEnergy": true,
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"name": "Energy Cell",
+			"source": "XDMG",
+			"page": 72,
+			"edition": "one",
+			"type": "AF|XDMG",
+			"rarity": "none",
+			"weight": 0.5,
+			"age": "futuristic",
+			"cellEnergy": true,
 			"miscTags": [
 				"CNS"
 			]
@@ -816,6 +940,7 @@
 			"name": "Firearm Bullet",
 			"source": "XPHB",
 			"page": 222,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 0.2,
@@ -833,6 +958,7 @@
 			"name": "Firearm Bullets (10)",
 			"source": "XPHB",
 			"page": 222,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 2,
@@ -875,8 +1001,10 @@
 			"name": "Flail",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 1000,
@@ -908,7 +1036,9 @@
 			"name": "Flute",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 1,
@@ -965,8 +1095,10 @@
 			"name": "Glaive",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 6,
 			"value": 2000,
@@ -1023,8 +1155,10 @@
 			"name": "Greataxe",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 7,
 			"value": 3000,
@@ -1069,8 +1203,10 @@
 			"name": "Greatclub",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 10,
 			"value": 20,
@@ -1115,8 +1251,10 @@
 			"name": "Greatsword",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 6,
 			"value": 5000,
@@ -1163,8 +1301,10 @@
 			"name": "Halberd",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 6,
 			"value": 2000,
@@ -1208,8 +1348,10 @@
 			"name": "Half Plate Armor",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "MA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "MA|XPHB",
 			"rarity": "none",
 			"weight": 40,
 			"value": 75000,
@@ -1249,8 +1391,10 @@
 			"name": "Hand Crossbow",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 3,
 			"value": 7500,
@@ -1310,8 +1454,10 @@
 			"name": "Handaxe",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 500,
@@ -1362,8 +1508,10 @@
 			"name": "Heavy Crossbow",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 18,
 			"value": 5000,
@@ -1409,8 +1557,10 @@
 			"name": "Hide Armor",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "MA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "MA|XPHB",
 			"rarity": "none",
 			"weight": 12,
 			"value": 1000,
@@ -1487,7 +1637,9 @@
 			"name": "Horn",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 2,
@@ -1519,6 +1671,10 @@
 			"name": "Hunting Rifle",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Hunting Rifle|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 8,
@@ -1536,6 +1692,33 @@
 			"firearm": true,
 			"weapon": true,
 			"ammoType": "modern bullet"
+		},
+		{
+			"name": "Hunting Rifle",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 8,
+			"valueRarity": "rare",
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"Slow|XPHB"
+			],
+			"range": "80/240",
+			"reload": 5,
+			"dmg1": "2d10",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "firearm bullet|xphb"
 		},
 		{
 			"name": "Javelin",
@@ -1565,8 +1748,10 @@
 			"name": "Javelin",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 50,
@@ -1621,8 +1806,10 @@
 			"name": "Lance",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 6,
 			"value": 1000,
@@ -1630,7 +1817,10 @@
 			"property": [
 				"H|XPHB",
 				"R|XPHB",
-				"2H|XPHB"
+				{
+					"uid": "2H|XPHB",
+					"note": "unless mounted"
+				}
 			],
 			"mastery": [
 				"Topple|XPHB"
@@ -1648,6 +1838,10 @@
 			"name": "Laser Pistol",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Laser Pistol|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 2,
@@ -1666,9 +1860,39 @@
 			"ammoType": "energy cell"
 		},
 		{
+			"name": "Laser Pistol",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 2,
+			"valueRarity": "very rare",
+			"weaponCategory": "martial",
+			"age": "futuristic",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG"
+			],
+			"mastery": [
+				"Vex|XPHB"
+			],
+			"range": "40/120",
+			"reload": 50,
+			"dmg1": "3d6",
+			"dmgType": "R",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "energy cell|xdmg"
+		},
+		{
 			"name": "Laser Rifle",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Laser Rifle|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 7,
@@ -1686,6 +1910,33 @@
 			"firearm": true,
 			"weapon": true,
 			"ammoType": "energy cell"
+		},
+		{
+			"name": "Laser Rifle",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 7,
+			"valueRarity": "very rare",
+			"weaponCategory": "martial",
+			"age": "futuristic",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"Slow|XPHB"
+			],
+			"range": "100/300",
+			"reload": 30,
+			"dmg1": "3d8",
+			"dmgType": "R",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "energy cell|xdmg"
 		},
 		{
 			"name": "Leather Armor",
@@ -1711,8 +1962,10 @@
 			"name": "Leather Armor",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "LA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "LA|XPHB",
 			"rarity": "none",
 			"weight": 10,
 			"value": 1000,
@@ -1751,8 +2004,10 @@
 			"name": "Light Crossbow",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 5,
 			"value": 2500,
@@ -1802,8 +2057,10 @@
 			"name": "Light Hammer",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 200,
@@ -1875,8 +2132,10 @@
 			"name": "Longbow",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 5000,
@@ -1935,8 +2194,10 @@
 			"name": "Longsword",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 3,
 			"value": 1500,
@@ -1973,7 +2234,9 @@
 			"name": "Lute",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 2,
@@ -2020,7 +2283,9 @@
 			"name": "Lyre",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 2,
@@ -2072,8 +2337,10 @@
 			"name": "Mace",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 4,
 			"value": 500,
@@ -2115,8 +2382,10 @@
 			"name": "Maul",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 10,
 			"value": 1000,
@@ -2138,10 +2407,12 @@
 			"name": "Modern Bullet",
 			"source": "DMG",
 			"page": 268,
+			"edition": "classic",
 			"type": "AF|DMG",
 			"rarity": "none",
 			"weight": 0.1,
 			"age": "modern",
+			"bulletFirearm": true,
 			"miscTags": [
 				"CNS"
 			]
@@ -2150,10 +2421,12 @@
 			"name": "Modern Bullets (10)",
 			"source": "DMG",
 			"page": 268,
+			"edition": "classic",
 			"type": "AF|DMG",
 			"rarity": "none",
 			"weight": 1,
 			"age": "modern",
+			"bulletFirearm": true,
 			"packContents": [
 				{
 					"item": "modern bullet",
@@ -2188,8 +2461,10 @@
 			"name": "Morningstar",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 4,
 			"value": 1500,
@@ -2233,8 +2508,10 @@
 			"name": "Musket",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 10,
 			"value": 50000,
@@ -2259,6 +2536,8 @@
 			"name": "Needle",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 0.02,
@@ -2273,6 +2552,8 @@
 			"name": "Needles (50)",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 1,
@@ -2319,13 +2600,16 @@
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"A Large or smaller creature hit by a net is {@condition restrained} until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+						"A Large or smaller creature hit by a net is {@condition restrained} until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a {@dc 10} Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
 					]
 				}
 			]
 		},
 		{
 			"name": "Orb",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "PHB",
 			"page": 151,
 			"srd": true,
@@ -2342,8 +2626,13 @@
 		},
 		{
 			"name": "Orb",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "XPHB",
 			"page": 224,
+			"srd52": true,
+			"edition": "one",
 			"type": "SCF|XPHB",
 			"scfType": "arcane",
 			"rarity": "none",
@@ -2375,8 +2664,10 @@
 			"name": "Padded Armor",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "LA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "LA|XPHB",
 			"rarity": "none",
 			"weight": 8,
 			"value": 500,
@@ -2404,7 +2695,9 @@
 			"name": "Pan Flute",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 2,
@@ -2460,8 +2753,10 @@
 			"name": "Pike",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 18,
 			"value": 500,
@@ -2508,8 +2803,10 @@
 			"name": "Pistol",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 3,
 			"value": 25000,
@@ -2555,8 +2852,10 @@
 			"name": "Plate Armor",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "HA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "HA|XPHB",
 			"rarity": "none",
 			"weight": 65,
 			"value": 150000,
@@ -2593,8 +2892,10 @@
 			"name": "Quarterstaff",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 4,
 			"value": 20,
@@ -2639,8 +2940,10 @@
 			"name": "Rapier",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 2500,
@@ -2665,11 +2968,13 @@
 			"reprintedAs": [
 				"Firearm Bullet|XPHB"
 			],
+			"edition": "classic",
 			"type": "AF|DMG",
 			"rarity": "none",
 			"weight": 0.2,
 			"value": 30,
 			"age": "renaissance",
+			"bulletFirearm": true,
 			"miscTags": [
 				"CNS"
 			]
@@ -2681,11 +2986,13 @@
 			"reprintedAs": [
 				"Firearm Bullets (10)|XPHB"
 			],
+			"edition": "classic",
 			"type": "AF|DMG",
 			"rarity": "none",
 			"weight": 2,
 			"value": 300,
 			"age": "renaissance",
+			"bulletFirearm": true,
 			"packContents": [
 				{
 					"item": "renaissance bullet",
@@ -2700,6 +3007,10 @@
 			"name": "Revolver",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Revolver|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 3,
@@ -2716,6 +3027,32 @@
 			"firearm": true,
 			"weapon": true,
 			"ammoType": "modern bullet"
+		},
+		{
+			"name": "Revolver",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 3,
+			"valueRarity": "rare",
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG"
+			],
+			"mastery": [
+				"Sap|XPHB"
+			],
+			"range": "40/120",
+			"reload": 6,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "firearm bullet|xphb"
 		},
 		{
 			"name": "Ring Mail",
@@ -2742,8 +3079,10 @@
 			"name": "Ring Mail",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "HA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "HA|XPHB",
 			"rarity": "none",
 			"weight": 40,
 			"value": 3000,
@@ -2754,6 +3093,9 @@
 		},
 		{
 			"name": "Rod",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "PHB",
 			"page": 151,
 			"srd": true,
@@ -2770,8 +3112,13 @@
 		},
 		{
 			"name": "Rod",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "XPHB",
 			"page": 224,
+			"srd52": true,
+			"edition": "one",
 			"type": "SCF|XPHB",
 			"scfType": "arcane",
 			"rarity": "none",
@@ -2803,8 +3150,10 @@
 			"name": "Scale Mail",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "MA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "MA|XPHB",
 			"rarity": "none",
 			"weight": 45,
 			"value": 5000,
@@ -2841,8 +3190,10 @@
 			"name": "Scimitar",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 3,
 			"value": 2500,
@@ -2859,6 +3210,32 @@
 			"sword": true,
 			"weapon": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Semiautomatic Pistol",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 3,
+			"valueRarity": "rare",
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG"
+			],
+			"mastery": [
+				"Vex|XPHB"
+			],
+			"range": "50/150",
+			"reload": 15,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "firearm bullet|xphb"
 		},
 		{
 			"name": "Shawm",
@@ -2882,6 +3259,7 @@
 			"reprintedAs": [
 				"Shawm|XPHB"
 			],
+			"edition": "classic",
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
@@ -2892,7 +3270,9 @@
 			"name": "Shawm",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 1,
@@ -2943,8 +3323,10 @@
 			"name": "Shield",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "S",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "S|XPHB",
 			"rarity": "none",
 			"weight": 6,
 			"value": 1000,
@@ -2981,8 +3363,10 @@
 			"name": "Shortbow",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 2500,
@@ -3030,8 +3414,10 @@
 			"name": "Shortsword",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 1000,
@@ -3053,6 +3439,10 @@
 			"name": "Shotgun",
 			"source": "DMG",
 			"page": 268,
+			"reprintedAs": [
+				"Shotgun|XDMG"
+			],
+			"edition": "classic",
 			"type": "R",
 			"rarity": "none",
 			"weight": 7,
@@ -3070,6 +3460,33 @@
 			"firearm": true,
 			"weapon": true,
 			"ammoType": "modern bullet"
+		},
+		{
+			"name": "Shotgun",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"type": "R|XPHB",
+			"rarity": "none",
+			"weight": 7,
+			"valueRarity": "rare",
+			"weaponCategory": "martial",
+			"age": "modern",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"Push|XPHB"
+			],
+			"range": "30/90",
+			"reload": 2,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "firearm bullet|xphb"
 		},
 		{
 			"name": "Sickle",
@@ -3097,8 +3514,10 @@
 			"name": "Sickle",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 100,
@@ -3141,8 +3560,10 @@
 			"name": "Sling",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "R",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "R|XPHB",
 			"rarity": "none",
 			"value": 10,
 			"weaponCategory": "simple",
@@ -3179,6 +3600,8 @@
 			"name": "Sling Bullet",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 0.075,
@@ -3215,6 +3638,8 @@
 			"name": "Sling Bullets (20)",
 			"source": "XPHB",
 			"page": 222,
+			"srd52": true,
+			"edition": "one",
 			"type": "A|XPHB",
 			"rarity": "none",
 			"weight": 1.5,
@@ -3271,8 +3696,10 @@
 			"name": "Spear",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 3,
 			"value": 100,
@@ -3333,8 +3760,10 @@
 			"name": "Splint Armor",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "HA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "HA|XPHB",
 			"rarity": "none",
 			"weight": 60,
 			"value": 20000,
@@ -3346,6 +3775,9 @@
 		},
 		{
 			"name": "Staff",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "PHB",
 			"page": 151,
 			"srd": true,
@@ -3370,8 +3802,13 @@
 		},
 		{
 			"name": "Staff",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "XPHB",
 			"page": 224,
+			"srd52": true,
+			"edition": "one",
 			"type": "SCF|XPHB",
 			"scfType": "arcane",
 			"rarity": "none",
@@ -3380,6 +3817,9 @@
 			"weaponCategory": "simple",
 			"property": [
 				"V"
+			],
+			"mastery": [
+				"Topple|XPHB"
 			],
 			"dmg1": "1d6",
 			"dmgType": "B",
@@ -3410,8 +3850,10 @@
 			"name": "Studded Leather Armor",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true,
-			"type": "LA",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "LA|XPHB",
 			"rarity": "none",
 			"weight": 13,
 			"value": 4500,
@@ -3478,8 +3920,10 @@
 			"name": "Trident",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 4,
 			"value": 500,
@@ -3517,7 +3961,9 @@
 			"name": "Viol",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
 			"type": "INS|XPHB",
 			"rarity": "none",
 			"weight": 1,
@@ -3547,6 +3993,9 @@
 		},
 		{
 			"name": "Wand",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "PHB",
 			"page": 151,
 			"srd": true,
@@ -3563,8 +4012,13 @@
 		},
 		{
 			"name": "Wand",
+			"group": [
+				"Arcane Focus"
+			],
 			"source": "XPHB",
 			"page": 224,
+			"srd52": true,
+			"edition": "one",
 			"type": "SCF|XPHB",
 			"scfType": "arcane",
 			"rarity": "none",
@@ -3594,8 +4048,10 @@
 			"name": "War Pick",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 2,
 			"value": 500,
@@ -3650,8 +4106,10 @@
 			"name": "Warhammer",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 5,
 			"value": 1500,
@@ -3696,8 +4154,10 @@
 			"name": "Whip",
 			"source": "XPHB",
 			"page": 215,
-			"freeRules2024": true,
-			"type": "M",
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"type": "M|XPHB",
 			"rarity": "none",
 			"weight": 3,
 			"value": 200,
@@ -3716,6 +4176,9 @@
 		},
 		{
 			"name": "Wooden Staff",
+			"group": [
+				"Druidic Focus"
+			],
 			"source": "PHB",
 			"page": 151,
 			"srd": true,
@@ -3739,8 +4202,13 @@
 		},
 		{
 			"name": "Wooden Staff",
+			"group": [
+				"Druidic Focus"
+			],
 			"source": "XPHB",
 			"page": 225,
+			"srd52": true,
+			"edition": "one",
 			"type": "SCF|XPHB",
 			"scfType": "druid",
 			"rarity": "none",
@@ -3749,6 +4217,9 @@
 			"weaponCategory": "simple",
 			"property": [
 				"V"
+			],
+			"mastery": [
+				"Topple|XPHB"
 			],
 			"dmg1": "1d6",
 			"dmgType": "B",
@@ -3818,7 +4289,7 @@
 			"abbreviation": "2H",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"template": "{{prop_name}}",
 			"entries": [
 				{
@@ -3853,8 +4324,8 @@
 			"abbreviation": "A",
 			"source": "XPHB",
 			"page": 213,
-			"freeRules2024": true,
-			"template": "{{prop_name}} ({{item.range}}\u00A0ft.)",
+			"basicRules2024": true,
+			"template": "{{prop_name}} (Range {{item.range}}\u00A0ft.; {{item.ammoType}})",
 			"entries": [
 				{
 					"type": "entries",
@@ -3869,6 +4340,9 @@
 			"abbreviation": "AF",
 			"source": "DMG",
 			"page": 267,
+			"reprintedAs": [
+				"AF|XDMG"
+			],
 			"template": "{{prop_name_lower}} ({{item.range}}\u00A0ft.)",
 			"entries": [
 				{
@@ -3882,16 +4356,49 @@
 			]
 		},
 		{
+			"abbreviation": "AF",
+			"source": "XDMG",
+			"page": 72,
+			"template": "{{prop_name}} ({{item.range}}\u00A0ft.; {{item.ammoType}})",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Ammunition",
+					"entries": [
+						"Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion."
+					]
+				}
+			]
+		},
+		{
 			"abbreviation": "BF",
 			"source": "DMG",
 			"page": 267,
+			"reprintedAs": [
+				"BF|XDMG"
+			],
 			"template": "{{prop_name_lower}}",
 			"entries": [
 				{
 					"type": "entries",
 					"name": "Burst Fire",
 					"entries": [
-						"A weapon that has the burst fire property can make a single-target attack, or it can spray a 10-foot-cube area within normal range with shots. Each creature in the area must succeed on a DC 15 Dexterity saving throw or take the weapon's normal damage. This action uses ten pieces of ammunition."
+						"A weapon that has the burst fire property can make a single-target attack, or it can spray a 10-foot-cube area within normal range with shots. Each creature in the area must succeed on a {@dc 15} Dexterity saving throw or take the weapon's normal damage. This action uses ten pieces of ammunition."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "BF",
+			"source": "XDMG",
+			"page": 72,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Burst Fire",
+					"entries": [
+						"As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within the weapon's normal range. Each creature in that area must succeed on a {@dc 15} Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save."
 					]
 				}
 			]
@@ -3934,7 +4441,7 @@
 			"abbreviation": "F",
 			"source": "XPHB",
 			"page": 213,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"template": "{{prop_name}}",
 			"entries": [
 				{
@@ -3968,7 +4475,7 @@
 			"abbreviation": "H",
 			"source": "XPHB",
 			"page": 213,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"template": "{{prop_name}}",
 			"entries": [
 				{
@@ -4002,7 +4509,7 @@
 			"abbreviation": "L",
 			"source": "XPHB",
 			"page": 213,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"template": "{{prop_name}}",
 			"entries": [
 				{
@@ -4036,7 +4543,7 @@
 			"abbreviation": "LD",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"template": "{{prop_name}}",
 			"entries": [
 				{
@@ -4070,7 +4577,7 @@
 			"abbreviation": "R",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"template": "{{prop_name}}",
 			"entries": [
 				{
@@ -4086,6 +4593,9 @@
 			"abbreviation": "RLD",
 			"source": "DMG",
 			"page": 267,
+			"reprintedAs": [
+				"RLD|XDMG"
+			],
 			"template": "{{prop_name_lower}} ({{item.reload}} shots)",
 			"entries": [
 				{
@@ -4093,6 +4603,21 @@
 					"name": "Reload",
 					"entries": [
 						"A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice)."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "RLD",
+			"source": "XDMG",
+			"page": 72,
+			"template": "{{prop_name}} ({{item.reload}} shots)",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Reload",
+					"entries": [
+						"You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a {@variantrule Bonus Action|XPHB}."
 					]
 				}
 			]
@@ -4126,7 +4651,7 @@
 			"abbreviation": "T",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"template": "{{prop_name}} ({{item.range}}\u00A0ft.)",
 			"entries": [
 				{
@@ -4160,8 +4685,8 @@
 			"abbreviation": "V",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
-			"template": "{{prop_name}}",
+			"basicRules2024": true,
+			"template": "{{prop_name}} ({{item.dmg2}})",
 			"entries": [
 				{
 					"type": "entries",
@@ -4200,7 +4725,19 @@
 			"name": "Treasure (Art Object)",
 			"abbreviation": "$A",
 			"source": "DMG",
-			"page": 133
+			"page": 133,
+			"reprintedAs": [
+				"$A|XDMG"
+			]
+		},
+		{
+			"name": "Treasure (Art Object)",
+			"abbreviation": "$A",
+			"source": "XDMG",
+			"page": 215,
+			"entries": [
+				"Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes\u2014art objects include all these and more."
+			]
 		},
 		{
 			"name": "Treasure (Coinage)",
@@ -4216,7 +4753,7 @@
 			"abbreviation": "$C",
 			"source": "XPHB",
 			"page": 213,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"entries": [
 				"Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of their material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.",
 				"A coin weighs about a third of an ounce, so fifty coins weigh a pound."
@@ -4226,7 +4763,19 @@
 			"name": "Treasure (Gemstone)",
 			"abbreviation": "$G",
 			"source": "DMG",
-			"page": 133
+			"page": 133,
+			"reprintedAs": [
+				"$G|XDMG"
+			]
+		},
+		{
+			"name": "Treasure (Gemstone)",
+			"abbreviation": "$G",
+			"source": "XDMG",
+			"page": 214,
+			"entries": [
+				"Gemstones are small, lightweight, and easily secured compared to their same value in coins."
+			]
 		},
 		{
 			"name": "Ammunition",
@@ -4242,13 +4791,22 @@
 			"abbreviation": "A",
 			"source": "XPHB",
 			"page": 222,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Ammunition",
 			"abbreviation": "AF",
 			"source": "DMG",
-			"page": 267
+			"page": 267,
+			"reprintedAs": [
+				"AF|XDMG"
+			]
+		},
+		{
+			"name": "Ammunition",
+			"abbreviation": "AF",
+			"source": "XDMG",
+			"page": 72
 		},
 		{
 			"name": "Vehicle (Air)",
@@ -4268,7 +4826,7 @@
 			"abbreviation": "AIR",
 			"source": "XPHB",
 			"page": 230,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"_copy": {
 				"abbreviation": "SHP",
 				"source": "XPHB"
@@ -4291,7 +4849,7 @@
 			"abbreviation": "AT",
 			"source": "XPHB",
 			"page": 220,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"entries": [
 				"Artisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.",
 				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
@@ -4301,7 +4859,16 @@
 			"name": "Explosive",
 			"abbreviation": "EXP",
 			"source": "DMG",
-			"page": 267
+			"page": 267,
+			"reprintedAs": [
+				"EXP|XDMG"
+			]
+		},
+		{
+			"name": "Explosive",
+			"abbreviation": "EXP",
+			"source": "XDMG",
+			"page": 72
 		},
 		{
 			"name": "Food and Drink",
@@ -4317,7 +4884,7 @@
 			"abbreviation": "FD",
 			"source": "XPHB",
 			"page": 231,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Adventuring Gear",
@@ -4333,7 +4900,7 @@
 			"abbreviation": "G",
 			"source": "XPHB",
 			"page": 222,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Gaming Set",
@@ -4352,7 +4919,7 @@
 			"abbreviation": "GS",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
 			]
@@ -4377,7 +4944,7 @@
 			"abbreviation": "HA",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Illegal Drug",
@@ -4405,7 +4972,7 @@
 			"abbreviation": "INS",
 			"source": "XPHB",
 			"page": 221,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
 			]
@@ -4424,7 +4991,7 @@
 			"abbreviation": "LA",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Melee Weapon",
@@ -4440,7 +5007,7 @@
 			"abbreviation": "M",
 			"source": "XPHB",
 			"page": 213,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Medium Armor",
@@ -4456,7 +5023,7 @@
 			"abbreviation": "MA",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Mount",
@@ -4472,7 +5039,7 @@
 			"abbreviation": "MNT",
 			"source": "XPHB",
 			"page": 230,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Other",
@@ -4494,7 +5061,7 @@
 			"abbreviation": "P",
 			"source": "XPHB",
 			"page": 222,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Ranged Weapon",
@@ -4519,7 +5086,7 @@
 			"abbreviation": "R",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"entries": [
 				{
 					"type": "entries",
@@ -4556,7 +5123,7 @@
 			"abbreviation": "S",
 			"source": "XPHB",
 			"page": 219,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Scroll",
@@ -4572,7 +5139,7 @@
 			"abbreviation": "SC",
 			"source": "XPHB",
 			"page": 222,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Spellcasting Focus",
@@ -4588,7 +5155,7 @@
 			"abbreviation": "SCF",
 			"source": "XPHB",
 			"page": 222,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Vehicle (Water)",
@@ -4644,7 +5211,7 @@
 			"abbreviation": "SHP",
 			"source": "XPHB",
 			"page": 230,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"entries": [
 				{
 					"type": "entries",
@@ -4703,7 +5270,7 @@
 			"abbreviation": "T",
 			"source": "XPHB",
 			"page": 220,
-			"freeRules2024": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
 			]
@@ -4722,16 +5289,37 @@
 			"abbreviation": "TAH",
 			"source": "XPHB",
 			"page": 230,
-			"freeRules2024": true
+			"basicRules2024": true
+		},
+		{
+			"name": "Trade Bar",
+			"abbreviation": "TB",
+			"source": "XDMG",
+			"page": 213,
+			"entries": [
+				"Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars\u2014ingots of precious metals and alloys (usually silver). These bars are valued by weight."
+			]
 		},
 		{
 			"name": "Trade Good",
 			"abbreviation": "TG",
 			"source": "PHB",
 			"page": 146,
+			"reprintedAs": [
+				"TG|XDMG"
+			],
 			"entries": [
 				"Most wealth is not in coins. It is measured in livestock, grain, land, rights to collect taxes, or rights to resources (such as a mine or a forest).",
 				"Guilds, nobles, and royalty regulate trade. Chartered companies are granted rights to conduct trade along certain routes, to send merchant ships to various ports, or to buy or sell specific goods. Guilds set prices for the goods or services that they control, and determine who may or may not offer those goods and services. Merchants commonly exchange trade goods without using currency."
+			]
+		},
+		{
+			"name": "Trade Good",
+			"abbreviation": "TG",
+			"source": "XDMG",
+			"page": 213,
+			"entries": [
+				"Merchants commonly exchange trade goods without using currency."
 			]
 		},
 		{
@@ -4748,7 +5336,7 @@
 			"abbreviation": "VEH",
 			"source": "XPHB",
 			"page": 230,
-			"freeRules2024": true
+			"basicRules2024": true
 		},
 		{
 			"name": "Wand",
@@ -4906,12 +5494,28 @@
 			]
 		},
 		{
+			"name": "Armor of Resistance",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"You have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage while you wear this armor."
+			]
+		},
+		{
 			"name": "Chromatic Rose",
 			"source": "WBtW",
 			"entriesTemplate": [
 				"While this rose is held, it {{item.detail1}} as a harmless visual effect.",
 				"While holding the rose by its stem, you gain resistance to {{item.resist}} damage. If you would take more than 10 {{item.resist}} damage from a single source (after applying the resistance), the rose disintegrates, and you take no damage instead.",
-				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a DC 15 Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
+				"As an action, you can blow the petals from the rose to produce a 20-foot cone of {{item.resist}}. Each creature in the cone must make a {@dc 15} Constitution saving throw, taking {@damage 3d10} {{item.resist}} damage on a failed save, or half as much damage on a successful one. Using this property destroys the rose."
+			]
+		},
+		{
+			"name": "Dragon Scale Mail",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"Dragon Scale Mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them. Other times, hunters carefully preserve the hide of a dead dragon. In either case, Dragon Scale Mail is highly valued.",
+				"While wearing this armor, you gain a +1 bonus to {@variantrule Armor Class|XPHB}, you have {@variantrule Advantage|XPHB} on saving throws against the breath weapons of Dragons, and you have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage.",
+				"Additionally, you can focus your senses as a {@action Magic|XPHB} action to discern the distance and direction to the closest {{item.detail1}} dragon within 30 miles of yourself. This action can't be used again until the next dawn."
 			]
 		},
 		{
@@ -4922,10 +5526,34 @@
 			]
 		},
 		{
+			"name": "Grenade",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere}."
+			]
+		},
+		{
+			"name": "Ioun Stone",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"Roughly marble sized, {@i Ioun Stones} are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of {@i Ioun Stones} exist, each type a distinct combination of shape and color.",
+				"When you take a {@action Magic|XPHB} action to toss an {@i Ioun Stone} into the air, the stone orbits your head at a distance of {@dice 1d3} feet, conferring its benefit to you while doing so. You can have up to three {@i Ioun Stones} orbiting your head at the same time.",
+				"Each {@i Ioun Stone} orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.",
+				"As a {@action Utilize|XPHB} action, you can seize and stow any number of {@i Ioun Stones} orbiting your head. If your {@variantrule Attunement|XPHB} to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it."
+			]
+		},
+		{
 			"name": "Potion of Resistance",
 			"source": "DMG",
 			"entriesTemplate": [
 				"When you drink this potion, you gain resistance to {{item.resist}} damage for 1 hour."
+			]
+		},
+		{
+			"name": "Potion of Resistance",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"When you drink this potion, you have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage for 1 hour."
 			]
 		},
 		{
@@ -4934,6 +5562,21 @@
 			"entriesTemplate": [
 				"You have resistance to {{item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
 			]
+		},
+		{
+			"name": "Ring of Resistance",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"You have {@variantrule Resistance|XPHB} to {{getFullImmRes item.resist}} damage while wearing this ring. The ring is set with {{item.detail1}}."
+			]
+		},
+		{
+			"name": "Scroll of Protection",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"Using a {@action Magic|XPHB} action to read the scroll creates a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. For 5 minutes, {{item.detail2}} can't enter or affect anything in the area. However, if you move in such a way that an {{item.detail1}} would be inside the area, the effect ends.",
+				"As a {@action Magic|XPHB} action, a creature within 5 feet of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} can attempt to overcome it, which forces the creature to make a {@dc 15} Charisma saving throw. On a successful save, the creature ceases to be affected by the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}."
+			]
 		}
 	],
 	"itemMastery": [
@@ -4941,7 +5584,8 @@
 			"name": "Cleave",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
 			]
@@ -4950,7 +5594,8 @@
 			"name": "Graze",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
 				"If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
 			]
@@ -4959,7 +5604,8 @@
 			"name": "Nick",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
 				"When you make the extra attack of the Light property, you can make it as part of the {@action Attack|XPHB} action instead of as a {@variantrule Bonus Action|XPHB}. You can make this extra attack only once per turn."
 			]
@@ -4968,7 +5614,8 @@
 			"name": "Push",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
 			]
@@ -4977,7 +5624,8 @@
 			"name": "Sap",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you hit a creature with this weapon, that creature has {@variantrule Disadvantage|XPHB} on its next attack roll before the start of your next turn."
 			]
@@ -4986,7 +5634,8 @@
 			"name": "Slow",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you hit a creature with this weapon and deal damage to it, you can reduce its {@variantrule Speed|XPHB} by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the {@variantrule Speed|XPHB} reduction doesn't exceed 10 feet."
 			]
@@ -4995,16 +5644,18 @@
 			"name": "Topple",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
-				"If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw ({@dc 8} plus the ability modifier used to make the attack roll and your {@variantrule Proficiency|XPHB} Bonus). On a failed save, the creature has the {@condition Prone|XPHB} condition."
+				"If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw ({@dc 8} plus the ability modifier used to make the attack roll and your {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, the creature has the {@condition Prone|XPHB} condition."
 			]
 		},
 		{
 			"name": "Vex",
 			"source": "XPHB",
 			"page": 214,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"entries": [
 				"If you hit a creature with this weapon and deal damage to the creature, you have {@variantrule Advantage|XPHB} on your next attack roll against that creature before the end of your next turn."
 			]

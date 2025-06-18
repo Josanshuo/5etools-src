@@ -988,7 +988,8 @@
 				"source": "CoA"
 			},
 			"traitTags": [
-				"Legendary Resistances"
+				"Legendary Resistances",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD",
@@ -1714,7 +1715,8 @@
 			"traitTags": [
 				"Devil's Sight",
 				"Legendary Resistances",
-				"Magic Resistance"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD",
@@ -2100,6 +2102,9 @@
 				"constitution",
 				"wisdom"
 			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
+			],
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"wisdom"
@@ -2203,7 +2208,7 @@
 				{
 					"name": "Devil's Sight",
 					"entries": [
-						"Magical darkness doesn't impede Belials darkvision."
+						"Magical darkness doesn't impede Belial's darkvision."
 					]
 				},
 				{
@@ -2295,7 +2300,8 @@
 			"traitTags": [
 				"Devil's Sight",
 				"Legendary Resistances",
-				"Magic Resistance"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
@@ -2326,6 +2332,9 @@
 				"dexterity",
 				"intelligence",
 				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3496,7 +3505,8 @@
 			"traitTags": [
 				"Devil's Sight",
 				"Legendary Resistances",
-				"Magic Resistance"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
@@ -3525,6 +3535,9 @@
 				"constitution",
 				"dexterity",
 				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4291,7 +4304,8 @@
 			},
 			"traitTags": [
 				"Legendary Resistances",
-				"Magic Resistance"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
@@ -4312,6 +4326,9 @@
 			"savingThrowForced": [
 				"dexterity",
 				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4696,7 +4713,8 @@
 			],
 			"traitTags": [
 				"Legendary Resistances",
-				"Magic Resistance"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"B",
@@ -4727,6 +4745,9 @@
 				"charisma",
 				"constitution",
 				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4854,7 +4875,7 @@
 				{
 					"name": "Change Shape",
 					"entries": [
-						"The shadow transforms into a Beast, Humanoid or Fiend that it has an Empathic Link with, or back into its true form. In a new form, the shadow retains its align ment, hit points, hit dice, telepathy, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features, lair actions, or legendary actions of that form."
+						"The shadow transforms into a Beast, Humanoid or Fiend that it has an Empathic Link with, or back into its true form. In a new form, the shadow retains its alignment, hit points, hit dice, telepathy, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features, lair actions, or legendary actions of that form."
 					]
 				}
 			],
@@ -4900,6 +4921,9 @@
 			"savingThrowForced": [
 				"intelligence",
 				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5645,7 +5669,7 @@
 				{
 					"name": "Change Shape",
 					"entries": [
-						"The shadow transforms into a Beast, Humanoid or Fiend that it has an Empathic Link with, or back into its true form. In a new form, the shadow retains its align ment, hit points, hit dice, telepathy, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features, lair actions, or legendary actions of that form."
+						"The shadow transforms into a Beast, Humanoid or Fiend that it has an Empathic Link with, or back into its true form. In a new form, the shadow retains its alignment, hit points, hit dice, telepathy, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features, lair actions, or legendary actions of that form."
 					]
 				}
 			],
@@ -5903,6 +5927,9 @@
 				"charisma",
 				"dexterity",
 				"intelligence"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
 			],
 			"savingThrowForcedSpell": [
 				"constitution",
@@ -6256,7 +6283,8 @@
 			"traitTags": [
 				"Devil's Sight",
 				"Legendary Resistances",
-				"Magic Resistance"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD",
@@ -6285,6 +6313,9 @@
 			"savingThrowForced": [
 				"constitution",
 				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6507,7 +6538,8 @@
 				"Devil's Sight",
 				"Flyby",
 				"Legendary Resistances",
-				"Magic Resistance"
+				"Magic Resistance",
+				"Regeneration"
 			],
 			"senseTags": [
 				"SD"
@@ -6548,6 +6580,9 @@
 				"unconscious"
 			],
 			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedLegendary": [
 				"dexterity"
 			],
 			"savingThrowForcedSpell": [
@@ -7082,7 +7117,7 @@
 				{
 					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage or 11 ({@dice 1d10 + 6}) if wielded in two hands, plus 13 ({@damage 3d8}) radiant damage. If the target is an evil creature, it must succeed on a {@dc 17} Charisma saving throw or take an additional 13 ({@damage 3d8}) radiant damage."
+						"{@atk mw} {@hit 11} to hit, reach 5ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage or 11 ({@damage 1d10 + 6}) if wielded in two hands, plus 13 ({@damage 3d8}) radiant damage. If the target is an evil creature, it must succeed on a {@dc 17} Charisma saving throw or take an additional 13 ({@damage 3d8}) radiant damage."
 					]
 				},
 				{
@@ -7504,7 +7539,7 @@
 				{
 					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage or 11 ({@dice 1d10 + 6}) if wielded in two hands. The target must succeed on a {@dc 18} Constitution saving throw or be cursed by Bhaal, preventing it from regaining hit points. The curse lasts until removed by the {@spell Remove Curse} spell or similar effect."
+						"{@atk mw} {@hit 12} to hit, reach 5ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage or 11 ({@damage 1d10 + 6}) if wielded in two hands. The target must succeed on a {@dc 18} Constitution saving throw or be cursed by Bhaal, preventing it from regaining hit points. The curse lasts until removed by the {@spell Remove Curse} spell or similar effect."
 					]
 				},
 				{
@@ -8308,7 +8343,7 @@
 				{
 					"name": "Change Shape",
 					"entries": [
-						"The shadow transforms into a Beast, Humanoid or Fiend that it has an Empathic Link with, or back into its true form. In a new form, the shadow retains its align ment, hit points, hit dice, telepathy, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features, lair actions, or legendary actions of that form."
+						"The shadow transforms into a Beast, Humanoid or Fiend that it has an Empathic Link with, or back into its true form. In a new form, the shadow retains its alignment, hit points, hit dice, telepathy, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features, lair actions, or legendary actions of that form."
 					]
 				}
 			],
@@ -9212,6 +9247,9 @@
 			],
 			"savingThrowForced": [
 				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
 				"wisdom"
 			],
 			"savingThrowForcedSpell": [

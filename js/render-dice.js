@@ -244,15 +244,17 @@ Renderer.dice = {
 					{isDisabled: true},
 				),
 				null,
-				...options.map(it => new ContextUtil.Action(
-					`Roll ${it}`,
-					evt => {
-						shiftKey = shiftKey || evt.shiftKey;
-						ctrlKey = ctrlKey || (EventUtil.isCtrlMetaKey(evt));
-						cpyRollData.toRoll = it;
-						return cpyRollData;
-					},
-				)),
+				...options.map(rollOption => {
+					return new ContextUtil.Action(
+						`Roll ${rollOption.replace(/#\$prompt_number[^$]*\$#/g, "(𝑛)")}`,
+						evt => {
+							shiftKey = shiftKey || evt.shiftKey;
+							ctrlKey = ctrlKey || (EventUtil.isCtrlMetaKey(evt));
+							cpyRollData.toRoll = rollOption;
+							return cpyRollData;
+						},
+					);
+				}),
 			]);
 
 			chosenRollData = await ContextUtil.pOpenMenu(evt, menu);
@@ -1005,7 +1007,11 @@ Use <span class="out-roll-item-code">/macro list</span> to list saved macros.<br
 
 Renderer.dice.util = {
 	getReducedMeta (meta) {
-		return {pb: meta.pb};
+		return {
+			pb: meta.pb,
+			summonSpellLevel: meta.summonSpellLevel,
+			summonClassLevel: meta.summonClassLevel,
+		};
 	},
 };
 
@@ -2059,7 +2065,9 @@ Renderer.dice.parsed = {
 		}
 
 		_invoke_handlePart (fnName, meta, view, num, faces, isLast) {
-			const rolls = [...new Array(num)].map(() => ({val: Renderer.dice.parsed.Dice._facesToValue(faces, fnName)}));
+			const rolls = Array.from({length: num}, () => ({val: Renderer.dice.parsed.Dice._facesToValue(faces, fnName)}));
+			if (!rolls.length) rolls.push({val: 0});
+
 			let displayRolls;
 			let isSuccessMode = false;
 
@@ -2268,6 +2276,6 @@ Renderer.dice.parsed = {
 	},
 };
 
-if (!IS_VTT && typeof window !== "undefined") {
+if (!globalThis.IS_VTT && typeof window !== "undefined") {
 	window.addEventListener("load", Renderer.dice._pInit);
 }

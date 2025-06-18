@@ -5,6 +5,8 @@ import {RaceImmResVulnTag, RaceLanguageTag, RaceTraitTag} from "./converterutils
 import {EntryCoalesceEntryLists, EntryCoalesceRawLines} from "./converterutils-entrycoalesce.js";
 import {ConverterFeatureBase} from "./converter-feature.js";
 import {SITE_STYLE__CLASSIC, SITE_STYLE__ONE} from "../consts.js";
+import {PropOrder} from "../utils-proporder.js";
+import {SkillTag} from "./converterutils-tags.js";
 
 class _ConversionStateTextRace extends ConversionStateTextBase {
 
@@ -72,6 +74,8 @@ export class ConverterRace extends ConverterFeatureBase {
 		const raceOut = this._getFinalEntity(entity, options);
 
 		options.cbOutput(raceOut, options.isAppend);
+
+		return raceOut;
 	}
 
 	static _doParseText_stepName (state) {
@@ -136,6 +140,8 @@ export class ConverterRace extends ConverterFeatureBase {
 		const raceOut = this._getFinalEntity(entity, options);
 
 		options.cbOutput(raceOut, options.isAppend);
+
+		return raceOut;
 	}
 
 	static _doParseMarkdown_stepName (state) {
@@ -234,9 +240,15 @@ export class ConverterRace extends ConverterFeatureBase {
 		this._doRacePostProcess_creatureType(race, options);
 		this._doRacePostProcess_darkvision(race, options);
 
+		SkillTag.tryRunPropsStrictCapsWords(race, ["entries"], {styleHint: options.styleHint});
+
 		RaceLanguageTag.tryRun(race, options);
 		RaceImmResVulnTag.tryRun(race, options);
 		RaceTraitTag.tryRun(race, options);
+
+		delete race._hasCreatureTypeEntry;
+		delete race._hasSizeEntry;
+		delete race._hasSpeedEntry;
 		// endregion
 	}
 
@@ -259,6 +271,19 @@ export class ConverterRace extends ConverterFeatureBase {
 
 		const text = entry.entries[0];
 
+		const mOnlySize = /^(?<size>Medium|Small|Tiny)\.?$/.exec(text);
+		if (mOnlySize) {
+			race.size = [
+				mOnlySize.groups.size.toUpperCase()[0],
+			];
+
+			// Filter out "redundant" size info, as it will be displayed in subtitle
+			if (isInRoot) race.entries = race.entries.filter(it => it !== entry);
+			else race._hasSizeEntry = true;
+
+			return;
+		}
+
 		const mSimple = /\b(?:You are|Your size is) (?<size>Medium|Small|Tiny)\.?$/.exec(text)
 			|| /, (?:you are|your size is) (?<size>Medium|Small|Tiny)\.?$/.exec(text);
 		if (mSimple) {
@@ -268,7 +293,7 @@ export class ConverterRace extends ConverterFeatureBase {
 
 			// Filter out "redundant" size info, as it will be displayed in subtitle
 			if (isInRoot) race.entries = race.entries.filter(it => it !== entry);
-			else race.hasSizeEntry = true;
+			else race._hasSizeEntry = true;
 
 			return;
 		}
@@ -282,7 +307,7 @@ export class ConverterRace extends ConverterFeatureBase {
 
 			// Filter out "redundant" size info, as it will be displayed in subtitle
 			if (isInRoot) race.entries = race.entries.filter(it => it !== entry);
-			else race.hasSizeEntry = true;
+			else race._hasSizeEntry = true;
 
 			return;
 		}
@@ -305,7 +330,7 @@ export class ConverterRace extends ConverterFeatureBase {
 				mChooseTwoSpecies.groups.size1.toUpperCase()[0],
 				mChooseTwoSpecies.groups.size2.toUpperCase()[0],
 			];
-			if (!isInRoot) race.hasSizeEntry = true;
+			if (!isInRoot) race._hasSizeEntry = true;
 			return;
 		}
 
@@ -318,13 +343,13 @@ export class ConverterRace extends ConverterFeatureBase {
 
 		const text = entry.entries[0];
 
-		const mSimple = /^Your (?:base )?(?:walking )?speed is (?<speed>\d+) feet\.?$/.exec(text);
+		const mSimple = /Your (?:base )?(?:walking )?speed is (?<speed>\d+) feet\.?$/.exec(text);
 		if (mSimple) {
 			race.speed = Number(mSimple.groups.speed);
 
 			// Filter out "redundant" size info, as it will be displayed in subtitle
 			if (isInRoot) race.entries = race.entries.filter(it => it !== entry);
-			else race.hasSpeedEntry = true;
+			else race._hasSpeedEntry = true;
 
 			return;
 		}
@@ -335,7 +360,7 @@ export class ConverterRace extends ConverterFeatureBase {
 
 			// Filter out "redundant" size info, as it will be displayed in subtitle
 			if (isInRoot) race.entries = race.entries.filter(it => it !== entry);
-			else race.hasSpeedEntry = true;
+			else race._hasSpeedEntry = true;
 
 			return;
 		}
@@ -428,7 +453,7 @@ export class ConverterRace extends ConverterFeatureBase {
 				race.entries = race.entries.filter(it => it !== entry);
 			} else {
 				race.creatureTypes = [type];
-				race.hasCreatureTypeEntry = true;
+				race._hasCreatureTypeEntry = true;
 			}
 
 			return;
@@ -481,7 +506,8 @@ export class ConverterRace extends ConverterFeatureBase {
 						return true;
 					}
 
-					const mDarkvisionShort = /You have Darkvision with a range of (?<radius>\d+) feet/.exec(stStripped);
+					const mDarkvisionShort = /You have Darkvision with a range of (?<radius>\d+) feet/i.exec(stStripped)
+						|| /You have (?<radius>\d+) feet of Darkvision/i.exec(stStripped);
 					if (mDarkvisionShort) {
 						race.darkvision = Number(mDarkvisionShort.groups.radius);
 						return true;

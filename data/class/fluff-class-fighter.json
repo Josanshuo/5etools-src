@@ -60,6 +60,13 @@
 						"Although some adventuring fighters risk their lives fighting for glory or treasure, others are primarily concerned with the welfare of others. They put more value on the well-being of the society, the village, or the group than on their own safety. Even if there's gold in the offing, the true reward for most fighters comes from sending enemies to their doom.",
 						"The sections below offer ways to add a little depth and a few personal touches to your fighter character.",
 						{
+							"type": "quote",
+							"entries": [
+								"Sticks and stones may break my bones, but swords will never hurt me\u2014as long as I stay really high and shoot down at an angle."
+							],
+							"by": "Xanathar"
+						},
+						{
 							"type": "entries",
 							"name": "Heraldic Sign",
 							"entries": [
@@ -299,7 +306,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/PHB/Fighter.webp"
-					}
+					},
+					"width": 842,
+					"height": 1000
 				}
 			]
 		},
@@ -325,7 +334,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Fighter.webp"
 					},
-					"credit": "Nèstor Ossandón Leal"
+					"credit": "Nèstor Ossandón Leal",
+					"width": 1700,
+					"height": 2242
 				},
 				{
 					"type": "image",
@@ -334,7 +345,9 @@
 						"path": "classes/XPHB/064-03-040.fighter-v-black-dragon.webp"
 					},
 					"title": "A Fighter stands between an ally and the onslaught of a black dragon",
-					"credit": "Campbell White"
+					"credit": "Campbell White",
+					"width": 2184,
+					"height": 1440
 				}
 			]
 		}
@@ -352,23 +365,37 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/SCAG/Purple Dragon Knight (Banneret) Fighter.webp"
-					}
+					},
+					"width": 736,
+					"height": 1000
 				}
 			]
 		},
 		{
-			"name": "Scofflaw",
-			"shortName": "Scofflaw",
-			"source": "HWCS",
+			"name": "Arcane Archer",
+			"shortName": "Arcane Archer",
+			"source": "XGE",
 			"className": "Fighter",
 			"classSource": "PHB",
-			"images": [
+			"entries": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/HWCS/Scofflaw Fighter.webp"
-					}
+					"type": "entries",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Arrows are the worst. They go much farther than eye rays. That's why I stay indoors all the time. Besides, the sky is totally overrated."
+							],
+							"by": "Xanathar"
+						},
+						{
+							"type": "quote",
+							"entries": [
+								"So there are different names for different sorts of people who swing swords? Why? Let me try: big sword swinger and tiny sword swinger. No, that sounds like it's the size of the sword that matters. How about: big meat bag with a sword and little meat bag with a sword!"
+							],
+							"by": "Xanathar"
+						}
+					]
 				}
 			]
 		},
@@ -384,7 +411,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/EGW/Echo Knight Fighter.webp"
-					}
+					},
+					"width": 1000,
+					"height": 869
 				}
 			]
 		},
@@ -400,7 +429,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/TCE/Psi Warrior Fighter.webp"
-					}
+					},
+					"width": 823,
+					"height": 1000
 				}
 			]
 		},
@@ -416,7 +447,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/TCE/Rune Knight Fighter.webp"
-					}
+					},
+					"width": 800,
+					"height": 1693
 				}
 			]
 		},
@@ -433,7 +466,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Battle Master Fighter.webp"
 					},
-					"credit": "Ignarius Budi"
+					"credit": "Ignarius Budi",
+					"width": 850,
+					"height": 2015
 				}
 			]
 		},
@@ -450,7 +485,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Champion Fighter.webp"
 					},
-					"credit": "Katerina Ladon"
+					"credit": "Katerina Ladon",
+					"width": 850,
+					"height": 2000
 				}
 			]
 		},
@@ -467,7 +504,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Eldritch Knight Fighter.webp"
 					},
-					"credit": "Hocheol Ryu"
+					"credit": "Hocheol Ryu",
+					"width": 850,
+					"height": 999
 				}
 			]
 		},
@@ -484,7 +523,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Psi Warrior Fighter.webp"
 					},
-					"credit": "Javier Charro"
+					"credit": "Javier Charro",
+					"width": 850,
+					"height": 2204
 				}
 			]
 		}

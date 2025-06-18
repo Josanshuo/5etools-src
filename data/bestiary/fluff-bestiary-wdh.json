@@ -153,7 +153,7 @@
 								{
 									"type": "entries",
 									"entries": [
-										"Bepis Honeymaker is a honey merchant who was kidnapped from his Trades Ward home a month ago. The Xanathar Guild tried to ransom him back, but seemingly his relatives either couldn't pay or decided not to. (In truth, his rotten in-laws destroyed the ransom notes and told Bepis's wife and children that he ran away with another family.) Ahmaergo has put him to work as a cook but threatens to give him over to the mind flayer Nihiloor every so often."
+										"Bepis Honeymaker is a honey merchant who was kidnapped from his Trades Ward home a month ago. The Xanathar Guild tried to ransom him back, but seemingly his relatives either couldn't pay or decided not to. (In truth, his rotten in-laws destroyed the ransom notes and told Bepis' wife and children that he ran away with another family.) Ahmaergo has put him to work as a cook but threatens to give him over to the mind flayer Nihiloor every so often."
 									]
 								}
 							]
@@ -192,6 +192,28 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/WDH/Black Viper.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Bonnie",
+			"source": "WDH",
+			"entries": [
+				"{@i Human barmaid}",
+				{
+					"type": "quote",
+					"entries": [
+						"Many adventurers pass though the Yawning Portal on their way to greatness. All of them try the ale."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/WDH/Bonnie.webp"
 					}
 				}
 			]
@@ -271,6 +293,13 @@
 			"name": "Durnan",
 			"source": "WDH",
 			"entries": [
+				"{@i Human proprietor}",
+				{
+					"type": "quote",
+					"entries": [
+						"I'll give you a free flagon of ale if you don't talk to me about the weather."
+					]
+				},
 				{
 					"type": "entries",
 					"entries": [
@@ -563,6 +592,13 @@
 			"name": "Jalester Silvermane",
 			"source": "WDH",
 			"entries": [
+				"{@i Human patron}",
+				{
+					"type": "quote",
+					"entries": [
+						"Want to know what's going on in our fine city? Grab a stool. Stay a while."
+					]
+				},
 				{
 					"type": "entries",
 					"entries": [
@@ -950,6 +986,28 @@
 			]
 		},
 		{
+			"name": "Mattrim \"Threestrings\" Mereg",
+			"source": "WDH",
+			"entries": [
+				"{@i Human bard}",
+				{
+					"type": "quote",
+					"entries": [
+						"Anyone can play {@i The Three Flambinis} on a lute, but try playing it with just three strings!"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/WDH/Threestrings.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Maxeene",
 			"source": "WDH",
 			"entries": [
@@ -997,6 +1055,13 @@
 			"name": "Meloon Wardragon",
 			"source": "WDH",
 			"entries": [
+				"{@i Famous human adventurer}",
+				{
+					"type": "quote",
+					"entries": [
+						"Heroes, am I right? Maybe one day you'll join Force Grey. Can I buy you an ale?"
+					]
+				},
 				{
 					"type": "entries",
 					"entries": [
@@ -1211,6 +1276,28 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/WDH/Noska Ur'gray.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Obaya Uday",
+			"source": "WDH",
+			"entries": [
+				"{@i Human cleric of Waukeen}",
+				{
+					"type": "quote",
+					"entries": [
+						"The wonders of Waterdeep are something to behold. I tell you, I've never seen so much money in my life!"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/WDH/Obaya Uday.webp"
 					}
 				}
 			]
@@ -1470,7 +1557,7 @@
 								{
 									"type": "entries",
 									"entries": [
-										" Member of the Shard Shunner gang hired by Emmek Frewn to disrupt the characters' running of the Trollskull Manor"
+										"Member of the Shard Shunner gang hired by Emmek Frewn to disrupt the characters' running of the Trollskull Manor"
 									]
 								}
 							]
@@ -1532,7 +1619,7 @@
 									"type": "entries",
 									"entries": [
 										"Soluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother, Nar'l, has infiltrated the Xanathar Guild. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities.",
-										"Soluun has a burning hatred of surface elves and halfelves, having been taught from a young age to kill them as opportunity permits. When not engaged in a Bregan D'aerthe operation, Soluun spends his nights haunting the darkened streets and alleys of Waterdeep, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but Jarlaxle, Fel'rekt, and Krebbyg know what he's up to."
+										"Soluun has a burning hatred of surface elves and half-elves, having been taught from a young age to kill them as opportunity permits. When not engaged in a Bregan D'aerthe operation, Soluun spends his nights haunting the darkened streets and alleys of Waterdeep, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but Jarlaxle, Fel'rekt, and Krebbyg know what he's up to."
 									]
 								}
 							]
@@ -1727,7 +1814,7 @@
 								{
 									"type": "entries",
 									"entries": [
-										" A member of the Guild of Butchers, Thrakkus has a lucrative side business. Zhents loyal to Manshoon pay Thrakkus to chop up people they kill, and he sells the meat on the sly."
+										"A member of the Guild of Butchers, Thrakkus has a lucrative side business. Zhents loyal to Manshoon pay Thrakkus to chop up people they kill, and he sells the meat on the sly."
 									]
 								}
 							]
@@ -1945,6 +2032,13 @@
 			"name": "Yagra Stonefist",
 			"source": "WDH",
 			"entries": [
+				"{@i Half-orc mercenary}",
+				{
+					"type": "quote",
+					"entries": [
+						"Want to arm wrestle? Hope you're stronger than you look."
+					]
+				},
 				{
 					"type": "entries",
 					"entries": [

@@ -20,8 +20,6 @@ class PageFilterClassesRaw extends PageFilterClassesBase {
 		this._sourceFilter.addItem(cls.source);
 		this._miscFilter.addItem(cls._fMisc);
 
-		if (cls.fluff) cls.fluff.forEach(it => this._addEntrySourcesToFilter(it));
-
 		cls.subclasses.forEach(sc => {
 			const isScExcluded = subclassExclusions[sc.source]?.[sc.name] || false;
 			if (isScExcluded) return;
@@ -427,7 +425,22 @@ class ModalFilterClasses extends ModalFilterBase {
 				if (!sc.className) continue; // Subclass class name is required
 				sc.classSource = sc.classSource || Parser.SRC_PHB;
 
-				let cls = data.class.find(it => (it.name || "").toLowerCase() === sc.className.toLowerCase() && (it.source || Parser.SRC_PHB).toLowerCase() === sc.classSource.toLowerCase());
+				const entFaux = {
+					name: sc.className.toLowerCase(),
+					source: sc.classSource.toLowerCase(),
+				};
+
+				// Avoid finding/creating parent class if it would be excluded
+				if (
+					ExcludeUtil.isExcluded(
+						UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](entFaux),
+						"class",
+						SourceUtil.getEntitySource(entFaux),
+						{isNoCount: true},
+					)
+				) continue;
+
+				let cls = data.class.find(it => (it.name || "").toLowerCase() === entFaux.name && (it.source || Parser.SRC_PHB).toLowerCase() === entFaux.source);
 
 				if (!cls) {
 					cls = await this._pGetParentClass(sc);
@@ -445,8 +458,6 @@ class ModalFilterClasses extends ModalFilterBase {
 
 				(cls.subclasses = cls.subclasses || []).push(sc);
 			}
-
-			delete data.subclass;
 		}
 
 		// Clean and initialise fields; sort arrays
@@ -468,7 +479,7 @@ class ModalFilterClasses extends ModalFilterBase {
 				.map(it => it.choose ? (it.choose.count || 1) : 0)
 				.reduce((a, b) => a + b, 0);
 
-			cls._cntStartingSkillChoicesMutliclass = (MiscUtil.get(cls, "multiclassing", "proficienciesGained", "skills") || [])
+			cls._cntStartingSkillChoicesMulticlass = (MiscUtil.get(cls, "multiclassing", "proficienciesGained", "skills") || [])
 				.map(it => it.choose ? (it.choose.count || 1) : 0)
 				.reduce((a, b) => a + b, 0);
 		});
@@ -511,6 +522,7 @@ class ModalFilterClasses extends ModalFilterBase {
 			`${cls.name} -- ${cls.source}`,
 			{
 				source: `${source} -- ${cls.name}`,
+				...ListItem.getCommonValues(cls),
 			},
 			{
 				ixClass: clsI,
@@ -535,6 +547,7 @@ class ModalFilterClasses extends ModalFilterBase {
 			`${cls.name} -- ${cls.source} -- ${sc.name} -- ${sc.source}`,
 			{
 				source: `${cls.source} -- ${cls.name} -- ${source} -- ${sc.name}`,
+				...ListItem.getCommonValues(sc),
 			},
 			{
 				ixClass: clsI,

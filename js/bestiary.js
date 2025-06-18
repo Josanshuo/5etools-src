@@ -273,7 +273,7 @@ class BestiaryPage extends ListPageMultiSource {
 	static _tableView_getEntryPropTransform ({mon, fnGet}) {
 		const fnGetSpellTraits = Renderer.monster.getSpellcastingRenderedTraits.bind(Renderer.monster, Renderer.get());
 		const allEntries = fnGet(mon, {fnGetSpellTraits});
-		return (allEntries || []).map(it => it.rendered || Renderer.get().render(it, 2)).join("");
+		return (allEntries || []).map(it => it.rendered || Renderer.get().render(it, 2)).join("\n");
 	}
 
 	constructor () {
@@ -321,7 +321,7 @@ class BestiaryPage extends ListPageMultiSource {
 					resist: {name: "Damage Resistances", transform: it => Parser.getFullImmRes(it)},
 					immune: {name: "Damage Immunities", transform: it => Parser.getFullImmRes(it)},
 					conditionImmune: {name: "Condition Immunities", transform: it => Parser.getFullCondImm(it)},
-					_senses: {name: "Senses", transform: mon => Renderer.monster.getSensesPart(mon)},
+					_senses: {name: "Senses", transform: mon => Renderer.monster.getSensesPart(mon, {isForcePassive: true})},
 					languages: {name: "Languages", transform: it => Renderer.monster.getRenderedLanguages(it)},
 					_cr: {name: "CR", transform: mon => Renderer.monster.getChallengeRatingPart(mon)},
 					_trait: {
@@ -344,8 +344,16 @@ class BestiaryPage extends ListPageMultiSource {
 						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedReactions}),
 						flex: 3,
 					},
-					legendary: {name: "Legendary Actions", transform: it => (it || []).map(x => Renderer.get().render(x, 2)).join(""), flex: 3},
-					mythic: {name: "Mythic Actions", transform: it => (it || []).map(x => Renderer.get().render(x, 2)).join(""), flex: 3},
+					_legendary: {
+						name: "Legendary Actions",
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedLegendaryActions}),
+						flex: 3,
+					},
+					_mythic: {
+						name: "Mythic Actions",
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedMythicActions}),
+						flex: 3,
+					},
 					_lairActions: {
 						name: "Lair Actions",
 						transform: mon => {
@@ -365,6 +373,7 @@ class BestiaryPage extends ListPageMultiSource {
 						flex: 3,
 					},
 					environment: {name: "Environment", transform: it => Renderer.monster.getRenderedEnvironment(it)},
+					treasure: {name: "Treasure", transform: it => Renderer.monster.getRenderedTreasure(it)},
 				},
 			},
 			propEntryData: "monster",
@@ -461,9 +470,7 @@ class BestiaryPage extends ListPageMultiSource {
 				source,
 				type,
 				cr,
-				group: mon.group ? [mon.group].flat().join(",") : "",
-				alias: (mon.alias || []).map(it => `"${it}"`).join(","),
-				page: mon.page,
+				...ListItem.getCommonValues(mon),
 			},
 			{
 				isExcluded,
@@ -510,7 +517,7 @@ class BestiaryPage extends ListPageMultiSource {
 			}
 		} else if (scaledClassSummonHash) {
 			const scaleTo = Number(UrlUtil.unpackSubHash(scaledClassSummonHash)[VeCt.HASH_SCALED_CLASS_SUMMON][0]);
-			if (mon.summonedByClass != null && scaleTo > 0 && scaleTo !== this._lastRender.entity._summonedByClass_level) {
+			if ((mon.summonedByClass != null || mon.summonedScaleByPlayerLevel) && scaleTo > 0 && scaleTo !== this._lastRender.entity._summonedByClass_level) {
 				ScaleClassSummonedCreature.scale(mon, scaleTo)
 					.then(monScaled => this._renderStatblock(monScaled, {isScaledClassSummon: true}));
 			}
@@ -807,7 +814,7 @@ class BestiaryPage extends ListPageMultiSource {
 			Renderer.get().addPlugin("string_@dc", pluginDc);
 			Renderer.get().addPlugin("dice", pluginDice);
 
-			this._$pgContent.empty().append(RenderBestiary.$getRenderedCreature(mon, {$btnScaleCr, $btnResetScaleCr, selSummonSpellLevel, selSummonClassLevel}));
+			this._$pgContent.empty().append(RenderBestiary.$getRenderedCreature(mon, {$btnScaleCr, $btnResetScaleCr, selSummonSpellLevel, selSummonClassLevel, classLevelScalerClass: mon.summonedByClass}));
 		} finally {
 			Renderer.get().removePlugin("dice", pluginDice);
 			Renderer.get().removePlugin("string_@dc", pluginDc);

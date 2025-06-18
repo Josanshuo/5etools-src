@@ -1,6 +1,7 @@
 import {BuilderUi, PageUiUtil} from "./makebrew-builderui.js";
 import {VetoolsConfig} from "../utils-config/utils-config-config.js";
 import {SITE_STYLE__CLASSIC, SITE_STYLE_DISPLAY} from "../consts.js";
+import {PropOrder} from "../utils-proporder.js";
 
 class SidemenuRenderCache {
 	constructor ({$lastStageSaved, $lastWrpBtnLoadExisting}) {
@@ -50,11 +51,14 @@ export class BuilderBase extends ProxyBase {
 		this._$sideMenuStageSaved = null;
 		this._$sideMenuWrpList = null;
 		this._$eles = {}; // Generic internal element storage
+		this._compsSource = {};
 	}
 
 	_doResetProxies () {
 		this._resetHooks("state");
 		this._resetHooks("meta");
+		this._$eles = {};
+		this._compsSource = {};
 	}
 
 	doCreateProxies () {
@@ -521,7 +525,7 @@ export class BuilderBase extends ProxyBase {
 		};
 
 		const $wrpRowsOuter = $(`<div class="relative"></div>`);
-		const $wrpRows = $(`<div class="ve-flex-col"></div>`).appendTo($wrpRowsOuter);
+		const $wrpRows = $(`<div class="ve-flex-col mb-1 mt-n1"></div>`).appendTo($wrpRowsOuter);
 
 		const rowOptions = {$wrpRowsOuter};
 
@@ -596,7 +600,7 @@ export class BuilderBase extends ProxyBase {
 			$wrpRowsOuter: options.$wrpRowsOuter,
 		});
 
-		out.$ele = $$`<div class="ve-flex-v-center mb-2 mkbru__wrp-rows--removable">${$iptUrl}${$btnPreview}${$btnRemove}${$dragOrder}</div>`;
+		out.$ele = $$`<div class="ve-flex-v-center py-1 mkbru__wrp-rows--removable">${$iptUrl}${$btnPreview}${$btnRemove}${$dragOrder}</div>`;
 		out.getState = getState;
 		imageRows.push(out);
 

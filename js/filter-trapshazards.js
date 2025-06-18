@@ -22,6 +22,8 @@ class PageFilterTrapsHazards extends PageFilterBase {
 				"ENV",
 				"WLD",
 				"GEN",
+				"TRP",
+				"HAUNT",
 			],
 			displayFn: Parser.trapHazTypeToFull,
 			itemSortFn: PageFilterTrapsHazards.sortFilterType.bind(PageFilterTrapsHazards),

@@ -1,5 +1,6 @@
 import {BrewUtilShared} from "./utils-brew-helpers.js";
 import {BrewDoc} from "./utils-brew-models.js";
+import {SITE_STYLE__CLASSIC, SITE_STYLE__ONE} from "../consts.js";
 
 export class BrewUtil2Base {
 	_STORAGE_KEY_LEGACY;
@@ -26,6 +27,7 @@ export class BrewUtil2Base {
 	DEFAULT_AUTHOR;
 	STYLE_BTN;
 	IS_PREFER_DATE_ADDED;
+	IS_ADD_BTN_ALL_PARTNERED;
 
 	_LOCK = new VeLock({name: this.constructor.name});
 
@@ -68,8 +70,72 @@ export class BrewUtil2Base {
 		return this._pActiveInit;
 	}
 
-	/** @abstract */
-	_pInit_doBindDragDrop () { throw new Error("Unimplemented!"); }
+	static _isPrereleaseDroppedJson (json) {
+		return json._meta?.sources?.every(src => SourceUtil.isPrereleaseSource(src?.json || ""));
+	}
+
+	static _IS_INIT_SHARED_DRAG_DROP = false;
+
+	static _initSharedDragDrop () {
+		if (this._IS_INIT_SHARED_DRAG_DROP) return;
+
+		document.body.addEventListener("drop", async evt => {
+			if (EventUtil.isInInput(evt)) return;
+
+			evt.stopPropagation();
+			evt.preventDefault();
+
+			const files = evt.dataTransfer?.files;
+			if (!files?.length) return;
+
+			const pFiles = [...files].map((file, i) => {
+				if (!/\.json$/i.test(file.name)) return null;
+
+				return new Promise(resolve => {
+					const reader = new FileReader();
+					reader.onload = () => {
+						let json;
+						try {
+							json = JSON.parse(reader.result);
+						} catch (ignored) {
+							return resolve(null);
+						}
+
+						resolve({name: file.name, json});
+					};
+
+					reader.readAsText(files[i]);
+				});
+			});
+
+			const fileMetas = (await Promise.allSettled(pFiles))
+				.filter(({status}) => status === "fulfilled")
+				.map(({value}) => value)
+				.filter(Boolean);
+
+			const [prereleaseFileMetas, brewFileMetas] = fileMetas.segregate(fileMeta => this._isPrereleaseDroppedJson(fileMeta.json));
+
+			if (prereleaseFileMetas.length) await PrereleaseUtil.pAddBrewsFromFiles(prereleaseFileMetas);
+			if (brewFileMetas.length) await BrewUtil2.pAddBrewsFromFiles(brewFileMetas);
+
+			[PrereleaseUtil, BrewUtil2]
+				.find(it => it.isReloadRequired())
+				?.doLocationReload();
+		});
+
+		document.body.addEventListener("dragover", evt => {
+			if (EventUtil.isInInput(evt)) return;
+
+			evt.stopPropagation();
+			evt.preventDefault();
+		});
+
+		this._IS_INIT_SHARED_DRAG_DROP = true;
+	}
+
+	_pInit_doBindDragDrop () {
+		this.constructor._initSharedDragDrop();
+	}
 
 	async _pInit_pDoLoadFonts () {
 		const fontFaces = Object.entries(
@@ -140,6 +206,7 @@ export class BrewUtil2Base {
 
 		try {
 			const lockToken = await this._LOCK.pLock();
+			if (this._cache_brewsProc) return this._cache_brewsProc;
 			await this._pGetBrewProcessed_({lockToken});
 		} catch (e) {
 			setTimeout(() => { throw e; });
@@ -210,6 +277,7 @@ export class BrewUtil2Base {
 
 		try {
 			lockToken = await this._LOCK.pLock({token: lockToken});
+			if (this._cache_brews) return this._cache_brews;
 
 			const out = [
 				...(await this._pGetBrewRaw({lockToken})),
@@ -235,10 +303,11 @@ export class BrewUtil2Base {
 
 	async _pGetBrew_pGetLocalBrew ({lockToken} = {}) {
 		if (this._cache_brewsLocal) return this._cache_brewsLocal;
-		if (IS_VTT || IS_DEPLOYED || typeof window === "undefined") return this._cache_brewsLocal = [];
+		if (globalThis.IS_VTT || IS_DEPLOYED || typeof window === "undefined") return this._cache_brewsLocal = [];
 
 		try {
 			await this._LOCK.pLock({token: lockToken});
+			if (this._cache_brewsLocal) return this._cache_brewsLocal;
 			return (await this._pGetBrew_pGetLocalBrew_());
 		} finally {
 			this._LOCK.unlock();
@@ -394,7 +463,8 @@ export class BrewUtil2Base {
 			if (id == null) return true;
 			return !idsToAdd.has(id);
 		});
-		return [...brews, ...brewsToAdd];
+		return [...brews, ...brewsToAdd]
+			.sort((a, b) => SortUtil.ascSortLower(a.head?.filename || "", b.head?.filename || ""));
 	}
 
 	/* -------------------------------------------- */
@@ -570,6 +640,7 @@ export class BrewUtil2Base {
 				out._brewInternalSources = metaIndex[out.name]?.n || [];
 				out._brewStatus = metaIndex[out.name]?.s || "ready";
 				out._brewIsPartnered = !!metaIndex[out.name]?.p;
+				out._brewEdition = metaIndex[out.name]?.e === 0 ? SITE_STYLE__CLASSIC : SITE_STYLE__ONE;
 				out._brewPropDisplayName = this.getPropDisplayName(out.dirProp);
 
 				return out;
@@ -831,10 +902,19 @@ export class BrewUtil2Base {
 		setTimeout(() => $ele.html(cached).addClass("rd__wrp-loadbrew--ready").title(cachedTitle), 500);
 	}
 
+	_isMatchingCombinedIndexInfo (info) {
+		return info._brewIsPartnered;
+	}
+
+	async pGetCntBrewsPartnered () {
+		const combinedIndexes = await this.pGetCombinedIndexes();
+		return combinedIndexes.filter(it => this._isMatchingCombinedIndexInfo(it)).length;
+	}
+
 	async pAddBrewsPartnered ({isSilent = false} = {}) {
 		const combinedIndexes = await this.pGetCombinedIndexes();
 
-		const brewInfos = combinedIndexes.filter(it => it._brewIsPartnered);
+		const brewInfos = combinedIndexes.filter(it => this._isMatchingCombinedIndexInfo(it));
 		if (!brewInfos.length) {
 			if (!isSilent) JqueryUtil.doToast({type: "warning", content: `Did not find any partnered ${this.DISPLAY_NAME} to load!`});
 			return [];
@@ -993,6 +1073,7 @@ export class BrewUtil2Base {
 		[UrlUtil.PG_RECIPES]: ["recipe"],
 		[UrlUtil.PG_CLASS_SUBCLASS_FEATURES]: ["classFeature", "subclassFeature"],
 		[UrlUtil.PG_DECKS]: ["card", "deck"],
+		[UrlUtil.PG_BASTIONS]: ["facility", "facilityFluff"],
 	};
 
 	getPageProps ({page, isStrict = false, fallback = null} = {}) {
@@ -1015,7 +1096,7 @@ export class BrewUtil2Base {
 	}
 
 	_getBrewPage (page) {
-		return page || (IS_VTT ? this.PAGE_MANAGE : UrlUtil.getCurrentPage());
+		return page || (globalThis.IS_VTT ? this.PAGE_MANAGE : UrlUtil.getCurrentPage());
 	}
 
 	getDirProp (dir) {
@@ -1243,7 +1324,7 @@ export class BrewUtil2Base {
 		const brews = await this._pGetBrewRaw();
 		const brewsExportable = brews
 			.filter(brew => !brew.head.isEditable && !brew.head.isLocal);
-		return brewsExportable.flatMap(brew => (brew.body._meta?.source || []).map(src => src.json)).unique();
+		return brewsExportable.flatMap(brew => (brew.body._meta?.sources || []).map(src => src.json)).unique();
 	}
 	// endregion
 }

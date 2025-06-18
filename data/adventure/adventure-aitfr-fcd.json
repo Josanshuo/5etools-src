@@ -51,7 +51,7 @@
 							"name": "The Moment to Strike",
 							"page": 2,
 							"entries": [
-								"Adventurers already entwined in this adventure series might have ample reason to confront Tyreus by now. They can locate him either by searching the High Moors or by following leads in Secomber, as described in \"The Lure of Power.\" Depending on what allies the adventurers have made in previous adventures, any number of NPCs could seek out the characters to let them know about a mysterious new castle on the shore of Highstar Lake and the bluecoated wizard some call the Cobalt Mage.",
+								"Adventurers already entwined in this adventure series might have ample reason to confront Tyreus by now. They can locate him either by searching the High Moors or by following leads in Secomber, as described in \"The Lure of Power.\" Depending on what allies the adventurers have made in previous adventures, any number of NPCs could seek out the characters to let them know about a mysterious new castle on the shore of Highstar Lake and the blue-coated wizard some call the Cobalt Mage.",
 								"Otherwise, while passing through Secomber, the adventurers could encounter mercenaries headed for Highstar Lake. The mercenaries post bills looking for sword-arms to defend the Castle of the Cobalt Mage, whom they say can grow castles from the ground. Tyreus isn't afraid of drawing the adventurers to him\u2014he wants to face them, defeat them, and move on with his plans for the Sword Coast."
 							],
 							"id": "004"
@@ -964,7 +964,7 @@
 											"page": 8,
 											"entries": [
 												"This area is an overlook and a checkpoint, designed by Tyreus to harm intruders and alert him of approaching threats. It has no ceiling and is open to the air, allowing air elementals to reach it with ease. The floor of this area includes a wide, metal grate that can be opened to create a pit into the lake below; the switch is by the doorway on the keep's side of the room.",
-												"The third floor's eastern doorway is trapped with a glyph of warding's explosive runes and a linked glyph connected to an alarm glyph (DC 18 to detect both); the effect glyph for the alarm is in Tyreus's sanctum (area 10). The glyphs respond to any creature that does not say the password \"visionary\" before passing through the doorway. If {@creature Tyreus, Illusionist|AitFR-FCD|Tyreus} is alerted to an intruder, he prepares for combat as described in his entry in appendix A. For more about {@spell linked glyphs|AitFR-AVT}, see appendix B."
+												"The third floor's eastern doorway is trapped with a glyph of warding's explosive runes and a linked glyph connected to an alarm glyph ({@dc 18} to detect both); the effect glyph for the alarm is in Tyreus's sanctum (area 10). The glyphs respond to any creature that does not say the password \"visionary\" before passing through the doorway. If {@creature Tyreus, Illusionist|AitFR-FCD|Tyreus} is alerted to an intruder, he prepares for combat as described in his entry in appendix A. For more about {@spell linked glyphs|AitFR-AVT}, see appendix B."
 											],
 											"id": "034"
 										}
@@ -1024,7 +1024,7 @@
 											"page": 8,
 											"entries": [
 												"This area is an overlook and a checkpoint, designed by Tyreus to harm intruders and alert him of approaching threats. It has no ceiling and is open to the air, allowing air elementals to reach it with ease. The floor of this area includes a wide, metal grate that can be opened to create a pit into the lake below; the switch is by the doorway on the keep's side of the room.",
-												"The third floor's eastern doorway is trapped with a glyph of warding's explosive runes and a linked glyph connected to an alarm glyph (DC 18 to detect both); the effect glyph for the alarm is in Tyreus's sanctum (area 10). The glyphs respond to any creature that does not say the password \"visionary\" before passing through the doorway. If {@creature Tyreus, Illusionist|AitFR-FCD|Tyreus} is alerted to an intruder, he prepares for combat as described in his entry in appendix A. For more about {@spell linked glyphs|AitFR-AVT}, see appendix B."
+												"The third floor's eastern doorway is trapped with a glyph of warding's explosive runes and a linked glyph connected to an alarm glyph ({@dc 18} to detect both); the effect glyph for the alarm is in Tyreus's sanctum (area 10). The glyphs respond to any creature that does not say the password \"visionary\" before passing through the doorway. If {@creature Tyreus, Illusionist|AitFR-FCD|Tyreus} is alerted to an intruder, he prepares for combat as described in his entry in appendix A. For more about {@spell linked glyphs|AitFR-AVT}, see appendix B."
 											],
 											"id": "03a"
 										}
@@ -1056,7 +1056,7 @@
 											"name": "Traps",
 											"page": 8,
 											"entries": [
-												"Two magical glyphs are hidden in the floor in the center of this room (DC 18 to detect them both) and keyed to activate if anyone but Tyreus or the fortress's mystical servants touches the 10-foot area in the center of the room. The first is an alarm glyph from a linked glyph spell; its effect glyph is located in Tyreus's sanctum. The second glyph is a spell glyph that casts {@spell wall of force} to create a dome over intruders, theoretically trapping intruders and buying Tyreus or his minions time to arrive. The wall of force's dome covers a circle with a 10-foot radius out from the center of the room."
+												"Two magical glyphs are hidden in the floor in the center of this room ({@dc 18} to detect them both) and keyed to activate if anyone but Tyreus or the fortress's mystical servants touches the 10-foot area in the center of the room. The first is an alarm glyph from a linked glyph spell; its effect glyph is located in Tyreus's sanctum. The second glyph is a spell glyph that casts {@spell wall of force} to create a dome over intruders, theoretically trapping intruders and buying Tyreus or his minions time to arrive. The wall of force's dome covers a circle with a 10-foot radius out from the center of the room."
 											],
 											"id": "03e"
 										},
@@ -1088,7 +1088,7 @@
 									],
 									"id": "041"
 								},
-								"Tyreus keeps a tidy but plush residence, with lush tapestries, soft rugs, velvet curtains, and a large round bed, all summoned into existence as part of the fortress. The portait over the fireplace is of Tyreus himself. It depicts him as he wishes to be in ten or twenty years. Nothing of actual value is here aside from a book of arcane history he stole from another wizard's library."
+								"Tyreus keeps a tidy but plush residence, with lush tapestries, soft rugs, velvet curtains, and a large round bed, all summoned into existence as part of the fortress. The portrait over the fireplace is of Tyreus himself. It depicts him as he wishes to be in ten or twenty years. Nothing of actual value is here aside from a book of arcane history he stole from another wizard's library."
 							],
 							"id": "040"
 						},
@@ -1162,7 +1162,7 @@
 								{
 									"type": "insetReadaloud",
 									"entries": [
-										"A long dining table dominates the room, framed by a huge fireplace at one end. Above the fireplace, a taxidermy head of a blue dragon is frozen in mid-snarl; its eyes seem to be diamonds. The dark table is decorated with a cobalt-blue runner, and a sideboard gleams with golden cups on a golden tray, next to a decanter of darkred wine. The table is set with six low chairs and a single, high-backed chair at the head, near the fireplace."
+										"A long dining table dominates the room, framed by a huge fireplace at one end. Above the fireplace, a taxidermy head of a blue dragon is frozen in mid-snarl; its eyes seem to be diamonds. The dark table is decorated with a cobalt-blue runner, and a sideboard gleams with golden cups on a golden tray, next to a decanter of dark red wine. The table is set with six low chairs and a single, high-backed chair at the head, near the fireplace."
 									],
 									"id": "04b"
 								},
@@ -1182,7 +1182,7 @@
 									],
 									"id": "04d"
 								},
-								"Even Tyreus isn't sure what this room is for other than adding height to the keep and looking out at the stars of Faerûn. The circle of sigils is a place for Tyreus to cast {@spell teleport}ation circle and other spells but is not an active or permanent magical feature.",
+								"Even Tyreus isn't sure what this room is for other than adding height to the keep and looking out at the stars of Faerûn. The circle of sigils is a place for Tyreus to cast {@spell teleportation circle} and other spells but is not an active or permanent magical feature.",
 								"The throne quietly serves two purposes: first, to aggrandize Tyreus, and second, to make visitors think he has mastered the Stone of Creation and made it his own. The throne, of course, is not magical at all\u2014it is another conjured part of Tyreus's fantasy castle.",
 								"If he can, Tyreus attempts to intimidate (or even combat) intruders here.",
 								{

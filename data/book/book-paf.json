@@ -1157,7 +1157,7 @@
 							"height": 1497
 						},
 						"For anyone unsure of what a \"{@creature Flumph}\" is, they are strange, floating, jellyfish-like creatures found in the Underdark. Wise, kind, and good-natured, these peculiar creatures feed exclusively on psionic energy. That energy affects their mood, which in turn affects their coloration. A pink flumph is a happy flumph. Darker colors reflect darker emotions and may suggest that the flumphs are feeding off something dangerous, like {@creature aboleth|MM|aboleths} or {@creature mind flayer|MM|mind flayers}, which is a useful warning to explorers.",
-						"Flumphcakes are small pancakes that resemble upbeat flumphs in their flatness, roundness, and pale hue. Patrons at the theater can order postshow flumphcakes in a range of colors to match their own mood; pink flumphcakes are served with strawberries, green flumphcakes with cream cheese and chives, and black flumphcakes with caviar. No flumphs are harmed in the making of these cakes.",
+						"Flumphcakes are small pancakes that resemble upbeat flumphs in their flatness, roundness, and pale hue. Patrons at the theater can order post-show flumphcakes in a range of colors to match their own mood; pink flumphcakes are served with strawberries, green flumphcakes with cream cheese and chives, and black flumphcakes with caviar. No flumphs are harmed in the making of these cakes.",
 						{
 							"type": "statblock",
 							"tag": "recipe",
@@ -1214,7 +1214,7 @@
 							"width": 1632,
 							"height": 2121
 						},
-						"A merchant sailor named Hitoshi Jade often pays his bar tab at the Low Lantern with scrimshaw, an intricate carving on bone or ivory depicting ships at sea, mermaids, sea creatures, long-lost loves, or elegant abstract designs. The artform of scrimshaw has always been popular among sailors on long sea voyages, and Jade is an especially proficient scrimshaw artist, able to etch extraordinary intricate scenes for large amounts of coin. The Captain is an enthusiastic fan of Jade's work and has a cocktail on the menu with bone-white foam, served in an etched coupe glass in tribute to his scrimshaw. Unfortunately for Jade, he's an equally enthusiastic fan of booze, and his bar tab frequently exceeds his coin, so most of his work ends up behind the bar at the Low Lantern to cover his expenses rather than ever going on sale!",
+						"A merchant sailor named Hitoshi Jade often pays his bar tab at the Low Lantern with scrimshaw, an intricate carving on bone or ivory depicting ships at sea, mermaids, sea creatures, long-lost loves, or elegant abstract designs. The art form of scrimshaw has always been popular among sailors on long sea voyages, and Jade is an especially proficient scrimshaw artist, able to etch extraordinary intricate scenes for large amounts of coin. The Captain is an enthusiastic fan of Jade's work and has a cocktail on the menu with bone-white foam, served in an etched coupe glass in tribute to his scrimshaw. Unfortunately for Jade, he's an equally enthusiastic fan of booze, and his bar tab frequently exceeds his coin, so most of his work ends up behind the bar at the Low Lantern to cover his expenses rather than ever going on sale!",
 						{
 							"type": "statblock",
 							"tag": "recipe",
@@ -1452,7 +1452,7 @@
 							"width": 1632,
 							"height": 2121
 						},
-						"Contrary to common claim, there is no beauty in the eye of a {@creature Beholder}. Those dungeon-dwelling creatures are ugly and repugnant floating abominations, with a disturbing number of needle-sharp teeth and ten grotesque eyes on serpentine stalks, all writhing around its one central dinnerplate-size eye. Beholders can kill with a single glance, so they are no laughing matter. However, few people will ever encounter a Beholder, and fewer still will live to tell the tale, so the creatures retain an almost mythic reputation in the minds of many adventurers.",
+						"Contrary to common claim, there is no beauty in the eye of a {@creature Beholder}. Those dungeon-dwelling creatures are ugly and repugnant floating abominations, with a disturbing number of needle-sharp teeth and ten grotesque eyes on serpentine stalks, all writhing around its one central dinner plate-size eye. Beholders can kill with a single glance, so they are no laughing matter. However, few people will ever encounter a Beholder, and fewer still will live to tell the tale, so the creatures retain an almost mythic reputation in the minds of many adventurers.",
 						"It is with utmost unseriousness that Beholders have been immortalized in the name and design of a tart green party punch. A few glasses of this, and everything seems beautiful in the eye of the beholder.",
 						{
 							"type": "statblock",
@@ -2214,7 +2214,7 @@
 							"height": 1497
 						},
 						"Private rooms are available at the Moonstone Mask, and guests can order food and drink to their room and request a specific server to bring it. One particularly popular order is a serving of courtesans. These sweet roasted figs are a decadent indulgence with a long list of purported benefits that have made them legendary. Figs are said to stir arousal, of course. Pistachios boost one's vigor. Goat's cheese feeds desire, and honey encourages sensuality.",
-						"Liset Cheldar makes no specific claims to the aphrodisiac property of this dish, but establishment powerbrokers certainly spend a small fortune testing the possibility.",
+						"Liset Cheldar makes no specific claims to the aphrodisiac property of this dish, but establishment power brokers certainly spend a small fortune testing the possibility.",
 						{
 							"type": "statblock",
 							"tag": "recipe",
@@ -2413,7 +2413,7 @@
 					"page": 164,
 					"entries": [
 						"The tough Northlanders of Luskan have endured many long, bitter winters; some winters have even frozen the wide Mirar River solid and trapped the fine ships that are the heart and engine of the City of Sails.",
-						"Illuksan mulled cider is sold on many street corners across the city, often simmering for hours in large iron pots over coal braziers, and the five gangs that dominate the city each have their own preferred vendors and recipes. The folks at Ship Kurth enjoy a fragrant cider with plenty of ginger and cardamom, the Ship Baram gang go heavy on the oranges, and the Ship Suljack folk add more maple syrup to their cider than most people can stand. All five Ships agree that Illuskan mulled cider can only be made from the region's own hardy orchard stock. When word spread that the Yawning Portal proprietor, {@creature Durnan|WDH}, was selling \"Illuskan mulled cider\" made with Waterdhavian apples, they sent an envoy to advise him of his mistake. The Kurth recipe is now the standard at the Yawning Portal.",
+						"Illuskan mulled cider is sold on many street corners across the city, often simmering for hours in large iron pots over coal braziers, and the five gangs that dominate the city each have their own preferred vendors and recipes. The folks at Ship Kurth enjoy a fragrant cider with plenty of ginger and cardamom, the Ship Baram gang go heavy on the oranges, and the Ship Suljack folk add more maple syrup to their cider than most people can stand. All five Ships agree that Illuskan mulled cider can only be made from the region's own hardy orchard stock. When word spread that the Yawning Portal proprietor, {@creature Durnan|WDH}, was selling \"Illuskan mulled cider\" made with Waterdhavian apples, they sent an envoy to advise him of his mistake. The Kurth recipe is now the standard at the Yawning Portal.",
 						{
 							"type": "statblock",
 							"tag": "recipe",

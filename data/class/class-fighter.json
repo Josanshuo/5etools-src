@@ -188,7 +188,8 @@
 			"name": "Fighter",
 			"source": "XPHB",
 			"page": 90,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"edition": "one",
 			"primaryAbility": [
 				{
@@ -214,6 +215,15 @@
 					],
 					"progression": {
 						"1": 1
+					}
+				},
+				{
+					"name": "Epic Boon",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
 					}
 				}
 			],
@@ -248,9 +258,7 @@
 				]
 			},
 			"startingEquipment": {
-				"entries": [
-					"{@i Choose A, B, or C:} (A) {@item Chain Mail|XPHB}, {@item Greatsword|XPHB}, {@item Flail|XPHB}, 8 {@item Javelin|XPHB|Javelins}, {@item Dungeoneer's Pack|XPHB}, and 4 GP; (B) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Dungeoneer's Pack|XPHB}, and 11 GP; or (C) 155 GP"
-				],
+				"additionalFromBackground": true,
 				"defaultData": [
 					{
 						"A": [
@@ -306,6 +314,9 @@
 							}
 						]
 					}
+				],
+				"entries": [
+					"{@i Choose A, B, or C:} (A) {@item Chain Mail|XPHB}, {@item Greatsword|XPHB}, {@item Flail|XPHB}, 8 {@item Javelin|XPHB|Javelins}, {@item Dungeoneer's Pack|XPHB}, and 4 GP; (B) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Dungeoneer's Pack|XPHB}, and 11 GP; or (C) 155 GP"
 				]
 			},
 			"multiclassing": {
@@ -389,23 +400,23 @@
 						],
 						[
 							"4",
-							"5"
+							"6"
 						],
 						[
 							"4",
-							"5"
+							"6"
 						],
 						[
 							"4",
-							"5"
+							"6"
 						],
 						[
 							"4",
-							"5"
+							"6"
 						],
 						[
 							"4",
-							"5"
+							"6"
 						]
 					]
 				}
@@ -1015,7 +1026,8 @@
 				"Ever-Ready Shot|Fighter||Arcane Archer|XGE|15",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|15",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|18"
-			]
+			],
+			"hasFluff": true
 		},
 		{
 			"name": "Arcane Archer",
@@ -1109,53 +1121,6 @@
 					"srd": true,
 					"basicRules": true,
 					"reprintedAs": true
-				}
-			}
-		},
-		{
-			"name": "Scofflaw",
-			"shortName": "Scofflaw",
-			"source": "HWCS",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"page": 41,
-			"edition": "classic",
-			"subclassFeatures": [
-				"Scofflaw|Fighter||Scofflaw|HWCS|3",
-				"Misdirection|Fighter||Scofflaw|HWCS|7",
-				"Blindside|Fighter||Scofflaw|HWCS|10",
-				"Infamy|Fighter||Scofflaw|HWCS|15",
-				"Two For Flinching|Fighter||Scofflaw|HWCS|18"
-			],
-			"hasFluffImages": true
-		},
-		{
-			"name": "Scofflaw",
-			"shortName": "Scofflaw",
-			"source": "HWCS",
-			"className": "Fighter",
-			"classSource": "XPHB",
-			"_copy": {
-				"name": "Scofflaw",
-				"source": "HWCS",
-				"shortName": "Scofflaw",
-				"className": "Fighter",
-				"classSource": "PHB",
-				"_preserve": {
-					"page": true,
-					"otherSources": true,
-					"srd": true,
-					"basicRules": true,
-					"reprintedAs": true
-				}
-			},
-			"fluff": {
-				"_subclassFluff": {
-					"name": "Scofflaw",
-					"source": "HWCS",
-					"shortName": "Scofflaw",
-					"className": "Fighter",
-					"classSource": "PHB"
 				}
 			}
 		},
@@ -1371,7 +1336,8 @@
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"edition": "one",
 			"featProgression": [
 				{
@@ -2197,6 +2163,8 @@
 			"name": "Fighting Style",
 			"source": "XPHB",
 			"page": 91,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 1,
@@ -2209,6 +2177,8 @@
 			"name": "Second Wind",
 			"source": "XPHB",
 			"page": 91,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 1,
@@ -2222,11 +2192,13 @@
 			"name": "Weapon Mastery",
 			"source": "XPHB",
 			"page": 91,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 1,
 			"entries": [
-				"Your training with weapons allows you to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of three kinds of {@filter Simple|items|type=simple weapon;melee weapon=sand} or {@filter Martial Melee weapons|items|type=martial weapon;melee weapon=sand} weapons of your choice. Whenever you finish a {@variantrule Long Rest|XPHB}, you can practice weapon drills and change one of those weapon choices.",
+				"Your training with weapons allows you to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of three kinds of {@filter Simple|items|type=simple weapon} or {@filter Martial|items|type=martial weapon} weapons of your choice. Whenever you finish a {@variantrule Long Rest|XPHB}, you can practice weapon drills and change one of those weapon choices.",
 				"When you reach certain Fighter levels, you gain the ability to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of more kinds of weapons, as shown in the {@variantrule Weapon|XPHB} Mastery column of the Fighter Features table."
 			]
 		},
@@ -2234,6 +2206,8 @@
 			"name": "Action Surge",
 			"source": "XPHB",
 			"page": 91,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 2,
@@ -2246,6 +2220,8 @@
 			"name": "Tactical Mind",
 			"source": "XPHB",
 			"page": 91,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 2,
@@ -2257,6 +2233,8 @@
 			"name": "Fighter Subclass",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 3,
@@ -2268,6 +2246,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 4,
@@ -2279,6 +2259,8 @@
 			"name": "Extra Attack",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 5,
@@ -2290,6 +2272,8 @@
 			"name": "Tactical Shift",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 5,
@@ -2301,6 +2285,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 6,
@@ -2312,6 +2298,8 @@
 			"name": "Subclass Feature",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 7,
@@ -2323,6 +2311,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 8,
@@ -2334,6 +2324,8 @@
 			"name": "Indomitable",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 9,
@@ -2346,6 +2338,8 @@
 			"name": "Tactical Master",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 9,
@@ -2357,6 +2351,8 @@
 			"name": "Subclass Feature",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 10,
@@ -2368,6 +2364,8 @@
 			"name": "Two Extra Attacks",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 11,
@@ -2379,6 +2377,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 12,
@@ -2390,6 +2390,8 @@
 			"name": "Indomitable",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 13,
@@ -2402,6 +2404,8 @@
 			"name": "Studied Attacks",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 13,
@@ -2413,6 +2417,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 14,
@@ -2424,6 +2430,8 @@
 			"name": "Subclass Feature",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 15,
@@ -2435,6 +2443,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 16,
@@ -2446,6 +2456,8 @@
 			"name": "Action Surge",
 			"source": "XPHB",
 			"page": 91,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 17,
@@ -2458,6 +2470,8 @@
 			"name": "Indomitable",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 17,
@@ -2470,6 +2484,8 @@
 			"name": "Subclass Feature",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 18,
@@ -2481,6 +2497,8 @@
 			"name": "Epic Boon",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 19,
@@ -2492,6 +2510,8 @@
 			"name": "Three Extra Attacks",
 			"source": "XPHB",
 			"page": 92,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"level": 20,
@@ -2624,137 +2644,6 @@
 				"{@i 18th-level Echo Knight feature}",
 				"You can use a bonus action to create two echoes with your Manifest Echo feature, and these echoes can coexist. If you try to create a third echo, the previous two echoes are destroyed. Anything you can do from one echo's position can be done from the other's instead.",
 				"In addition, when you roll initiative and have no uses of your Unleash Incarnation feature left, you regain one use of that feature."
-			]
-		},
-		{
-			"name": "Scofflaw",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 3,
-			"entries": [
-				"A fighter who hits hard and fights dirty, the Scofflaw balks at the ideals of honor and tradition, doing what they need to survive. Rules are made to be broken, and the Scofflaw extends this logic to their fighting style. Using every trick at their disposal to gain the upper hand against their foes, the Scofflaw cows their enemy into submission, or overwhelms their defenses with a single cheap shot.",
-				"Scofflaws eventually trust their notorious reputation to do much of the work for them, gaining the ability to cause foes to quake with a single threat. Scofflaws are a diverse bunch that run the gamut from graceful yet deadly knaves to bruiser thugs. What ties them together is their belief that there's no such thing as a bad win.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Fighter||Scofflaw|HWCS|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Intimidating Banter|Fighter||Scofflaw|HWCS|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Brutal Brawler|Fighter||Scofflaw|HWCS|3"
-				}
-			]
-		},
-		{
-			"name": "Bonus Proficiency",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 3,
-			"header": 2,
-			"entries": [
-				"When you choose this Martial Archetype at 3rd level, you gain proficiency in one of the following skills of your choice: {@skill Deception}, {@skill Insight}, {@skill Intimidation}, {@skill Sleight of Hand}, or {@skill Stealth}. Alternatively, you may learn {@class rogue|phb|Thieves' Cant||phb|Thieves' Cant 1}."
-			]
-		},
-		{
-			"name": "Brutal Brawler",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 3,
-			"header": 2,
-			"entries": [
-				"At 3rd level, your tavernside scuffles have honed your ability to deal damage with just about anything that's handy. You have proficiency with improvised weapons, and treat any improvised weapon you handle as if it has the finesse quality.",
-				"Additionally, whenever you hit with an improvised weapon, you may spend a bonus action to break it over your opponent. Doing this destroys the weapon, but deals the maximum number each of the weapon's damage dice could deal to the target. Any additional dice added to the attack's damage roll are not affected by this ability.",
-				"At 10th level, the improvised weapons you wield become even more lethal in your hands. When you spend your bonus action to break an improvised weapon over your opponent, add an additional {@damage 2d6} to the weapon's base damage dice.",
-				"At 18th level, you have advantage on attacks you make with improvised weapons."
-			]
-		},
-		{
-			"name": "Intimidating Banter",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 3,
-			"header": 2,
-			"entries": [
-				"At 3rd level, you are adept at integrating insults and barbs into your fighting style. So long as you are in combat, you may choose to use Strength or Dexterity to make Charisma ability checks."
-			]
-		},
-		{
-			"name": "Misdirection",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"At 7th level, you are adept at using words and gestures to taunt or fake-out your opponent, turning their lack of composure against them. This allows you to goad your foe into swinging in ways that can cause them to strike their allies, or which leave them open to a counterattack. As a bonus action you can misdirect an opponent within 5 feet of you. The target must succeed on an Intelligence saving throw against a DC equal to 8 + your proficiency bonus + your Strength or Dexterity modifier. On a failure, they must spend their reaction to attack a creature of your choice within 5 feet of them. If no other creatures are present within 5 feet of them, they waste their reaction attacking the air where you once were.",
-				"In order for you to misdirect a creature in this way they must be able to see, hear, or otherwise be able to understand you."
-			]
-		},
-		{
-			"name": "Blindside",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"At 10th level, you are truly skilled at exploiting the openings you create in combat, hitting off-guard opponents with precise blows that are swift and deadly. You may use this technique against any creature that hasn't yet taken a turn in combat, or who you have successfully misdirected this turn. You may also apply this technique to any attack roll you make with advantage. On a hit, you exploit an opening in the target's defenses, dealing an extra {@damage 5d6} points of damage. Once you use this ability, you can't use it again until you have taken a short or long rest.",
-				"At 15th level, the damage dealt by your blindside increases to {@damage 7d6}.",
-				"At 18th level the damage dealt by your blindside increases to {@damage 9d6}. If you have no uses of this ability at the beginning of combat on your turn, you regain one use of it."
-			]
-		},
-		{
-			"name": "Infamy",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"At 15th level, your reputation precedes you, making it easy for you to strike fear into the hearts of anyone foolish enough to oppose you. As part of your {@action Attack} action, you can utter deadly threats to a single target within 30 feet of you, causing them to become {@condition frightened} of you for 1 minute on a failed Wisdom saving throw. An affected target may repeat this saving throw at the end of each of their turns, ending the effect on a success. The DC for this saving throw is 8 + your proficiency bonus + your Strength or Dexterity modifier. A creature who has witnessed or heard tales of your ruthlessness makes this saving throw with disadvantage.",
-				"In order for you to use this feature, a creature must be able to see, hear, or otherwise be able to understand you."
-			]
-		},
-		{
-			"name": "Two For Flinching",
-			"source": "HWCS",
-			"page": 41,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Scofflaw",
-			"subclassSource": "HWCS",
-			"level": 18,
-			"header": 2,
-			"entries": [
-				"At 18th level, you have perfected the art of exploiting your opponent's weakness. Whenever you take the attack action against an opponent you have successfully misdirected this turn, or an opponent that is afflicted by a {@book condition|PHB|11}, you may make one additional attack against that opponent. You may only use this feature once per round."
 			]
 		},
 		{
@@ -3517,6 +3406,22 @@
 			]
 		},
 		{
+			"name": "Protective Field",
+			"source": "TCE",
+			"page": 42,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "TCE",
+			"level": 3,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
+			"entries": [
+				"When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
+			]
+		},
+		{
 			"name": "Psi Warrior",
 			"source": "TCE",
 			"page": 42,
@@ -3532,6 +3437,35 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "Psionic Power|Fighter||Psi Warrior|TCE|3"
 				}
+			]
+		},
+		{
+			"name": "Psionic Strike",
+			"source": "TCE",
+			"page": 42,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "TCE",
+			"level": 3,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
+			"entries": [
+				"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier."
+			]
+		},
+		{
+			"name": "Telekinetic Movement",
+			"source": "TCE",
+			"page": 42,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "TCE",
+			"level": 3,
+			"entries": [
+				"You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
 			]
 		},
 		{
@@ -3556,18 +3490,44 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Protective Field|Fighter|TCE|Psi Warrior|TCE|3"
+							"subclassFeature": "Protective Field|Fighter|PHB|Psi Warrior|TCE|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psionic Strike|Fighter|TCE|Psi Warrior|TCE|3"
+							"subclassFeature": "Psionic Strike|Fighter|PHB|Psi Warrior|TCE|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Telekinetic Movement|Fighter|TCE|Psi Warrior|TCE|3"
+							"subclassFeature": "Telekinetic Movement|Fighter|PHB|Psi Warrior|TCE|3"
 						}
 					]
 				}
+			]
+		},
+		{
+			"name": "Psi-Powered Leap",
+			"source": "TCE",
+			"page": 42,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "TCE",
+			"level": 7,
+			"entries": [
+				"As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+			]
+		},
+		{
+			"name": "Telekinetic Thrust",
+			"source": "TCE",
+			"page": 42,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "TCE",
+			"level": 7,
+			"entries": [
+				"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target {@condition prone} or move it up to 10 feet in any direction horizontally."
 			]
 		},
 		{
@@ -3589,11 +3549,11 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psi-Powered Leap|Fighter|TCE|Psi Warrior|TCE|7"
+							"subclassFeature": "Psi-Powered Leap|Fighter|PHB|Psi Warrior|TCE|7"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Telekinetic Thrust|Fighter|TCE|Psi Warrior|TCE|7"
+							"subclassFeature": "Telekinetic Thrust|Fighter|PHB|Psi Warrior|TCE|7"
 						}
 					]
 				}
@@ -4220,7 +4180,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, you can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}. You can use this feature only once on each of your turns."
+				"Starting at 15th level, you can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw ({@dc 8} + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}. You can use this feature only once on each of your turns."
 			]
 		},
 		{
@@ -4346,77 +4306,6 @@
 			]
 		},
 		{
-			"name": "Protective Field",
-			"source": "TCE",
-			"page": 42,
-			"className": "Fighter",
-			"classSource": "TCE",
-			"subclassShortName": "Psi Warrior",
-			"subclassSource": "TCE",
-			"level": 3,
-			"consumes": {
-				"name": "Psionic Energy Die"
-			},
-			"entries": [
-				"When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
-			]
-		},
-		{
-			"name": "Psionic Strike",
-			"source": "TCE",
-			"page": 42,
-			"className": "Fighter",
-			"classSource": "TCE",
-			"subclassShortName": "Psi Warrior",
-			"subclassSource": "TCE",
-			"level": 3,
-			"consumes": {
-				"name": "Psionic Energy Die"
-			},
-			"entries": [
-				"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier."
-			]
-		},
-		{
-			"name": "Telekinetic Movement",
-			"source": "TCE",
-			"page": 42,
-			"className": "Fighter",
-			"classSource": "TCE",
-			"subclassShortName": "Psi Warrior",
-			"subclassSource": "TCE",
-			"level": 3,
-			"entries": [
-				"You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
-			]
-		},
-		{
-			"name": "Psi-Powered Leap",
-			"source": "TCE",
-			"page": 42,
-			"className": "Fighter",
-			"classSource": "TCE",
-			"subclassShortName": "Psi Warrior",
-			"subclassSource": "TCE",
-			"level": 7,
-			"entries": [
-				"As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
-			]
-		},
-		{
-			"name": "Telekinetic Thrust",
-			"source": "TCE",
-			"page": 42,
-			"className": "Fighter",
-			"classSource": "TCE",
-			"subclassShortName": "Psi Warrior",
-			"subclassSource": "TCE",
-			"level": 7,
-			"entries": [
-				"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target {@condition prone} or move it up to 10 feet in any direction horizontally."
-			]
-		},
-		{
 			"name": "Battle Master",
 			"source": "XPHB",
 			"page": 93,
@@ -4474,7 +4363,7 @@
 					"type": "entries",
 					"name": "Saving Throws",
 					"entries": [
-						"If a maneuver requires a saving throw, the DC equals 8 plus your Strength or Dexterity modifier (your choice) and {@variantrule Proficiency|XPHB} Bonus."
+						"If a maneuver requires a saving throw, the DC equals 8 plus your Strength or Dexterity modifier (your choice) and {@variantrule Proficiency|XPHB|Proficiency Bonus}."
 					]
 				}
 			]
@@ -4654,7 +4543,8 @@
 			"name": "Champion",
 			"source": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"subclassShortName": "Champion",
@@ -4677,7 +4567,8 @@
 			"name": "Improved Critical",
 			"source": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"subclassShortName": "Champion",
@@ -4692,7 +4583,8 @@
 			"name": "Remarkable Athlete",
 			"source": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"subclassShortName": "Champion",
@@ -4708,7 +4600,8 @@
 			"name": "Additional Fighting Style",
 			"source": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"subclassShortName": "Champion",
@@ -4723,7 +4616,8 @@
 			"name": "Heroic Warrior",
 			"source": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"subclassShortName": "Champion",
@@ -4738,7 +4632,8 @@
 			"name": "Superior Critical",
 			"source": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"subclassShortName": "Champion",
@@ -4753,7 +4648,8 @@
 			"name": "Survivor",
 			"source": "XPHB",
 			"page": 96,
-			"freeRules2024": true,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Fighter",
 			"classSource": "XPHB",
 			"subclassShortName": "Champion",
@@ -4796,7 +4692,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Weapon Bond|Fighter|XPHB|Eldritch Knight|XPHB|3"
+					"subclassFeature": "War Bond|Fighter|XPHB|Eldritch Knight|XPHB|3"
 				}
 			]
 		},
@@ -4884,7 +4780,7 @@
 			]
 		},
 		{
-			"name": "Weapon Bond",
+			"name": "War Bond",
 			"source": "XPHB",
 			"page": 98,
 			"className": "Fighter",
@@ -4938,7 +4834,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you use your {@variantrule Action|XPHB} Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action."
+				"When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action."
 			]
 		},
 		{
@@ -4982,9 +4878,6 @@
 			"subclassShortName": "Psi Warrior",
 			"subclassSource": "XPHB",
 			"level": 3,
-			"consumes": {
-				"name": "Psionic Energy Die"
-			},
 			"entries": [
 				"You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter levels.",
 				{
@@ -5036,32 +4929,86 @@
 				"Any features in this subclass that use a Psionic Energy Die use only the dice from this subclass. Some of your powers expend the Psionic Energy Die, as specified in a power's description, and you can't use a power if it requires you to use a die when all your Psionic Energy Dice are expended.",
 				"You regain one of your expended Psionic Energy Dice when you finish a {@variantrule Short Rest|XPHB}, and you regain all of them when you finish a {@variantrule Long Rest|XPHB}.",
 				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Protective Field",
-							"entries": [
-								"When you or another creature you can see within 30 feet of you takes damage, you can take a {@variantrule Reaction|XPHB} to expend one Psionic Energy Die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Psionic Strike",
-							"entries": [
-								"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of yourself with an attack and deal damage to it with a weapon, you can expend one Psionic Energy Die, rolling it and dealing Force damage to the target equal to the number rolled plus your Intelligence modifier."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Telekinetic Movement",
-							"entries": [
-								"You can move an object or a creature with your mind. As a {@action Magic|XPHB} action, choose one target you can see within 30 feet of yourself; the target must be a loose object that is Large or smaller or one willing creature other than you. You transport the target up to 30 feet to an unoccupied space you can see. Alternatively, if the target is a Tiny object, you can transport it to or from your hand.",
-								"Once you take this action, you can't do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB} unless you expend a Psionic Energy Die (no action required) to restore your use of it."
-							]
-						}
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Protective Field|Fighter|XPHB|Psi Warrior|XPHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psionic Strike|Fighter|XPHB|Psi Warrior|XPHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Telekinetic Movement|Fighter|XPHB|Psi Warrior|XPHB|3"
 				}
+			]
+		},
+		{
+			"name": "Protective Field",
+			"source": "XPHB",
+			"page": 98,
+			"className": "Fighter",
+			"classSource": "XPHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
+			"entries": [
+				"When you or another creature you can see within 30 feet of you takes damage, you can take a {@variantrule Reaction|XPHB} to expend one Psionic Energy Die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
+			]
+		},
+		{
+			"name": "Psionic Strike",
+			"source": "XPHB",
+			"page": 98,
+			"className": "Fighter",
+			"classSource": "XPHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
+			"entries": [
+				"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of yourself with an attack and deal damage to it with a weapon, you can expend one Psionic Energy Die, rolling it and dealing Force damage to the target equal to the number rolled plus your Intelligence modifier."
+			]
+		},
+		{
+			"name": "Telekinetic Movement",
+			"source": "XPHB",
+			"page": 98,
+			"className": "Fighter",
+			"classSource": "XPHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
+			"entries": [
+				"You can move an object or a creature with your mind. As a {@action Magic|XPHB} action, choose one target you can see within 30 feet of yourself; the target must be a loose object that is Large or smaller or one willing creature other than you. You transport the target up to 30 feet to an unoccupied space you can see. Alternatively, if the target is a Tiny object, you can transport it to or from your hand.",
+				"Once you take this action, you can't do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB} unless you expend a Psionic Energy Die (no action required) to restore your use of it."
+			]
+		},
+		{
+			"name": "Psi-Powered Leap",
+			"source": "XPHB",
+			"page": 99,
+			"className": "Fighter",
+			"classSource": "XPHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "XPHB",
+			"level": 7,
+			"header": 2,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
+			"entries": [
+				"As a {@variantrule Bonus Action|XPHB}, you gain a {@variantrule Fly Speed|XPHB} equal to twice your {@variantrule Speed|XPHB} until the end of the current turn. Once you take this {@variantrule Bonus Action|XPHB}, you can't do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB} unless you expend a Psionic Energy Die (no action required) to restore your use of it."
 			]
 		},
 		{
@@ -5077,24 +5024,27 @@
 			"entries": [
 				"You have mastered new ways to use your telekinetic abilities, detailed below.",
 				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Psi-Powered Leap",
-							"entries": [
-								"As a {@variantrule Bonus Action|XPHB}, you gain a {@variantrule Fly Speed|XPHB} equal to twice your {@variantrule Speed|XPHB} until the end of the current turn. Once you take this {@variantrule Bonus Action|XPHB}, you can't do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB} unless you expend a Psionic Energy Die (no action required) to restore your use of it."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Telekinetic Thrust",
-							"entries": [
-								"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw ({@dc 8} plus your Intelligence modifier and {@variantrule Proficiency|XPHB} Bonus). On a failed save, you can give the target the {@condition Prone|XPHB} condition or transport it up to 10 feet horizontally."
-							]
-						}
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psi-Powered Leap|Fighter|XPHB|Psi Warrior|XPHB|7"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Telekinetic Thrust|Fighter|XPHB|Psi Warrior|XPHB|7"
 				}
+			]
+		},
+		{
+			"name": "Telekinetic Thrust",
+			"source": "XPHB",
+			"page": 99,
+			"className": "Fighter",
+			"classSource": "XPHB",
+			"subclassShortName": "Psi Warrior",
+			"subclassSource": "XPHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw ({@dc 8} plus your Intelligence modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, you can give the target the {@condition Prone|XPHB} condition or transport it up to 10 feet horizontally."
 			]
 		},
 		{
@@ -5107,6 +5057,9 @@
 			"subclassSource": "XPHB",
 			"level": 10,
 			"header": 2,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
 			"entries": [
 				"You have {@variantrule Resistance|XPHB} to Psychic damage. Moreover, if you start your turn with the {@condition Charmed|XPHB} or {@condition Frightened|XPHB} condition, you can expend a Psionic Energy Die (no action required) and end every effect on yourself giving you those conditions."
 			]
@@ -5121,6 +5074,9 @@
 			"subclassSource": "XPHB",
 			"level": 15,
 			"header": 2,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
 			"entries": [
 				"You can shield yourself and others with telekinetic force. As a {@variantrule Bonus Action|XPHB}, you can choose creatures, including yourself, within 30 feet of yourself, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures has {@variantrule Cover|XPHB|Half Cover} for 1 minute or until you have the {@condition Incapacitated|XPHB} condition.",
 				"Once you use this feature, you can't do so again until you finish a {@variantrule Long Rest|XPHB} unless you expend a Psionic Energy Die (no action required) to restore your use of it."
@@ -5136,6 +5092,9 @@
 			"subclassSource": "XPHB",
 			"level": 18,
 			"header": 2,
+			"consumes": {
+				"name": "Psionic Energy Die"
+			},
 			"entries": [
 				"You always have the {@spell Telekinesis|XPHB} spell prepared. With this feature, you can cast it without a spell slot or components, and your spellcasting ability for it is Intelligence. On each of your turns while you maintain {@status Concentration|XPHB} on it, including the turn when you cast it, you can make one attack with a weapon as a {@variantrule Bonus Action|XPHB}.",
 				"Once you cast the spell with this feature, you can't do so in this way again until you finish a {@variantrule Long Rest|XPHB} unless you expend a Psionic Energy Die (no action required) to restore your use of it."

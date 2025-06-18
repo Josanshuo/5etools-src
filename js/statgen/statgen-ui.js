@@ -3,6 +3,8 @@ import {StatGenUiRenderLevelOneBackground} from "./statgen-ui-comp-levelone-back
 import {StatGenUiRenderLevelOneRace} from "./statgen-ui-comp-levelone-race.js";
 import {StatGenUiRenderableCollectionPbRules} from "./statgen-ui-comp-pbrules.js";
 import {MAX_CUSTOM_FEATS, MODE_NONE} from "./statgen-ui-consts.js";
+import {VetoolsConfig} from "../utils-config/utils-config-config.js";
+import {SITE_STYLE__ONE} from "../consts.js";
 
 export class StatGenUi extends BaseComponent {
 	static _STANDARD_ARRAY = [15, 14, 13, 12, 10, 8];
@@ -206,6 +208,10 @@ export class StatGenUi extends BaseComponent {
 			propIxFeat: `common_asi_${namespace}_${ix}_ixFeat`,
 			propIxFeatAbility: `common_asi_${namespace}_${ix}_ixFeatAbility`,
 			propFeatAbilityChooseFrom: `common_asi_${namespace}_${ix}_featAbilityChooseFrom`,
+
+			// region Serialization/deserialization
+			propSaveLoadFeatHash: `_common_asi_${namespace}_${ix}_hash`,
+			// endregion
 		};
 	}
 
@@ -253,9 +259,9 @@ export class StatGenUi extends BaseComponent {
 			: [
 				this._isFvttMode ? new TabUiUtil.TabMeta({name: "Select...", icon: this._isFvttMode ? `fas fa-fw fa-square` : `far fa-fw fa-square`, hasBorder: true, isNoPadding: this._isFvttMode}) : null,
 				new TabUiUtil.TabMeta({name: "Roll", icon: this._isFvttMode ? `fas fa-fw fa-dice` : `far fa-fw fa-dice`, hasBorder: true, isNoPadding: this._isFvttMode}),
-				new TabUiUtil.TabMeta({name: "Standard Array", icon: this._isFvttMode ? `fas fa-fw fa-signal` : `far fa-fw fa-signal-alt`, hasBorder: true, isNoPadding: this._isFvttMode}),
+				new TabUiUtil.TabMeta({name: "Standard Array", icon: this._isFvttMode ? `fas fa-fw fa-signal` : `far fa-fw fa-signal-bars`, hasBorder: true, isNoPadding: this._isFvttMode}),
 				new TabUiUtil.TabMeta({name: "Point Buy", icon: this._isFvttMode ? `fas fa-fw fa-chart-bar` : `far fa-fw fa-chart-bar`, hasBorder: true, isNoPadding: this._isFvttMode}),
-				new TabUiUtil.TabMeta({name: "Manual", icon: this._isFvttMode ? `fas fa-fw fa-tools` : `far fa-fw fa-tools`, hasBorder: true, isNoPadding: this._isFvttMode}),
+				new TabUiUtil.TabMeta({name: "Manual", icon: this._isFvttMode ? `fas fa-fw fa-screwdriver-wrench` : `far fa-fw fa-screwdriver-wrench`, hasBorder: true, isNoPadding: this._isFvttMode}),
 				...this._tabMetasAdditional || [],
 			].filter(Boolean);
 
@@ -911,9 +917,8 @@ export class StatGenUi extends BaseComponent {
 							${$wrpsBase}
 						</div>
 
-						${$wrpRaceOuter}
-
 						${$wrpBackgroundOuter}
+						${$wrpRaceOuter}
 
 						<div class="ve-flex-col mr-3">
 							<div class="my-1 statgen-pb__header"></div>
@@ -934,8 +939,8 @@ export class StatGenUi extends BaseComponent {
 						</div>
 					</div>
 
-					${$stgRaceSel}
 					${$stgBackgroundSel}
+					${$stgRaceSel}
 				</div>
 
 				${$vrPbCustom}
@@ -946,12 +951,13 @@ export class StatGenUi extends BaseComponent {
 
 			<hr class="hr-3">
 
+			${$dispPreviewBackground}
+			
+			${$hrPreviewBackground}
+
 			${$dispPreviewRace}
 			${$hrPreviewRaceTashas}
 			${$dispTashas}
-
-			${$dispPreviewBackground}
-			${$hrPreviewBackground}
 
 			${$wrpAsi}
 		</div>`;
@@ -1118,7 +1124,10 @@ export class StatGenUi extends BaseComponent {
 
 		return race.ability
 			.map(fromRace => {
-				if (this._state.common_isTashas) {
+				if (
+					this._state.common_isTashas
+					&& this._state.common_isAllowTashasRules
+				) {
 					const weights = [];
 
 					if (fromRace.choose && fromRace.choose.weighted && fromRace.choose.weighted.weights) {
@@ -1253,10 +1262,10 @@ export class StatGenUi extends BaseComponent {
 		const out = super.getSaveableState();
 
 		const handleEntity = ({propIxEntity, page, propData, propHash}) => {
-			if (out[propIxEntity] != null && !~this._state[propIxEntity]) {
-				out[propHash] = UrlUtil.URL_TO_HASH_BUILDER[page](this[propData][out[propIxEntity]]);
-				delete out[propIxEntity];
-			}
+			if (out.state[propIxEntity] == null || !~this._state[propIxEntity]) return;
+
+			out.state[propHash] = UrlUtil.URL_TO_HASH_BUILDER[page](this[propData][out.state[propIxEntity]]);
+			delete out.state[propIxEntity];
 		};
 
 		handleEntity({
@@ -1272,6 +1281,15 @@ export class StatGenUi extends BaseComponent {
 			propData: "_backgrounds",
 			propHash: "_pb_backgroundHash",
 		});
+
+		for (let i = 0; i < (out.state.common_cntFeatsCustom || 0); ++i) {
+			const {propIxFeat, propSaveLoadFeatHash} = this.getPropsAsi(i, "custom");
+
+			if (out.state[propIxFeat] == null || !~this._state[propIxFeat]) continue;
+
+			out.state[propSaveLoadFeatHash] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS](this._feats[out.state[propIxFeat]]);
+			delete out.state[propIxFeat];
+		}
 
 		return out;
 	}
@@ -1290,14 +1308,16 @@ export class StatGenUi extends BaseComponent {
 
 		MiscUtil.getOrSet(saved, "state", {});
 
-		const handleEntityHash = ({propHash, page, propData, propIxEntity}) => {
-			if (!saved[propHash]) return;
+		saved.state.common_isAllowTashasRules = VetoolsConfig.get("styleSwitcher", "style") !== SITE_STYLE__ONE;
 
-			const ixEntity = this[propData].findIndex(it => {
-				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](it);
-				return hash === saved[propHash];
+		const handleEntityHash = ({propHash, page, propData, propIxEntity}) => {
+			if (!saved.state?.[propHash]) return;
+
+			const ixEntity = this[propData].findIndex(ent => {
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](ent);
+				return hash === saved.state[propHash];
 			});
-			if (~ixEntity) saved[propIxEntity] = ixEntity;
+			if (~ixEntity) saved.state[propIxEntity] = ixEntity;
 		};
 
 		handleEntityHash({
@@ -1313,6 +1333,18 @@ export class StatGenUi extends BaseComponent {
 			propData: "_backgrounds",
 			propIxEntity: "common_ixBackground",
 		});
+
+		for (let i = 0; i < (saved.state.common_cntFeatsCustom || 0); ++i) {
+			const {propIxFeat, propSaveLoadFeatHash} = this.getPropsAsi(i, "custom");
+
+			if (!saved.state?.[propSaveLoadFeatHash]) continue;
+
+			const ixEntity = this._feats.findIndex(ent => {
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS](ent);
+				return hash === saved.state[propSaveLoadFeatHash];
+			});
+			if (~ixEntity) saved.state[propIxFeat] = ixEntity;
+		}
 
 		const validKeys = new Set(Object.keys(this._getDefaultState()));
 		const validKeyPrefixes = [
@@ -1418,6 +1450,7 @@ export class StatGenUi extends BaseComponent {
 		return {
 			// region Common
 			common_isPreviewRace: false,
+			common_isAllowTashasRules: VetoolsConfig.get("styleSwitcher", "style") !== SITE_STYLE__ONE,
 			common_isTashas: false,
 			common_isShowTashasRules: false,
 			common_ixRace: null,

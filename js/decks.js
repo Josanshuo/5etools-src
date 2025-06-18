@@ -28,6 +28,7 @@ class DecksSublistManager extends SublistManager {
 			ent.name,
 			{
 				hash,
+				page: ent.page,
 				alias: PageFilterDecks.getListAliases(ent),
 			},
 			{
@@ -146,6 +147,7 @@ class DecksPage extends ListPage {
 			{
 				hash,
 				source,
+				page: ent.page,
 			},
 			{
 				isExcluded,
@@ -198,7 +200,7 @@ class DecksPage extends ListPage {
 				}
 			});
 
-		const $btnReset = $(`<button class="ve-btn ve-btn-xs ve-btn-default bb-0 bbr-0 bbl-0" title="Reset Deck"><i class="fas fa-fw fa-undo-alt"></i></button>`)
+		const $btnReset = $(`<button class="ve-btn ve-btn-xs ve-btn-default bb-0 bbr-0 bbl-0" title="Reset Deck"><i class="fas fa-fw fa-rotate-left"></i></button>`)
 			.click(async () => {
 				await this._compCardState.pResetDeck(ent);
 				JqueryUtil.doToast("Reset deck!");

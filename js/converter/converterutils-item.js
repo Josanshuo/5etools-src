@@ -93,13 +93,13 @@ export class RechargeTypeTag {
 		const mLongRest = /All charges are restored when you finish a long rest/i.test(strEntries);
 		if (mLongRest) return obj.recharge = "restLong";
 
-		const mDawn = /charges? at dawn|charges? daily (?:at|in the twilight before) dawn|charges?(?:, which (?:are|you) regain(?:ed)?)? each day at dawn|charges and regains all of them at dawn|charges and regains[^.]+each dawn|recharging them all each dawn|charges that are replenished each dawn/gi.exec(strEntries);
+		const mDawn = /charges? at dawn|charges? (?:daily|nightly),? (?:at|in the twilight before) dawn|charges?(?:, which (?:are|you) regain(?:ed)?)? each day at dawn|charges and regains all of them at dawn|charges and regains[^.]+each dawn|recharging them all each dawn|charges that are replenished each dawn/gi.exec(strEntries);
 		if (mDawn) return obj.recharge = "dawn";
 
-		const mDusk = /charges? daily at dusk|charges? each (?:day at dusk|nightfall)|regains all charges at dusk/gi.exec(strEntries);
+		const mDusk = /charges? (?:daily|nightly),? at dusk|charges? each (?:(?:day|night) at dusk|nightfall)|regains all charges at dusk/gi.exec(strEntries);
 		if (mDusk) return obj.recharge = "dusk";
 
-		const mMidnight = /charges? daily at midnight|Each night at midnight[^.]+charges/gi.exec(strEntries);
+		const mMidnight = /charges? (?:daily|nightly),? at midnight|Each night at midnight[^.]+charges/gi.exec(strEntries);
 		if (mMidnight) return obj.recharge = "midnight";
 
 		const mDecade = /regains [^ ]+ expended charge every ten years/gi.exec(strEntries);
@@ -126,7 +126,7 @@ export class RechargeAmountTag {
 		// region Dawn
 		[
 			"(?<charges>",
-			")[^.]*?\\b(?:charges? (?:at|each) dawn|charges? daily (?:at|in the twilight before) dawn|charges?(?:, which (?:are|you) regain(?:ed)?)? each day at dawn)",
+			")[^.]*?\\b(?:charges? (?:at|each) dawn|charges? (?:daily|nightly),? (?:at|in the twilight before) dawn|charges?(?:, which (?:are|you) regain(?:ed)?)? each day at dawn)",
 		],
 		[
 			"charges and regains (?<charges>",
@@ -137,14 +137,14 @@ export class RechargeAmountTag {
 		// region Dusk
 		[
 			"(?<charges>",
-			")[^.]*?\\b(?:charges? daily at dusk|charges? each (?:day at dusk|nightfall))",
+			")[^.]*?\\b(?:charges? (?:daily|nightly),? at dusk|charges? each (?:(?:day|night) at dusk|nightfall))",
 		],
 		// endregion
 
 		// region Midnight
 		[
 			"(?<charges>",
-			")[^.]*?\\b(?:charges? daily at midnight)",
+			")[^.]*?\\b(?:charges? (?:daily|nightly),? at midnight)",
 		],
 		[
 			"Each night at midnight[^.]+regains (?<charges>",
@@ -263,7 +263,7 @@ export class AttachedSpellTag {
 
 	static _checkAndTag_tables ({obj, walker, outSet}) {
 		const walkerHandlers = {
-			obj: [
+			object: [
 				(obj) => {
 					if (obj.type !== "table") return obj;
 
@@ -322,7 +322,7 @@ export class BonusTag {
 			return opts.isVariant ? `{=bonusWeaponAttack}${m[2]}` : m[0];
 		});
 
-		strEntries = strEntries.replace(/\+\s*(\d)([^.]+(?:bonus )?(?:to|on)(?: your)? [^.]*(?:AC|Armor Class|armor class))/g, (...m) => {
+		strEntries = strEntries.replace(/\+\s*(\d)([^.]+(?:bonus )?(?:to|on)(?: your)? [^.]*(?:AC|Armor Class|armor class|{@variantrule Armor Class\|XPHB}))/g, (...m) => {
 			obj.bonusAc = `+${m[1]}`;
 			return opts.isVariant ? `{=bonusAc}${m[2]}` : m[0];
 		});
@@ -833,3 +833,159 @@ ReqAttuneTagTag._EBERRON_MARK_RACES = {
 	"Mark of Passage": ["Human (Mark of Passage)|ERLW"],
 	"Mark of Sentinel": ["Human (Mark of Sentinel)|ERLW"],
 };
+
+export class LightTag {
+	static _getSingleRegex_lightInShape ({lightType, radiusName}) {
+		return new RegExp(`\\b${lightType} light in a (?<${radiusName}>\\d+)-foot[- ](?<shape>radius|cone)\\b`, "gi");
+	}
+	static _getSingleRegex_lightOutTo ({lightType, radiusName}) {
+		return new RegExp(`\\b${lightType} light out to (?:a range of )?(?<${radiusName}>\\d+) feet\\b`, "gi");
+	}
+	static _getSingleRegex_shapeOfLight ({lightType, radiusName}) {
+		return new RegExp(`\\b(?<${radiusName}>\\d+)-foot[- ](?<shape>radius|cone) of ${lightType} light\\b`, "gi");
+	}
+
+	static _checkAndTag (obj, opts) {
+		if (obj.light?.length) return;
+
+		const light = [];
+
+		MiscUtil.getWalker({isNoModification: true}).walk(obj.entries, {string: str => {
+			let strStrippedTmp = Renderer.stripTags(str);
+			[
+				// Bright and dim
+				/\bbright light in a (?<rBright>\d+)-foot[- ](?<shape>radius|cone) and dim light for an (?<isAdditional>additional) (?<rDim>\d+) (?:feet|foot|ft\.)\b/gi,
+				/\blight in a \d+-foot[- ](?<shape>radius|cone); the (?<isAdditional>closest) (?<rBright>\d+) feet is bright light, and the farthest (?<rDim>\d+) feet is dim light\b/gi,
+				/\bbright light in a (?<shape>radius|cone) of your choice up to (?<rBrightDim>\d+) feet and dim light for the (?<isAdditional>same) distance beyond that\b/gi,
+
+				// Bright only
+				this._getSingleRegex_lightInShape({lightType: "bright", radiusName: "rBright"}),
+				this._getSingleRegex_lightOutTo({lightType: "bright", radiusName: "rBright"}),
+				this._getSingleRegex_shapeOfLight({lightType: "bright", radiusName: "rBright"}),
+
+				// Dim only
+				this._getSingleRegex_lightInShape({lightType: "dim", radiusName: "rDim"}),
+				this._getSingleRegex_lightOutTo({lightType: "dim", radiusName: "rDim"}),
+				this._getSingleRegex_shapeOfLight({lightType: "dim", radiusName: "rDim"}),
+			]
+				.forEach(re => {
+					strStrippedTmp = strStrippedTmp
+						.replace(re, (...m) => {
+							const {rBright, rDim, rBrightDim, shape, isAdditional} = m.at(-1);
+
+							const rBrightNum = rBright ? Number(rBright) : rBrightDim ? Number(rBrightDim) : null;
+							const rDimNum = rDim ? Number(rDim) : rBrightDim ? Number(rBrightDim) : null;
+							const shapeClean = shape ? shape.toLowerCase().trim() : null;
+
+							const out = {};
+							if (rBrightNum) out.bright = rBrightNum;
+							if (rDimNum) out.dim = isAdditional && rBrightNum ? (rBrightNum + rDimNum) : rDimNum;
+
+							// Treat "radius" as the default
+							if (shapeClean && shapeClean !== "radius") out.shape = shapeClean;
+
+							light.push(out);
+						});
+				});
+		}});
+
+		if (light.length) obj.light = light;
+	}
+
+	static tryRun (ent, opts) {
+		if (ent.entries) this._checkAndTag(ent, opts);
+		if (ent.inherits?.entries) this._checkAndTag(ent.inherits, opts);
+	}
+}
+
+export class AttachedSpellChargesTag {
+	static _getSpellUid (spell) {
+		return spell.toLowerCase().trim().replace(/\|phb$/, "");
+	}
+
+	static _checkAndTag (obj, opts) {
+		if (!(obj.attachedSpells instanceof Array)) return;
+
+		const spellsOther = new Set(obj.attachedSpells.map(it => it.toLowerCase().replace(/\|phb$/, "")));
+		const spellsByCharge = {};
+		const spellsByDaily = {};
+
+		MiscUtil.getWalker({isNoModification: true}).walk(
+			obj.entries,
+			{
+				string: str => {
+					str = str.replace(/{@spell (?<spell>[^}]+)} \(((?<lvl>\d+)..[- ]level version, )?(?<cntCharges>\d+) charges?\)/gi, (...m) => {
+						const {spell, lvl, cntCharges} = m.at(-1);
+						const spellUid = this._getSpellUid(spell);
+						spellsOther.delete(spellUid);
+						const spellUidWithLevel = lvl
+							? `${spellUid}#${lvl}`
+							: spellUid;
+						(spellsByCharge[cntCharges] ||= new Set()).add(spellUidWithLevel);
+					});
+
+					str = str.replace(/expend (?:no more than )?(?<cntCharges>\d+) (?:of its )?charges? to cast {@spell (?<spell>[^}]+)}( \(((?<lvl>\d+)..[- ]level version)?\))?/gi, (...m) => {
+						const {spell, lvl, cntCharges} = m.at(-1);
+						const spellUid = this._getSpellUid(spell);
+						spellsOther.delete(spellUid);
+						const spellUidWithLevel = lvl
+							? `${spellUid}#${lvl}`
+							: spellUid;
+						(spellsByCharge[cntCharges] ||= new Set()).add(spellUidWithLevel);
+					});
+
+					if (/\buntil the next dawn\b/i.test(str)) {
+						str = str.replace(/{@spell (?<spell>[^}]+)}/gi, (...m) => {
+							const {spell} = m.at(-1);
+							const spellUid = this._getSpellUid(spell);
+							spellsOther.delete(spellUid);
+							(spellsByDaily["1e"] ||= new Set()).add(spellUid);
+						});
+					}
+				},
+				object: obj => {
+					if (obj.type !== "table") return;
+					if (obj.colLabels?.length !== 2) return;
+					if (typeof obj.colLabels[1] !== "string" || !/\bcharges?\b/i.test(obj.colLabels[1])) return;
+					if (!obj.rows?.length) return;
+					obj.rows
+						.forEach(([c1, c2]) => {
+							if (typeof c1 !== "string") return;
+							if (isNaN(c2)) return;
+
+							c1.replace(/{@spell (?<spell>[^}]+)}/gi, (...m) => {
+								const {spell} = m.at(-1);
+								const spellUid = this._getSpellUid(spell);
+								spellsOther.delete(spellUid);
+								(spellsByCharge[c2] ||= new Set()).add(spellUid);
+							});
+						});
+				},
+			},
+		);
+
+		if (!Object.keys(spellsByCharge).length && !Object.keys(spellsByDaily).length) return;
+
+		if (spellsOther.size && opts.isSkipUnknown) return;
+
+		obj.attachedSpells = {};
+		if (Object.keys(spellsByCharge).length) {
+			obj.attachedSpells.charges = Object.fromEntries(
+				Object.entries(spellsByCharge)
+					.map(([cnt, set]) => [cnt, [...set].sort(SortUtil.ascSortLower)]),
+			);
+		}
+		if (Object.keys(spellsByDaily).length) {
+			obj.attachedSpells.daily = Object.fromEntries(
+				Object.entries(spellsByDaily)
+					.map(([cnt, set]) => [cnt, [...set].sort(SortUtil.ascSortLower)]),
+			);
+		}
+		if (spellsOther.size) obj.attachedSpells.other = [...spellsOther].sort(SortUtil.ascSortLower);
+	}
+
+	static tryRun (ent, opts) {
+		if (ent.entries && ent.attachedSpells) this._checkAndTag(ent, opts);
+		if (ent.inherits?.entries && ent.inherits?.attachedSpells) this._checkAndTag(ent.inherits, opts);
+	}
+}

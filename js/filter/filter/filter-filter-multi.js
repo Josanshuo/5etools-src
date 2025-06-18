@@ -10,8 +10,8 @@ export class MultiFilter extends FilterBase {
 		Object.assign(
 			this.__state,
 			{
-				...MultiFilter._DETAULT_STATE,
-				mode: opts.mode || MultiFilter._DETAULT_STATE.mode,
+				...MultiFilter._DEFAULT_STATE,
+				mode: opts.mode || MultiFilter._DEFAULT_STATE.mode,
 			},
 		);
 		this._defaultState = MiscUtil.copy(this.__state);
@@ -374,7 +374,7 @@ export class MultiFilter extends FilterBase {
 	addItem () { throw new Error(`Cannot add item to MultiFilter! Add the item to a child filter instead.`); }
 
 	handleSearch (searchTerm) {
-		const isHeaderMatch = this.header.toLowerCase().includes(searchTerm);
+		const isHeaderMatch = this._getHeaderDisplayName().toLowerCase().includes(searchTerm);
 
 		if (isHeaderMatch) {
 			if (this.__$wrpFilter) this.__$wrpFilter.toggleClass("fltr__hidden--search", false);
@@ -405,7 +405,7 @@ export class MultiFilter extends FilterBase {
 	doTeardown () { this._filters.forEach(it => it.doTeardown()); }
 	trimState_ () { this._filters.forEach(it => it.trimState_()); }
 }
-MultiFilter._DETAULT_STATE = {
+MultiFilter._DEFAULT_STATE = {
 	mode: "and",
 };
 MultiFilter._DEFAULT_UI_META = {

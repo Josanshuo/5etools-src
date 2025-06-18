@@ -62,6 +62,13 @@
 						"Although no paladin in the world could be described as typical, a number of them are narrow-minded do-gooders who refuse to tolerate even the smallest deviation from their own outlook. Paladins who take up the adventuring life, however, rarely remain so rigid in their attitudes\u2014if only to keep from alienating their companions.",
 						"You can flesh out your paladin character by using the suggestions below. It's important to keep in mind that most paladins aren't robots. They have doubts and prejudices and harbor contradictory thoughts just as any other character does. Some are compelled by an internal motivation that might sometimes be at odds with the principles of their oaths.",
 						{
+							"type": "quote",
+							"entries": [
+								"Living up to an oath? That sounds ridiculous. Why would anyone ever do that? There's nothing wrong with making promises, but only suckers keep them."
+							],
+							"by": "Xanathar"
+						},
+						{
 							"type": "entries",
 							"name": "Personal Goal",
 							"entries": [
@@ -376,7 +383,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/PHB/Paladin.webp"
-					}
+					},
+					"width": 845,
+					"height": 1000
 				}
 			]
 		},
@@ -403,7 +412,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Paladin.webp"
 					},
-					"credit": "Michael Broussard"
+					"credit": "Michael Broussard",
+					"width": 1700,
+					"height": 2176
 				}
 			]
 		}
@@ -415,13 +426,24 @@
 			"source": "XGE",
 			"className": "Paladin",
 			"classSource": "PHB",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Conquest sounds cool. Do you have to leave your house for that? Because I've got a fish named Sylgar, and I can't be away for too long or he gets sad."
+					],
+					"by": "Xanathar"
+				}
+			],
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "classes/XGE/Conquest Paladin.webp"
-					}
+					},
+					"width": 714,
+					"height": 1000
 				}
 			]
 		},
@@ -431,13 +453,24 @@
 			"source": "XGE",
 			"className": "Paladin",
 			"classSource": "PHB",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Redemption. So you feel bad about having done something, and then you have to do something to feel better? Why don't you just kill and eat someone? That always makes me feel better."
+					],
+					"by": "Xanathar"
+				}
+			],
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
 						"path": "classes/XGE/Redemption Paladin.webp"
-					}
+					},
+					"width": 769,
+					"height": 1000
 				}
 			]
 		},
@@ -453,7 +486,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/TCE/Glory Paladin.webp"
-					}
+					},
+					"width": 800,
+					"height": 1320
 				}
 			]
 		},
@@ -469,7 +504,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/TCE/Watchers Paladin.webp"
-					}
+					},
+					"width": 936,
+					"height": 1000
 				}
 			]
 		},
@@ -485,7 +522,9 @@
 					"href": {
 						"type": "internal",
 						"path": "classes/TDCSR/Open Sea Paladin.webp"
-					}
+					},
+					"width": 1700,
+					"height": 2319
 				}
 			]
 		},
@@ -502,7 +541,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Devotion Paladin.webp"
 					},
-					"credit": "Katerina Ladon"
+					"credit": "Katerina Ladon",
+					"width": 850,
+					"height": 1501
 				}
 			]
 		},
@@ -519,7 +560,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Glory Paladin.webp"
 					},
-					"credit": "Polar Engine"
+					"credit": "Polar Engine",
+					"width": 850,
+					"height": 2293
 				}
 			]
 		},
@@ -536,7 +579,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Ancients Paladin.webp"
 					},
-					"credit": "Polar Engine"
+					"credit": "Polar Engine",
+					"width": 850,
+					"height": 2374
 				}
 			]
 		},
@@ -553,7 +598,9 @@
 						"type": "internal",
 						"path": "classes/XPHB/Vengeance Paladin.webp"
 					},
-					"credit": "Ignatius Budi"
+					"credit": "Ignatius Budi",
+					"width": 850,
+					"height": 2372
 				}
 			]
 		}

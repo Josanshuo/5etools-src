@@ -1,5 +1,5 @@
 import {FilterItemClassSubclass} from "./filter-item.js";
-import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__FREE_RULES_2024, MISC_FILTER_VALUE__SRD_5_1, MISC_FILTER_VALUE__SRD_5_2} from "./filter-constants.js";
+import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__BASIC_RULES_2024, MISC_FILTER_VALUE__SRD_5_1, MISC_FILTER_VALUE__SRD_5_2} from "./filter-constants.js";
 
 /** @abstract */
 export class PageFilterBase {
@@ -101,10 +101,15 @@ export class PageFilterBase {
 		});
 	}
 
-	static _isReprinted (ent) {
+	static isReprinted (ent, {fnMissingBuilder = null} = {}) {
 		if (!ent?.reprintedAs?.length) return false;
 		return ent.reprintedAs
 			.some(it => {
+				if (!UrlUtil.URL_TO_HASH_BUILDER[ent.__prop]) {
+					if (fnMissingBuilder) fnMissingBuilder(ent);
+					return false;
+				}
+
 				const unpacked = DataUtil.proxy.unpackUid(ent.__prop, it?.uid ?? it, Parser.getPropTag(ent.__prop));
 				const hash = UrlUtil.URL_TO_HASH_BUILDER[ent.__prop](unpacked);
 				return !ExcludeUtil.isExcluded(hash, ent.__prop, unpacked.source, {isNoCount: true});
@@ -129,7 +134,7 @@ export class PageFilterBase {
 		if (ent.basicRules) ent._fMisc.push(MISC_FILTER_VALUE__BASIC_RULES_2014);
 
 		if (ent.srd52) ent._fMisc.push(MISC_FILTER_VALUE__SRD_5_2);
-		if (ent.freeRules2024) ent._fMisc.push(MISC_FILTER_VALUE__FREE_RULES_2024);
+		if (ent.basicRules2024) ent._fMisc.push(MISC_FILTER_VALUE__BASIC_RULES_2024);
 
 		if (SourceUtil.isLegacySourceWotc(ent.source)) ent._fMisc.push("Legacy");
 
@@ -138,7 +143,7 @@ export class PageFilterBase {
 		if (this._hasFluff(ent)) ent._fMisc.push("Has Info");
 		if (this._hasFluffImages(ent)) ent._fMisc.push("Has Images");
 
-		if (this._isReprinted(ent)) ent._fMisc.push("Reprinted");
+		if (this.isReprinted(ent)) ent._fMisc.push("Reprinted");
 	}
 	// endregion
 }

@@ -9,7 +9,7 @@ const onLoadSeo = async () => {
 	document.title = `${it.name} - 5etools`;
 	$(`.page__title`).text(`${globalThis._SEO_PAGE.toTitleCase()}: ${it.name}`);
 
-	$(`<div class="ve-col-12 ve-flex-vh-center my-2 pt-3">
+	$(`<div class="ve-col-12 ve-flex-vh-center my-2 pt-3 no-print">
 		<button class="ve-btn ve-btn-primary">
 			<a href="/${globalThis._SEO_PAGE}.html" style="font-size: 1.7em; color: white;">${globalThis._SEO_STYLE === 1 ? `View All` : `View Complete`} ${globalThis._SEO_PAGE.toTitleCase()}</a>
 		</button>
@@ -28,13 +28,13 @@ const onLoadSeo = async () => {
 	});
 
 	switch (globalThis._SEO_PAGE) {
-		case "spells": $content.append(RenderSpells.$getRenderedSpell(it)); break;
+		case "spells": $content.append(RenderSpells.$getRenderedSpell(it, {isSkipExcludesRender: true})); break;
 		case "bestiary": {
 			Renderer.utils.bindPronounceButtons();
-			$content.append(RenderBestiary.$getRenderedCreature(it, {isSkipTokenRender: true}));
+			$content.append(RenderBestiary.$getRenderedCreature(it, {isSkipTokenRender: true, isSkipExcludesRender: true}));
 			break;
 		}
-		case "items": $content.append(RenderItems.$getRenderedItem(it)); break;
+		case "items": $content.append(RenderItems.$getRenderedItem(it, {isSkipExcludesRender: true})); break;
 
 		// TODO expand this as required
 		// case "races": {
@@ -54,7 +54,5 @@ const onLoadSeo = async () => {
 };
 
 window.addEventListener("load", () => {
-	// Attempt to sneak this in before the navigation onload fires
-	Renderer.get().setBaseUrl("/");
 	onLoadSeo().then(null);
 });

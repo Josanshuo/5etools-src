@@ -923,7 +923,7 @@
 							"width": 2359,
 							"height": 287
 						},
-						"'Tis the best day of my life! We have anchored at the dizzying Rock of Bral, and Dint has relayed to me our purpose in this Realmspace metropolis sited upon a disclike asteroid. Repeat. Dint has a PURPOSE for us! A QUEST! And a REWARD for the questing. FIVE ASTRAL DIAMONDS! And, while I do not know what an Astral Diamond is worth, I do suspect that five such diamonds are worth easily FIVE TIMES as much!",
+						"'Tis the best day of my life! We have anchored at the dizzying Rock of Bral, and Dint has relayed to me our purpose in this Realmspace metropolis sited upon a disc-like asteroid. Repeat. Dint has a PURPOSE for us! A QUEST! And a REWARD for the questing. FIVE ASTRAL DIAMONDS! And, while I do not know what an Astral Diamond is worth, I do suspect that five such diamonds are worth easily FIVE TIMES as much!",
 						"We are to proceed with great covertness into the Rock of Bral's High City district, blending into the teeming throngs of bizarre creatures from myriad realms. It is at the upscale Man-o-War restaurant overlooking Lake Bral that we shall broker a deal with a barkeep known as Jack the Knife for a rare bottle of wine: Veneno 1318 DR.",
 						"For this purpose, Dint has supplied us with 200 gold pieces to exchange for the Veneno, which he assured me should be more than enough by twice!",
 						"I shall now utter words of bardic magic to the Bureau to inspire brilliant execution of our tasks.",
@@ -1705,7 +1705,7 @@
 							"width": 1759,
 							"height": 1988
 						},
-						"Those who happen upon the Solamnian city of Palanthus would be fools not to drop by the A Taste of Silvanost restaurant and try its famous Stuffed Trout. Of course, what the trout is stuffed with is anyone's guess. According to the menu (which is written in Silvanesti), you'll find \"specially prepared mixtures\" inside. But rumor has it the stuffing is composed of breadcrumbs made from the fresh-baked loaves of the elven proprietor Solamna Farseer, and seasoned with a rare spice known as Old Bay, named for the Bay of Branchala, next to which the city rests.",
+						"Those who happen upon the Solamnian city of Palanthas would be fools not to drop by the A Taste of Silvanost restaurant and try its famous Stuffed Trout. Of course, what the trout is stuffed with is anyone's guess. According to the menu (which is written in Silvanesti), you'll find \"specially prepared mixtures\" inside. But rumor has it the stuffing is composed of breadcrumbs made from the fresh-baked loaves of the elven proprietor Solamna Farseer, and seasoned with a rare spice known as Old Bay, named for the Bay of Branchala, next to which the city rests.",
 						{
 							"type": "statblock",
 							"tag": "recipe",
@@ -1813,8 +1813,8 @@
 								"type": "internal",
 								"path": "items/DMG/Alchemy Jug.webp"
 							},
-							"width": 1421,
-							"height": 1554
+							"width": 778,
+							"height": 1000
 						}
 					],
 					"id": "037"
@@ -1931,7 +1931,7 @@
 							"width": 2408,
 							"height": 246
 						},
-						"Dint cooks?! The deck of the Dashor was splayed with an endless and delightful repast of morsels that threatened to burst my goblin tum! It was a bloodthemed meal, I must guess, in honor of the blood shed by dear Bri'An\u2014a memorial supper. Oh, the flavors! The Blood of Vol was a fireball of flavors as was a dish called {@recipe Thrakel-Seared Beef in Red Sauce|HFFotM}. This runny red meal paired perfectly with more {@recipe Ruby Cordial|HFFotM}. We engorged and imbibed, welcoming with open arms the food-and-booze-induced coma that was fated us.",
+						"Dint cooks?! The deck of the Dashor was splayed with an endless and delightful repast of morsels that threatened to burst my goblin tum! It was a blood themed meal, I must guess, in honor of the blood shed by dear Bri'An\u2014a memorial supper. Oh, the flavors! The Blood of Vol was a fireball of flavors as was a dish called {@recipe Thrakel-Seared Beef in Red Sauce|HFFotM}. This runny red meal paired perfectly with more {@recipe Ruby Cordial|HFFotM}. We engorged and imbibed, welcoming with open arms the food-and-booze-induced coma that was fated us.",
 						{
 							"type": "image",
 							"href": {
@@ -2402,7 +2402,7 @@
 							"width": 1837,
 							"height": 286
 						},
-						"I report this from the water closet. Art thou yanking my leg? CHAHD?! Clambering clumsily from stupid coffin, highcollared velveteen cape, a plaster of yellow-moldy hair framing his round stupid face. I recognized him in an instant and hid to avoid his eyes.",
+						"I report this from the water closet. Art thou yanking my leg? CHAHD?! Clambering clumsily from stupid coffin, high-collared velveteen cape, a plaster of yellow-moldy hair framing his round stupid face. I recognized him in an instant and hid to avoid his eyes.",
 						"Reader! Let Deelia blow thy wig bald.",
 						"He is NOT Chahd, nor Strahd! He is not vampire! This so-called Chahd is in reality CHAD, my old ally, turned nemesis. 'Twas HE that alerted the Lords of Shadow's Edge to exile me after a meager incident allegedly involving a small amount of purifying flame.",
 						"I must play my part, return to the banquet coolly, and challenge Chad's Vampyrity, for I doubt very much any vampire would see Chahd as peer.",
@@ -2432,7 +2432,7 @@
 							"width": 2408,
 							"height": 246
 						},
-						"I DON'T GET ANYTHING! I WANNA GO HOME! Ok.... Sorry! First, I don't get why Deelia didn't just burn the hell out of Chahd, magicwise, but Chahd started calling her \"Fire Fingers\" and Deelia got something called \"vexed!\" The skeletons start pulling out GIANT CLEAVERS! I look to Squirladax, and he's crying into that stupid Ruby....",
+						"I DON'T GET ANYTHING! I WANNA GO HOME! Ok.... Sorry! First, I don't get why Deelia didn't just burn the hell out of Chahd, magic-wise, but Chahd started calling her \"Fire Fingers\" and Deelia got something called \"vexed!\" The skeletons start pulling out GIANT CLEAVERS! I look to Squirladax, and he's crying into that stupid Ruby....",
 						"Okay, so it's on me. Let's try to flip this table like they do in stage plays! Nope, it's too big. Then I started smashing plates, but no one cared. Wait! I'll bet that big expensive pipe organ would get Chahd in trouble if it were broken! So, I hurl my chair at it, and yeah! BOOM!! And SURPRISE...it shuddered and slid to reveal a FREAKING SECRET DOOR!",
 						"So that's when I smashed Chahd in the face with the Veneno and grabbed my friends. We ran like the wind!",
 						{

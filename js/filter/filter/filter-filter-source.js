@@ -1,6 +1,6 @@
 import {FilterItem} from "../filter-item.js";
 import {Filter} from "./filter-filter-generic.js";
-import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__FREE_RULES_2024, MISC_FILTER_VALUE__SRD_5_1, MISC_FILTER_VALUE__SRD_5_2, PILL_STATE__IGNORE, PILL_STATE__YES, SOURCE_HEADER} from "../filter-constants.js";
+import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__BASIC_RULES_2024, MISC_FILTER_VALUE__SRD_5_1, MISC_FILTER_VALUE__SRD_5_2, PILL_STATE__IGNORE, PILL_STATE__YES, SOURCE_HEADER} from "../filter-constants.js";
 import {PageFilterBase} from "../filter-page-filter-base.js";
 
 export class SourceFilterItem extends FilterItem {
@@ -12,12 +12,13 @@ export class SourceFilterItem extends FilterItem {
 		super(options);
 		this.isOtherSource = options.isOtherSource;
 		this._sortName = null;
+		this.itemFull = Parser.sourceJsonToFull(this.item);
 	}
 }
 
 export class SourceFilter extends Filter {
 	static _SORT_ITEMS (a, b) {
-		return SortUtil.ascSortLowerPropNumeric("item", a, b);
+		return SortUtil.ascSortLowerPropNumeric("itemFull", a, b);
 	}
 
 	static _SORT_ITEMS_MINI (a, b) {
@@ -276,7 +277,7 @@ export class SourceFilter extends Filter {
 	}
 
 	_doSetPinsSrd () {
-		SourceFilter._SRD_SOURCES = SourceFilter._SRD_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB]);
+		SourceFilter._SRD_SOURCES = SourceFilter._SRD_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB, Parser.SRC_XDMG, Parser.SRC_XMM]);
 
 		Object.keys(this._state).forEach(k => this._state[k] = SourceFilter._SRD_SOURCES.has(k) ? PILL_STATE__YES : PILL_STATE__IGNORE);
 
@@ -289,7 +290,7 @@ export class SourceFilter extends Filter {
 		const basicRulesFilter = this._filterBox.filters.find(it => it.isBasicRulesFilter);
 		if (basicRulesFilter) {
 			basicRulesFilter.setValue(MISC_FILTER_VALUE__BASIC_RULES_2014, PILL_STATE__IGNORE);
-			basicRulesFilter.setValue(MISC_FILTER_VALUE__FREE_RULES_2024, PILL_STATE__IGNORE);
+			basicRulesFilter.setValue(MISC_FILTER_VALUE__BASIC_RULES_2024, PILL_STATE__IGNORE);
 		}
 
 		// also disable "Reprinted" otherwise some Deities are missing
@@ -298,14 +299,14 @@ export class SourceFilter extends Filter {
 	}
 
 	_doSetPinsBasicRules () {
-		SourceFilter._BASIC_RULES_SOURCES = SourceFilter._BASIC_RULES_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB]);
+		SourceFilter._BASIC_RULES_SOURCES = SourceFilter._BASIC_RULES_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB, Parser.SRC_XDMG, Parser.SRC_XMM]);
 
 		Object.keys(this._state).forEach(k => this._state[k] = SourceFilter._BASIC_RULES_SOURCES.has(k) ? PILL_STATE__YES : PILL_STATE__IGNORE);
 
 		const basicRulesFilter = this._filterBox.filters.find(it => it.isBasicRulesFilter);
 		if (basicRulesFilter) {
 			basicRulesFilter.setValue(MISC_FILTER_VALUE__BASIC_RULES_2014, PILL_STATE__YES);
-			basicRulesFilter.setValue(MISC_FILTER_VALUE__FREE_RULES_2024, PILL_STATE__YES);
+			basicRulesFilter.setValue(MISC_FILTER_VALUE__BASIC_RULES_2024, PILL_STATE__YES);
 		}
 
 		const srdFilter = this._filterBox.filters.find(it => it.isSrdFilter);

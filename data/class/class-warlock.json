@@ -187,7 +187,7 @@
 					},
 					{
 						"_": [
-							"Leather armor|phb",
+							"leather armor|phb",
 							{
 								"equipmentType": "weaponSimple"
 							},
@@ -405,6 +405,8 @@
 			"name": "Warlock",
 			"source": "XPHB",
 			"page": 152,
+			"srd52": true,
+			"basicRules2024": true,
 			"edition": "one",
 			"primaryAbility": [
 				{
@@ -489,6 +491,17 @@
 					}
 				}
 			],
+			"featProgression": [
+				{
+					"name": "Epic Boon",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
 			"optionalfeatureProgression": [
 				{
 					"name": "Eldritch Invocations",
@@ -544,9 +557,7 @@
 				]
 			},
 			"startingEquipment": {
-				"entries": [
-					"{@i Choose A or B:} (A) {@item Leather Armor|XPHB}, {@item Sickle|XPHB}, 2 {@item Dagger|XPHB|Daggers}, {@item Arcane Focus|XPHB} ({@item orb|XPHB}), {@item Book|XPHB} (occult lore), {@item Scholar's Pack|XPHB}, and 15 GP; or (B) 100 GP"
-				],
+				"additionalFromBackground": true,
 				"defaultData": [
 					{
 						"A": [
@@ -579,6 +590,9 @@
 							}
 						]
 					}
+				],
+				"entries": [
+					"{@i Choose A or B:} (A) {@item Leather Armor|XPHB}, {@item Sickle|XPHB}, 2 {@item Dagger|XPHB|Daggers}, {@item Arcane Focus|XPHB} ({@item orb|XPHB}), {@item Book|XPHB} (occult lore), {@item Scholar's Pack|XPHB}, and 15 GP; or (B) 100 GP"
 				]
 			},
 			"multiclassing": {
@@ -1194,6 +1208,7 @@
 				"Armor of Hexes|Warlock||Hexblade|XGE|10",
 				"Master of Hexes|Warlock||Hexblade|XGE|14"
 			],
+			"hasFluff": true,
 			"hasFluffImages": true
 		},
 		{
@@ -1668,6 +1683,8 @@
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"page": 161,
+			"srd52": true,
+			"basicRules2024": true,
 			"edition": "one",
 			"additionalSpells": [
 				{
@@ -2066,6 +2083,8 @@
 			"name": "Eldritch Invocation Options",
 			"source": "XPHB",
 			"page": 153,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 1,
@@ -2279,6 +2298,8 @@
 			"name": "Eldritch Invocations",
 			"source": "XPHB",
 			"page": 153,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 1,
@@ -2311,6 +2332,8 @@
 			"name": "Pact Magic",
 			"source": "XPHB",
 			"page": 153,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 1,
@@ -2378,6 +2401,8 @@
 			"name": "Magical Cunning",
 			"source": "XPHB",
 			"page": 154,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 2,
@@ -2389,6 +2414,8 @@
 			"name": "Warlock Subclass",
 			"source": "XPHB",
 			"page": 154,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 3,
@@ -2400,6 +2427,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 4,
@@ -2411,6 +2440,8 @@
 			"name": "Subclass Feature",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 6,
@@ -2422,6 +2453,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 8,
@@ -2433,6 +2466,8 @@
 			"name": "Contact Patron",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 9,
@@ -2445,6 +2480,8 @@
 			"name": "Subclass Feature",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 10,
@@ -2456,6 +2493,8 @@
 			"name": "Mystic Arcanum",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 11,
@@ -2470,6 +2509,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 12,
@@ -2481,6 +2522,8 @@
 			"name": "Mystic Arcanum",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 13,
@@ -2492,6 +2535,8 @@
 			"name": "Subclass Feature",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 14,
@@ -2503,6 +2548,8 @@
 			"name": "Mystic Arcanum",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 15,
@@ -2514,6 +2561,8 @@
 			"name": "Ability Score Improvement",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 16,
@@ -2525,6 +2574,8 @@
 			"name": "Mystic Arcanum",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 17,
@@ -2536,6 +2587,8 @@
 			"name": "Epic Boon",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 19,
@@ -2547,6 +2600,8 @@
 			"name": "Eldritch Master",
 			"source": "XPHB",
 			"page": 155,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"level": 20,
@@ -2685,7 +2740,7 @@
 			"subclassSource": "PHB",
 			"level": 1,
 			"entries": [
-				"You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.",
+				"You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz-Urb'luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.",
 				{
 					"type": "entries",
 					"name": "Expanded Spell List",
@@ -2922,7 +2977,7 @@
 			"subclassSource": "SCAG",
 			"level": 1,
 			"entries": [
-				"Death holds no sway over your patron, who has unlocked the secrets of everlasting life, although such a prize\u2014like all power\u2014comes at a price. Once mortal, the Undying has seen mortal lifetimes pass like the seasons, like the flicker of endless days and nights. It has the secrets of the ages to share, secrets of life and death. Beings of this sort include Vecna, Lord of the Hand and the Eye; the dread Iuz; the lich-queen Vol; the Undying Court of Aerenal; Vlaakith, lich-queen of the githyanki; and the deathless wizard Fistandantalus.",
+				"Death holds no sway over your patron, who has unlocked the secrets of everlasting life, although such a prize\u2014like all power\u2014comes at a price. Once mortal, the Undying has seen mortal lifetimes pass like the seasons, like the flicker of endless days and nights. It has the secrets of the ages to share, secrets of life and death. Beings of this sort include Vecna, Lord of the Hand and the Eye; the dread Iuz; the lich-queen Vol; the Undying Court of Aerenal; Vlaakith, lich-queen of the githyanki; and the deathless wizard Fistandantilus.",
 				"In the Realms, Undying patrons include Larloch the Shadow King, legendary master of Warlock's Crypt, and Gilgeam, the God-King of Unther.",
 				{
 					"type": "entries",
@@ -3124,7 +3179,7 @@
 			"entries": [
 				"{@i 1st-level Fathomless feature}",
 				"You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.",
-				"When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes {@damage 1d8} cold damage, and its speed is reduced by 10 feet until the start of your next turn. When you reach 10th level in this class, the damage increases to {@dice 2d8}.",
+				"When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes {@damage 1d8} cold damage, and its speed is reduced by 10 feet until the start of your next turn. When you reach 10th level in this class, the damage increases to {@damage 2d8}.",
 				"As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack.",
 				"You can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 			]
@@ -3189,6 +3244,32 @@
 				"{@i 14th-level Fathomless feature}",
 				"You can magically open temporary conduits to watery destinations. As an action, you can teleport yourself and up to five other willing creatures that you can see within 30 feet of you. Amid a whirl of tentacles, you all vanish and then reappear up to 1 mile away in a body of water you've seen (pond size or larger) or within 30 feet of it, each of you appearing in an unoccupied space within 30 feet of the others.",
 				"Once you use this feature, you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Bottled Respite",
+			"source": "TCE",
+			"page": 73,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Genie",
+			"subclassSource": "TCE",
+			"level": 1,
+			"entries": [
+				"As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Genie's Wrath",
+			"source": "TCE",
+			"page": 73,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Genie",
+			"subclassSource": "TCE",
+			"level": 1,
+			"entries": [
+				"Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
 			]
 		},
 		{
@@ -3381,11 +3462,11 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bottled Respite|Warlock|TCE|Genie|TCE|1"
+							"subclassFeature": "Bottled Respite|Warlock|PHB|Genie|TCE|1"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Genie's Wrath|Warlock|TCE|Genie|TCE|1"
+							"subclassFeature": "Genie's Wrath|Warlock|PHB|Genie|TCE|1"
 						}
 					]
 				},
@@ -3579,7 +3660,7 @@
 					"items": [
 						"Your spirit and body gain resistance to bludgeoning, piercing, and slashing damage.",
 						"When you cast a spell of the conjuration or necromancy school, the spell doesn't require verbal or somatic components or material components that lack a gold cost.",
-						"You have a flying speed equal to your walking speed and can hover. You can move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@dice 1d10} force damage if you end your turn inside a creature or an object.",
+						"You have a flying speed equal to your walking speed and can hover. You can move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@damage 1d10} force damage if you end your turn inside a creature or an object.",
 						"While you are using your Form of Dread, once during each of your turns when you deal necrotic damage to a creature, you regain hit points equal to half the amount of necrotic damage dealt."
 					]
 				},
@@ -3732,8 +3813,8 @@
 			"subclassSource": "XGE",
 			"level": 1,
 			"entries": [
-				"You have made your pact with a mysterious entity from the Shadowfell\u2014a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
-				"Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.",
+				"You have made your pact with a mysterious entity from the Shadowfell\u2014a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many Hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
+				"Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with Hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.",
 				{
 					"type": "entries",
 					"name": "Expanded Spell List",
@@ -3868,32 +3949,6 @@
 			]
 		},
 		{
-			"name": "Bottled Respite",
-			"source": "TCE",
-			"page": 73,
-			"className": "Warlock",
-			"classSource": "TCE",
-			"subclassShortName": "Genie",
-			"subclassSource": "TCE",
-			"level": 1,
-			"entries": [
-				"As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest."
-			]
-		},
-		{
-			"name": "Genie's Wrath",
-			"source": "TCE",
-			"page": 73,
-			"className": "Warlock",
-			"classSource": "TCE",
-			"subclassShortName": "Genie",
-			"subclassSource": "TCE",
-			"level": 1,
-			"entries": [
-				"Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
-			]
-		},
-		{
 			"name": "The Archfey",
 			"source": "PHB",
 			"className": "Warlock",
@@ -3931,7 +3986,8 @@
 				"subclassSource": "PHB",
 				"level": 1,
 				"_preserve": {
-					"page": true
+					"page": true,
+					"srd": true
 				}
 			}
 		},
@@ -4373,6 +4429,8 @@
 			"name": "Fiend Patron",
 			"source": "XPHB",
 			"page": 161,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"subclassShortName": "Fiend",
@@ -4395,6 +4453,8 @@
 			"name": "Dark One's Blessing",
 			"source": "XPHB",
 			"page": 161,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"subclassShortName": "Fiend",
@@ -4409,6 +4469,8 @@
 			"name": "Fiend Spells",
 			"source": "XPHB",
 			"page": 161,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"subclassShortName": "Fiend",
@@ -4453,6 +4515,8 @@
 			"name": "Dark One's Own Luck",
 			"source": "XPHB",
 			"page": 162,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"subclassShortName": "Fiend",
@@ -4468,6 +4532,8 @@
 			"name": "Fiendish Resilience",
 			"source": "XPHB",
 			"page": 162,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"subclassShortName": "Fiend",
@@ -4482,6 +4548,8 @@
 			"name": "Hurl Through Hell",
 			"source": "XPHB",
 			"page": 162,
+			"srd52": true,
+			"basicRules2024": true,
 			"className": "Warlock",
 			"classSource": "XPHB",
 			"subclassShortName": "Fiend",

@@ -112,15 +112,10 @@ class PageFilterSpells extends PageFilterBase {
 	// region static
 	static sortSpells (a, b, o) {
 		switch (o.sortBy) {
-			case "name": return SortUtil.compareListNames(a, b);
-			case "source":
-			case "level":
-			case "school":
-			case "concentration":
-			case "ritual": return SortUtil.ascSort(a.values[o.sortBy], b.values[o.sortBy]) || SortUtil.compareListNames(a, b);
 			case "time": return SortUtil.ascSort(a.values.normalisedTime, b.values.normalisedTime) || SortUtil.compareListNames(a, b);
 			case "range": return SortUtil.ascSort(a.values.normalisedRange, b.values.normalisedRange) || SortUtil.compareListNames(a, b);
 		}
+		return SortUtil.listSort(a, b, o);
 	}
 
 	static sortMetaFilter (a, b) {
@@ -448,7 +443,7 @@ class PageFilterSpells extends PageFilterBase {
 		this._affectsCreatureTypeFilter = new Filter({
 			header: "Affects Creature Types",
 			items: [...Parser.MON_TYPES],
-			displayFn: StrUtil.toTitleCase,
+			displayFn: StrUtil.toTitleCase.bind(StrUtil),
 		});
 	}
 
@@ -666,7 +661,7 @@ class ModalFilterSpells extends ModalFilterBase {
 		const time = PageFilterSpells.getTblTimeStr(spell.time[0]);
 		const school = Parser.spSchoolAndSubschoolsAbvsShort(spell.school, spell.subschools);
 		const concentration = spell._isConc ? "×" : "";
-		const range = Parser.spRangeToFull(spell.range);
+		const range = Parser.spRangeToFull(spell.range, {isDisplaySelfArea: true});
 
 		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst__row-border veapp__list-row no-select lst__wrp-cells">
 			<div class="ve-col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
@@ -694,6 +689,7 @@ class ModalFilterSpells extends ModalFilterBase {
 				hash,
 				source,
 				sourceJson: spell.source,
+				...ListItem.getCommonValues(spell),
 				level: spell.level,
 				time,
 				school: Parser.spSchoolAbvToFull(spell.school),

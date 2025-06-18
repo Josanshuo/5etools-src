@@ -278,7 +278,7 @@ class InitiativeTrackerStatColumn_Initiative extends _InitiativeTrackerStatColum
 	_getInitialCellObj ({mon, fluff}) {
 		if (!mon) return {value: null};
 		return {
-			value: Parser.getAbilityModifier(mon.dex),
+			value: Renderer.monster.getInitiativeBonusNumber({mon}),
 		};
 	}
 
@@ -288,6 +288,35 @@ class InitiativeTrackerStatColumn_Initiative extends _InitiativeTrackerStatColum
 		return {
 			applicability: _INITIATIVE_APPLICABILITY_EXACT,
 			initiative: isNaN(state.entity?.value) ? 0 : Number(state.entity.value),
+		};
+	}
+}
+
+class InitiativeTrackerStatColumn_CR extends _InitiativeTrackerStatColumnBase {
+	static get POPULATE_WITH () { return "cr"; }
+	static GROUP = GROUP_BASE_STATS;
+	static NAME = "Challenge Rating (CR)";
+	static ABV_DEFAULT = "CR";
+
+	_getInitialCellObj ({mon, fluff}) {
+		if (!mon) return {value: null};
+		const crNum = Parser.crToNumber(mon.cr);
+		return {
+			value: crNum >= VeCt.CR_CUSTOM ? null : crNum,
+		};
+	}
+}
+
+class InitiativeTrackerStatColumn_XP extends _InitiativeTrackerStatColumnBase {
+	static get POPULATE_WITH () { return "xp"; }
+	static GROUP = GROUP_BASE_STATS;
+	static NAME = "Experience Points (XP)";
+	static ABV_DEFAULT = "XP";
+
+	_getInitialCellObj ({mon, fluff}) {
+		if (!mon) return {value: null};
+		return {
+			value: Parser.crToXpNumber(mon.cr),
 		};
 	}
 }
@@ -318,7 +347,7 @@ class InitiativeTrackerStatColumn_LegendaryActions extends _InitiativeTrackerSta
 
 	_getInitialCellObj ({mon, fluff}) {
 		if (!mon) return {current: null, max: null};
-		const cnt = mon.legendaryActions ?? (mon.legendary ? 3 : null);
+		const cnt = mon.legendaryActions ?? (Renderer.monster.hasLegendaryActions(mon) ? 3 : null);
 		return {
 			current: cnt,
 			max: cnt,
@@ -608,6 +637,8 @@ export class InitiativeTrackerStatColumnFactory {
 			InitiativeTrackerStatColumn_Speed,
 			InitiativeTrackerStatColumn_SpellDc,
 			InitiativeTrackerStatColumn_Initiative,
+			InitiativeTrackerStatColumn_CR,
+			InitiativeTrackerStatColumn_XP,
 			InitiativeTrackerStatColumn_LegendaryActions,
 			InitiativeTrackerStatColumn_Image,
 		].forEach(Cls => this._initLookup_addCls(Cls));

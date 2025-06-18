@@ -39,7 +39,7 @@ class SublistCellTemplate {
 	) {
 		this._name = name;
 		this._css = css;
-		this._colStyle = colStyle;
+		this._colStyle = colStyle || "";
 	}
 
 	get name () { return this._name; }
@@ -288,6 +288,7 @@ class SublistManager {
 				? new ContextUtil.Action(
 					"Send to Foundry",
 					() => this._pDoSendSublistToFoundry(),
+					{title: "A Rivet import will be run for each entry."},
 				)
 				: undefined,
 			null,
@@ -462,8 +463,8 @@ class SublistManager {
 	}
 
 	async _pHandleJsonDownload () {
-		const entities = await this.getPinnedEntities();
-		entities.forEach(ent => DataUtil.cleanJson(MiscUtil.copyFast(ent)));
+		const entities = (await this.getPinnedEntities()).map(ent => MiscUtil.copyFast(ent));
+		entities.forEach(ent => DataUtil.cleanJson(ent));
 		DataUtil.userDownload(`${this._getDownloadName()}-data`, entities);
 	}
 
@@ -1309,7 +1310,7 @@ class ListPage {
 		return {
 			name: "Open Page",
 			type: "link",
-			fn: () => `${location.origin}/${slugPage}/${UrlUtil.getSluggedHash(fnGetHash())}`,
+			fn: () => `${location.origin}/${slugPage}/${UrlUtil.getSluggedHash(fnGetHash())}.html`,
 		};
 	}
 
@@ -1326,8 +1327,11 @@ class ListPage {
 				this.primaryLists.forEach(list => {
 					list.visibleItems.forEach(listItem => {
 						const {btnToggleExpand, dispExpandedOuter, dispExpandedInner} = this._getPreviewEles(listItem);
-						if (isExpand) this._doPreviewExpand({listItem, dispExpandedOuter, btnToggleExpand, dispExpandedInner});
-						else this._doPreviewCollapse({dispExpandedOuter, btnToggleExpand, dispExpandedInner});
+
+						if (!isExpand) return this._doPreviewCollapse({dispExpandedOuter, btnToggleExpand, dispExpandedInner});
+
+						if (btnToggleExpand.innerHTML !== `[+]`) return;
+						this._doPreviewExpand({listItem, dispExpandedOuter, btnToggleExpand, dispExpandedInner});
 					});
 				});
 			});
@@ -1436,6 +1440,7 @@ class ListPage {
 	_bindPopoutButton () {
 		this._getOrTabRightButton(`popout`, `new-window`)
 			.off("click")
+			.off("auxclick")
 			.title(`Popout Window (SHIFT for Source Data; CTRL for Markdown Render)`)
 			.on(
 				"click",
@@ -1445,7 +1450,15 @@ class ListPage {
 					if (EventUtil.isCtrlMetaKey(evt)) return this._bindPopoutButton_doShowMarkdown(evt);
 					return this._bindPopoutButton_doShowStatblock(evt);
 				},
-			);
+			)
+			.on("auxclick", evt => {
+				if (Hist.lastLoadedId === null) return;
+
+				if (!EventUtil.isMiddleMouse(evt)) return;
+				evt.stopPropagation();
+
+				return Renderer.hover.pDoBrowserPopoutCurPage(evt, this._lastRender.entity);
+			});
 	}
 
 	_bindPopoutButton_doShowStatblock (evt) {
@@ -1962,6 +1975,14 @@ class ListPage {
 		return this._pHandleUnknownHash_doSourceReload({source});
 	}
 
+	_pHandleUnknownHash_isRequireReload ({source}) {
+		return [
+			PrereleaseUtil,
+			BrewUtil2,
+		]
+			.some(brewUtil => brewUtil.hasSourceJson(source) && brewUtil.isReloadRequired());
+	}
+
 	_pHandleUnknownHash_doSourceReload ({source}) {
 		return [
 			PrereleaseUtil,
@@ -1969,8 +1990,7 @@ class ListPage {
 		]
 			.some(brewUtil => {
 				if (
-					brewUtil.hasSourceJson(source)
-					&& brewUtil.isReloadRequired()
+					this._pHandleUnknownHash_isRequireReload({source})
 				) {
 					brewUtil.doLocationReload();
 					return true;
@@ -2134,6 +2154,17 @@ class ListPage {
 
 	static _OFFSET_WINDOW_EXPORT_AS_IMAGE = 17;
 
+	_pHandleClick_exportAsImage_mutOptions ({$ele, optsDomToImage}) {
+		// See:
+		//  - https://github.com/1904labs/dom-to-image-more/issues/146
+		//  - https://github.com/1904labs/dom-to-image-more/issues/160
+		if (BrowserUtil.isFirefox()) {
+			const bcr = $ele[0].getBoundingClientRect();
+			optsDomToImage.width = bcr.width;
+			optsDomToImage.height = bcr.height;
+		}
+	}
+
 	async _pHandleClick_exportAsImage ({evt, isFast, $eleCopyEffect}) {
 		if (typeof domtoimage === "undefined") await import("../lib/dom-to-image-more.min.js");
 
@@ -2149,14 +2180,9 @@ class ListPage {
 			},
 		};
 
-		// See: https://github.com/1904labs/dom-to-image-more/issues/146
-		if (BrowserUtil.isFirefox()) {
-			const bcr = this._$pgContent[0].getBoundingClientRect();
-			optsDomToImage.width = bcr.width;
-			optsDomToImage.height = bcr.height;
-		}
-
 		if (isFast) {
+			this._pHandleClick_exportAsImage_mutOptions({$ele: this._$pgContent, optsDomToImage});
+
 			let blob;
 			try {
 				this._$pgContent.addClass("lst__is-exporting-image");
@@ -2176,10 +2202,11 @@ class ListPage {
 
 		const $cpy = $(html)
 			.addClass("lst__is-exporting-image");
-		$cpy.find();
 
 		const $btnCpy = $(`<button class="ve-btn ve-btn-default ve-btn-xs" title="SHIFT to Copy and Close">Copy</button>`)
 			.on("click", async evt => {
+				this._pHandleClick_exportAsImage_mutOptions({$ele: $cpy, optsDomToImage});
+
 				const blob = await domtoimage.toBlob($cpy[0], optsDomToImage);
 				const isCopy = await MiscUtil.pCopyBlobToClipboard(blob);
 				if (isCopy) JqueryUtil.showCopiedEffect($btnCpy, "Copied!");
@@ -2189,6 +2216,8 @@ class ListPage {
 
 		const $btnSave = $(`<button class="ve-btn ve-btn-default ve-btn-xs" title="SHIFT to Save and Close">Save</button>`)
 			.on("click", async evt => {
+				this._pHandleClick_exportAsImage_mutOptions({$ele: $cpy, optsDomToImage});
+
 				const dataUrl = await domtoimage.toPng($cpy[0], optsDomToImage);
 				DataUtil.userDownloadDataUrl(`${ent.name}.png`, dataUrl);
 
